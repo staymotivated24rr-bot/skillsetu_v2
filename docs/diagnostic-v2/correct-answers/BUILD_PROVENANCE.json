@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-31",
+  "sourceCommit": "049d1d9d2aedca04c4176367612056572eaa2c49",
+  "branch": "codex/diagnostic-code-blocks-20261031",
+  "nextBuildId": "cc2CMpaivf6bgBvlr7Bmz",
+  "localUrl": "http://localhost:3002/diagnostic-v2",
+  "database": "disposable local skillsetu_audit",
+  "bank": "python-adaptive-blocks-3.0.1 (unchanged)",
+  "checks": {
+    "unitIntegration": {
+      "passed": 144,
+      "total": 144,
+      "files": 13,
+      "seconds": 80.66
+    },
+    "browser": {
+      "passed": 12,
+      "total": 12,
+      "duration": "2.3 minutes"
+    },
+    "authoredSolutionCoverage": [
+      {
+        "bank": "legacy 1.0",
+        "entries": 36
+      },
+      {
+        "bank": "reviewed 2.0",
+        "entries": 48
+      },
+      {
+        "bank": "blocks 3.0.1",
+        "entries": 60
+      }
+    ],
+    "lint": "passed",
+    "typecheck": "passed",
+    "productionBuild": "passed; migrations/seed skipped",
+    "http": {
+      "page": 200,
+      "health": 200
+    }
+  },
+  "sourceHashes": {
+    "src/lib/diagnostic/report-review.ts": "a8cd175704685641de98cc35d8b61ad073c8b9407462f791020dc88842caea9f",
+    "src/lib/diagnostic/types.ts": "da8b23bfaae01fedf1fbc0fe2d9de7d7f9a741e83487a23110b42e15addb912b",
+    "src/components/diagnostic-question-review.tsx": "2dd5bd5ca6bcc1a158a37d9ca9d1603cbe21d1da32de045ed0f14cb88343831e",
+    "src/components/diagnostic.module.css": "eb2a394a1186fb94bb81bf474758a761c993775f3e9c1722c7086db9c6e64bc6"
+  },
+  "access": "correct solutions only in owned completed review; active questions and incomplete runs remain solution-free",
+  "historicalData": "read-only; no regrade, bank change, report rewrite or migration",
+  "productionParity": "not inspected; no live-build attribution",
+  "productionModified": false,
+  "previews": [
+    {
+      "file": "previews/code-block-answer.png",
+      "sha256": "4db843fbcea48130ee6652fd00601f0158c8618042e7a1b0f5346255035b911e"
+    },
+    {
+      "file": "previews/option-answer-mobile.png",
+      "sha256": "62ce4ad66cfbd58a592b74aeee229a603a06b14709d5558ecb31677c361ab5a2"
+    }
+  ]
+}

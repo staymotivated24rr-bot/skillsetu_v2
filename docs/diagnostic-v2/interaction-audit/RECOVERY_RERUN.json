@@ -1,0 +1,27 @@
+{
+  "result": "pass",
+  "events": [
+    {
+      "action": "nickname blank/whitespace guard and 40-character limit",
+      "result": "pass"
+    },
+    {
+      "action": "interrupted save displays application error and preserves zero response count",
+      "result": "pass"
+    },
+    {
+      "action": "Reconnect & resume restores draft",
+      "result": "pass"
+    },
+    {
+      "action": "rapid UI double click persists exactly one response",
+      "result": "pass"
+    },
+    {
+      "action": "Start a new browser session clears session cookie and preserves prior run/response",
+      "result": "pass"
+    }
+  ],
+  "reason": "Original broad alert locator also matched the Next.js route announcer; recovery checks rerun with main-scoped application alert",
+  "applicationCodeChanged": false
+}

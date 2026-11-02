@@ -1,0 +1,35 @@
+{
+  "recordedAtUTC": "2026-10-31T14:51:58.843Z",
+  "sourceCommit": "e11a2103e2c5aa10b94d7e01ea484a7031b3e3b1",
+  "buildId": "PbTQ0aOfKokK6vkPjgozq",
+  "buildNote": "These application sources were built before being committed; no app sources changed after the successful build.",
+  "sourceSHA256NormalizedLF": {
+    "src/app/diagnostic-v2/page.tsx": "1b5edf38ebdbe4aea590b0bcd3638303230849b20bdc2f13a2734326a8bc1a06",
+    "src/app/api/diagnostic-v2/route.ts": "eb66e3cd6b05d4846f02e080fad2e4597a1f9d4e8ab07fd5690d4170796d1808",
+    "src/components/diagnostic-experience.tsx": "9d28a4bc14187d07e0ff4c6b3cd5b92cdd457ed3e10996ead03c99e4cac9625d",
+    "src/lib/diagnostic/presentation.ts": "d4f83406d1b82e75e6b3a474e71a1347e3e18d5f2fa113521c3ea5161c7538b6",
+    "src/lib/diagnostic/starter-v3/bank.ts": "773ed1b54e000202bbc882e503a58aa271d58bc331fb060f9705fe9766aa6ee2"
+  },
+  "localUrl": "http://localhost:3002/diagnostic-v2",
+  "localRuntime": {
+    "preview": true,
+    "defaultEightAreas": true,
+    "environment": "local",
+    "database": "disposable loopback audit DB"
+  },
+  "trackedAndHostedDefault": "disabled; VERCEL and nonlocal database gates retained",
+  "verification": {
+    "unitIntegration": "158/158, 15 files, 77.54 seconds",
+    "browser": "2/2 relevant journeys, 12.9 seconds; 1/1 screenshot rerun, 5.1 seconds",
+    "lint": "passed",
+    "types": "passed",
+    "productionBuild": "passed; migrations and seeding skipped"
+  },
+  "history": "Six-area saved attempts retain their original competency structure and policy",
+  "production": {
+    "accessed": false,
+    "modified": false,
+    "deployed": false,
+    "commitParity": "not inspected"
+  }
+}

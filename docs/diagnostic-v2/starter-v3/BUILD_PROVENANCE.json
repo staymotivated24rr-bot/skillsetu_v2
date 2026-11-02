@@ -1,0 +1,71 @@
+{
+  "recordedAtUTC": "2026-10-31T14:16:08.199Z",
+  "branch": "codex/python-bank-360-staging",
+  "sourceCommittedAs": "be1fddf98964d625481db4762027118818c14854",
+  "gitHeadDuringBuild": "004162a17a44744ce827dd785b6e2ae1f995c46c",
+  "buildNote": "The final production build used these application sources as local uncommitted work; they were then committed without further application changes. A subsequent screenshot-only E2E change does not affect the app build.",
+  "buildId": "dgT4SzHgTUn2aBe8XlEsi",
+  "node": "v24.21.0",
+  "sourceHashNormalization": "UTF-8 text normalized to LF",
+  "applicationSourceSHA256": {
+    "src/app/api/diagnostic-v2/route.ts": "1bb60eeebb9ba54d7d2615b14559d37583b16024e53f1fee722c1fe89d8a42ca",
+    "src/app/diagnostic-v2/learn/page.tsx": "f8e68037aeda7b7eb615607750668f1a2aa19429593c6d82bc4952d648496a48",
+    "src/app/diagnostic-v2/page.tsx": "6935505477b28462fd1a4938973f199b14b23836925d54f626954a895b3e8bf4",
+    "src/components/diagnostic-experience.tsx": "50c74bc77c720b9699ac7149837074994c6b76c57a7d23686c219154d5ba647f",
+    "src/lib/diagnostic/engine.ts": "7d596657d3bfb0a5fb5d50ef7209782c14328e078ce671c7bf4e6d4e139132e3",
+    "src/lib/diagnostic/hybrid.ts": "7c9c84d85d146a12c6c2d3ead427daa7f4b28386d7d39ed67db514159df11b52",
+    "src/lib/diagnostic/numeric.ts": "194072510bae54d6c690c7f32480a8d7295a6ed54c458cd272e49f99f3a684df",
+    "src/lib/diagnostic/service.ts": "d002d92fe46b4a0aeddb3820aba5a2d27f97ace15d2d9530c5989ba8dcb88303",
+    "src/lib/diagnostic/starter-v3/bank.ts": "cfeb3d54aab06e6e1dc40212dc7fbef97b9cbfec390d140b7af6f65d16074aa5",
+    "src/lib/diagnostic/starter-v3/clarifications.ts": "72c87816512b758be54e8aef47aa2a2d1e57116aa9179ddc33d6ac008b3f84a0",
+    "src/lib/diagnostic/starter-v3/import.ts": "9ee7211e78c23eb97b209453cbc3769b748549fe37b37b60f59eda256f17a5c5",
+    "src/lib/diagnostic/starter-v3/lessons.ts": "458b5e41515de26ac7a0bfbdfeb8ef6ab641931b5a37d808045fe9aead0bac9f",
+    "src/lib/diagnostic/starter-v3/source.json": "a6c7f4a13d45284702f0b3566c8d8f1e8f63943b2baa48bc2c64bb699667a3b0",
+    "src/lib/diagnostic/types.ts": "28153f0381bc1ae0b31758122701801d67d31bcefe3cef947bce289a794594c7"
+  },
+  "archiveSHA256": "de31e445fac40bf81340a6b7d7e09ba68e59e76d4e42c1b308a1dc4628b069e0",
+  "extractedJSONSHA256": "a6c7f4a13d45284702f0b3566c8d8f1e8f63943b2baa48bc2c64bb699667a3b0",
+  "retainedJSONSHA256": "a6c7f4a13d45284702f0b3566c8d8f1e8f63943b2baa48bc2c64bb699667a3b0",
+  "bank": "python-starter-v3-360-draft-2",
+  "engine": "hybrid-4.0.0-draft.1",
+  "independentExpertApprovals": 0,
+  "tests": {
+    "unitIntegration": {
+      "passed": 157,
+      "total": 157,
+      "files": 15,
+      "seconds": 55.61
+    },
+    "diagnosticBrowser": {
+      "passed": 15,
+      "total": 15,
+      "duration": "3.0 minutes"
+    },
+    "screenshotRerun": {
+      "passed": 1,
+      "total": 1,
+      "seconds": 7.6
+    },
+    "stdoutKeys": 303,
+    "exceptionKeys": 3,
+    "clarifiedBoundaryTest": "passed",
+    "lint": "passed",
+    "types": "passed",
+    "productionBuild": "passed; migrations and seeding disabled"
+  },
+  "finalLocalGate": {
+    "enabled": false,
+    "normalPage": 200,
+    "health": 200,
+    "draftPage": 404,
+    "draftStart": 404
+  },
+  "production": {
+    "accessed": false,
+    "dataModified": false,
+    "deployed": false,
+    "commitParity": "not inspected"
+  },
+  "database": "Disposable local skillsetu_audit only; no credentials recorded",
+  "snapshots": "Earlier bank content, draft-1 attempts, saved response payloads and sealed reports retained; no migration or historical regrade"
+}

@@ -1,0 +1,773 @@
+import type { LessonSeed, PracticeItem } from './types';
+function p(
+  id: string,
+  prompt: string,
+  choices: string[],
+  hint: string,
+  explanation: string,
+): PracticeItem {
+  const shift = [...id].reduce((n, c) => n + c.charCodeAt(0), 0) % choices.length;
+  return {
+    id,
+    prompt,
+    options: [...choices.slice(shift), ...choices.slice(0, shift)],
+    correct: (choices.length - shift) % choices.length,
+    hint,
+    explanation,
+  };
+}
+function lesson(
+  skillId: string,
+  title: string,
+  objective: string,
+  introduction: string,
+  intuition: string,
+  example: string,
+  summary: string,
+  questions: [string, string[], string, string][],
+): LessonSeed {
+  return {
+    id: `lesson-${skillId}`,
+    skillId,
+    title,
+    minutes: 8,
+    content: {
+      objective,
+      introduction,
+      intuition,
+      example,
+      summary,
+      items: questions.map((q, i) => p(`${skillId}-p${i + 1}`, ...q)),
+    },
+  };
+}
+export const lessons: LessonSeed[] = [
+  lesson(
+    'sql-filter',
+    'Put boundaries around your query',
+    'Select exactly the records the business metric needs.',
+    'WHERE filters rows before any grouping. For timestamp periods, use a lower bound that includes the start and an upper bound that excludes the next period. Handle NULL with IS NULL, not = NULL.',
+    'A month is a labeled box: every instant from its start belongs inside, but the start of the next month belongs in the next box.',
+    "For May paid invoices: WHERE status = 'paid' AND paid_at >= '2026-05-01' AND paid_at < '2026-06-01'. This includes late on May 31.",
+    'Confirm inclusion rules, time zone, and date boundaries before measuring.',
+    [
+      [
+        'Which predicate includes only paid invoices?',
+        ["status = 'paid'", 'status != NULL', 'amount > 0'],
+        'Use the business status, not a proxy.',
+        'A positive amount does not necessarily mean an invoice was paid.',
+      ],
+      [
+        'How do you find missing customer IDs?',
+        ['customer_id IS NULL', 'customer_id = NULL', 'customer_id = 0'],
+        'NULL represents unknown, not an ordinary value.',
+        'IS NULL tests missingness. Equality to NULL does not evaluate to true.',
+      ],
+      [
+        'For a June timestamp window, what upper bound is safe?',
+        ["paid_at < '2026-07-01'", "paid_at <= '2026-06-30'", "paid_at > '2026-06-01'"],
+        'Include all times on the last day.',
+        'An exclusive next-month boundary avoids accidentally excluding most of June 30.',
+      ],
+      [
+        'Select completed orders from July 2026 in UTC.',
+        [
+          "status='completed' AND ordered_at >= '2026-07-01' AND ordered_at < '2026-08-01'",
+          "status='completed' OR ordered_at >= '2026-07-01'",
+          'MONTH(ordered_at)=7',
+        ],
+        'Both status and the complete dated range must hold.',
+        'AND enforces both conditions; the dated range prevents mixing years.',
+      ],
+    ],
+  ),
+  lesson(
+    'sql-aggregate',
+    'Choose the grain before the total',
+    'Group at the business grain and filter summary results.',
+    'GROUP BY determines one output row per group. WHERE filters input rows; HAVING filters grouped results. A subquery can compute a summary before another calculation.',
+    'A summary is a set of labeled baskets. Decide whether each basket represents a region, customer, or month before adding its contents.',
+    "SELECT region, SUM(amount) FROM sales WHERE status='paid' GROUP BY region HAVING SUM(amount)>10000 returns only regions with paid totals above 10,000.",
+    'Name the grain, filter source rows, group, then filter aggregate values.',
+    [
+      [
+        'One row per customer requires which grouping?',
+        ['GROUP BY customer_id', 'GROUP BY order_id', 'No grouping'],
+        'Output grain is the label on each basket.',
+        'Grouping by customer_id creates one summary per customer.',
+      ],
+      [
+        'Which clause filters total revenue above 1,000?',
+        ['HAVING SUM(amount)>1000', 'WHERE SUM(amount)>1000', 'WHERE amount>1000'],
+        'The condition uses an aggregate.',
+        'HAVING evaluates after grouping; WHERE amount filters individual records.',
+      ],
+      [
+        'Find the average customer total, not the average order amount.',
+        [
+          'Sum by customer in a subquery, then AVG those totals.',
+          'AVG each order amount directly.',
+          'COUNT all orders.',
+        ],
+        'Two grains require two steps.',
+        'The inner query gives one total per customer; the outer AVG treats each customer equally.',
+      ],
+      [
+        'Which query returns paid revenue per month?',
+        [
+          'Filter paid rows, group by a year-month key, sum amount.',
+          'Group by amount, count months.',
+          'Group by month number across all years without checking dates.',
+        ],
+        'Distinguish January in different years.',
+        'A year-month grouping key preserves period identity; filter paid orders before aggregating.',
+      ],
+    ],
+  ),
+  lesson(
+    'sql-joins',
+    'Join without losing the story',
+    'Preserve records and avoid multiplying order-level measures.',
+    'A LEFT JOIN keeps every row on the left, filling unmatched right-side fields with NULL. An INNER JOIN keeps matches only. A one-to-many join repeats left-side values.',
+    'Imagine attaching customer labels to orders. Missing labels should not erase orders. Attaching three product labels should not triple an order’s revenue.',
+    'An order worth ₹600 has three line items. Joining its order amount to each item and summing gives ₹1,800, incorrectly. Aggregate items first or sum at the order grain.',
+    'State the intended grain and check row counts before and after joining.',
+    [
+      [
+        'Keep orders with no matching customer. Which join?',
+        ['LEFT JOIN customers', 'INNER JOIN customers', 'CROSS JOIN customers'],
+        'The orders are the records you must preserve.',
+        'LEFT JOIN preserves unmatched orders.',
+      ],
+      [
+        'One ₹400 order joins to two item rows. SUM(order_amount) becomes?',
+        ['₹800, an inflated result.', '₹400 automatically.', '₹200.'],
+        'The order value appears on each joined row.',
+        'Both rows contain 400; summing repeats the amount twice.',
+      ],
+      [
+        'How can you safely attach an item count to each order?',
+        [
+          'Aggregate items by order_id first, then join.',
+          'Cross join all items.',
+          'Join raw items and assume distinct amount values solve it.',
+        ],
+        'Produce one right-side row per order.',
+        'A grouped item-count table has one row per order, preserving the left grain.',
+      ],
+      [
+        'A report must include every account and its total paid invoices, even zero invoices.',
+        [
+          'Aggregate paid invoices by account, LEFT JOIN from accounts, and COALESCE missing totals to zero.',
+          'INNER JOIN raw invoices, drop missing accounts.',
+          'Join invoices on amount instead of account ID.',
+        ],
+        'Start from the population you need to retain.',
+        'Accounts on the left preserve zero-invoice accounts; pre-aggregation prevents duplication.',
+      ],
+    ],
+  ),
+  lesson(
+    'sql-windows',
+    'Rank within a group',
+    'Use partitioned windows and filter them in an outer query.',
+    'Window functions calculate across related rows without collapsing the output. PARTITION BY defines groups; ORDER BY defines a sequence. ROW_NUMBER gives distinct positions, while RANK can share ranks for ties.',
+    'GROUP BY makes one basket per region. A window keeps every item and attaches its position inside that basket.',
+    'SELECT *, ROW_NUMBER() OVER (PARTITION BY region ORDER BY revenue DESC, product_id) AS rn FROM product_totals. An outer query WHERE rn<=2 selects two products per region.',
+    'Use a stable tie-breaker and choose tie behavior deliberately.',
+    [
+      [
+        'What defines independent regional rankings?',
+        ['PARTITION BY region', 'GROUP BY revenue', 'LIMIT 2'],
+        'Each region needs its own sequence.',
+        'PARTITION BY restarts the window computation for each region.',
+      ],
+      [
+        'Which function gives exactly one distinct row number per row?',
+        ['ROW_NUMBER()', 'RANK()', 'SUM()'],
+        'Ties should still have different positions.',
+        'ROW_NUMBER assigns separate positions even when the main ordering values tie.',
+      ],
+      [
+        'Where should you filter the computed rn in portable SQL?',
+        [
+          'In an outer query or CTE result.',
+          'In the same SELECT WHERE before the window runs.',
+          'In GROUP BY rn.',
+        ],
+        'WHERE is evaluated before window values in the same query.',
+        'Wrap the ranking query, then filter rn from its output.',
+      ],
+      [
+        'Top 3 invoices per account, with repeatable tie results:',
+        [
+          'ROW_NUMBER() OVER (PARTITION BY account_id ORDER BY amount DESC, invoice_id), filter rn<=3 outside.',
+          'ORDER BY amount DESC LIMIT 3 for the whole table.',
+          'GROUP BY account_id only.',
+        ],
+        'Preserve invoice detail and restart for each account.',
+        'The partition and stable invoice ID tie-breaker give a reproducible top three in each account.',
+      ],
+    ],
+  ),
+  lesson(
+    'sheet-formulas',
+    'Make the spreadsheet answer the metric',
+    'Apply multiple criteria and use appropriate rate denominators.',
+    'COUNTIFS counts rows meeting multiple conditions; SUMIFS sums a measure under conditions. Use fixed reference ranges when copying formulas. Rates divide qualifying events by the relevant population.',
+    'A formula is a small, repeatable metric definition. Its numerator and denominator must tell the same story.',
+    'If B holds status and C amount, =SUMIFS(C2:C100,B2:B100,"paid") sums paid amounts. For 18 successes among 60 eligible records, the rate is 18/60=30%.',
+    'Use explicit criteria, consistent ranges, and denominator checks.',
+    [
+      [
+        'Count rows where status is resolved and hours <=24.',
+        [
+          'COUNTIFS(status_range,"resolved",hours_range,"<=24")',
+          'SUM(hours_range)',
+          'COUNTBLANK(status_range)',
+        ],
+        'You need a count with two conditions.',
+        'COUNTIFS combines conditions on corresponding rows.',
+      ],
+      [
+        'Sum amounts only for paid rows.',
+        [
+          'SUMIFS(amount_range,status_range,"paid")',
+          'COUNTIF(status_range,"paid")',
+          'AVERAGE(amount_range)',
+        ],
+        'The requested measure is money, not number of rows.',
+        'SUMIFS sums the measure range where the criterion is satisfied.',
+      ],
+      [
+        'Keep cell A1 fixed when copying a formula.',
+        ['$A$1', 'A1', 'A$2'],
+        'Both row and column must stay fixed.',
+        'Dollar signs before both column and row make an absolute reference.',
+      ],
+      [
+        '24 of 80 eligible invoices were late. What is the late rate?',
+        [
+          '30%, with 80 eligible invoices as denominator.',
+          '24%, using 100 by habit.',
+          '80/24, about 333%.',
+        ],
+        'Rates use events divided by eligible population.',
+        '24/80 = 0.30. Confirm eligibility rather than silently including unrelated invoices.',
+      ],
+    ],
+  ),
+  lesson(
+    'data-quality',
+    'Protect the meaning of the data',
+    'Distinguish duplicates, missing values, and population coverage.',
+    'Before analysis, establish one row per intended unit, valid units, and a missing-value policy. Do not replace unknown with zero without business justification. Compare extracts to expected counts.',
+    'Cleaning is preserving the meaning of the measurement, not just making a table look complete.',
+    'An unresolved ticket has no final resolution duration. Zero would mean it resolved instantly. Keep it open, retain its missing final duration, and measure its current age separately.',
+    'Check grain, missingness, units, dates, and coverage before calculation.',
+    [
+      [
+        'An order ID appears twice unexpectedly. First step?',
+        [
+          'Confirm intended grain and source duplication before deduplicating.',
+          'Delete every repeated customer ID.',
+          'Double the revenue.',
+        ],
+        'Repeated IDs can be valid at a line-item grain.',
+        'Determine whether the row is an order or an item; only true duplicates should be removed.',
+      ],
+      [
+        'A pending delivery has no completed duration. Treat it as?',
+        ['Pending with unknown final duration.', 'Zero hours.', 'An average completed duration.'],
+        'Missing final duration does not mean fast completion.',
+        'Preserve the pending status and measure age separately.',
+      ],
+      [
+        'Revenue columns mix rupees and thousands of rupees. What now?',
+        [
+          'Normalize units explicitly before summing.',
+          'Sum as displayed.',
+          'Drop the smaller numbers.',
+        ],
+        'The same number can represent different magnitudes.',
+        'Convert all values to a common unit, preserving documented provenance.',
+      ],
+      [
+        'An export has repeated invoices and unknown payment flags. Which plan is defensible?',
+        [
+          'Verify invoice grain, resolve duplicates from source, and report unknown flags separately before computing paid rate.',
+          'Treat unknown flags as unpaid and retain duplicate invoices.',
+          'Remove all unknowns and claim the dataset is representative.',
+        ],
+        'Both uniqueness and missing coverage affect a rate.',
+        'Use a justified grain and disclose unknown coverage; silent defaults may bias the metric.',
+      ],
+    ],
+  ),
+  lesson(
+    'python',
+    'Read a data-frame pipeline',
+    'Interpret filter, group, and aggregate operations at the right grain.',
+    'pandas filters rows using boolean masks, groups with groupby, and summarizes with functions such as mean, sum, and median. The mean of a 0/1 flag is its rate. Missing values are often excluded by default, which must be intentional.',
+    'Read a pipeline as a sentence: keep these rows, organize them by this key, then summarize this column.',
+    'df.loc[df["status"].eq("paid")].groupby("region")["amount"].sum() means total paid amount separately for each region.',
+    'Read the row filter, grouping key, column, and aggregation in that order.',
+    [
+      [
+        'df[df["status"].eq("paid")] does what?',
+        ['Keeps rows whose status is paid.', 'Renames status to paid.', 'Sums all amounts.'],
+        'The boolean mask selects rows.',
+        'The expression creates a true/false mask and retains true rows.',
+      ],
+      [
+        'groupby("region")["amount"].sum() returns?',
+        ['Amount totals per region.', 'One overall median.', 'Counts of every column.'],
+        'The key sets the grain and sum sets the summary.',
+        'Each region gets its own total of amount.',
+      ],
+      [
+        'For clean 0/1 booked flags, mean() is?',
+        ['Booking proportion.', 'Revenue.', 'Number of users.'],
+        'The sum is bookings; dividing by count gives a proportion.',
+        'The arithmetic mean of a binary indicator is the share of ones.',
+      ],
+      [
+        'One user has three event rows. To compare user booking rates, what comes first?',
+        [
+          'Construct a justified one-row-per-user booking indicator, then group by assigned variant and mean.',
+          'Mean all event flags directly.',
+          'Drop all users who have more than one event.',
+        ],
+        'Randomization and measurement should use the same unit.',
+        'User-level aggregation prevents frequent users from receiving more weight in the comparison.',
+      ],
+    ],
+  ),
+  lesson(
+    'descriptive',
+    'Choose a useful typical value',
+    'Use median and spread when a few values dominate the mean.',
+    'The mean uses every magnitude. The median is the middle of sorted values and is less sensitive to extremes. Neither alone describes spread or unusual observations.',
+    'One huge purchase can drag the average upward while leaving a typical customer’s experience unchanged.',
+    'For 10,12,14,16,100: mean is 30.4, median is 14. Reporting the median with the range exposes the large value rather than hiding it.',
+    'Match the summary to the decision and show important variation.',
+    [
+      [
+        'Median of 2,4,6,8,100?',
+        ['6', '24', '8'],
+        'Sort and find the middle position.',
+        'Five values have their middle in position three: 6.',
+      ],
+      [
+        'What is most sensitive to a very large outlier?',
+        ['Mean', 'Median', 'Number of rows'],
+        'Every value contributes its magnitude.',
+        'The mean incorporates the extreme magnitude directly.',
+      ],
+      [
+        'A median alone tells you which of these?',
+        ['A center, but not the complete spread.', 'Every individual value.', 'The exact maximum.'],
+        'Many distributions can share the same center.',
+        'You need other summaries or a distribution plot to see variation.',
+      ],
+      [
+        'Most deliveries take 2–4 hours, but a few take 72 hours. For a service review:',
+        [
+          'Show median and a tail measure or distribution; the slow tail may matter to customers.',
+          'Show only median and declare everyone is satisfied.',
+          'Delete slow deliveries as inconvenient.',
+        ],
+        'A robust center can hide a harmful tail.',
+        'Report typical duration and slow-tail behavior; outliers can reflect real service failures.',
+      ],
+    ],
+  ),
+  lesson(
+    'probability',
+    'Use the population in the question',
+    'Calculate conditional probabilities with the correct denominator.',
+    'P(event | group) is the event rate among members of that group. It differs from the overall event probability. Aggregate rates can change when population mix changes even if subgroup rates do not.',
+    '“Among returning users” narrows your world before you count bookings.',
+    'Returning: 18 bookings from 60 users. New: 12 from 120. Returning rate is 18/60=30%; overall rate is 30/180≈16.7%.',
+    'Name the condition, restrict the population, then divide.',
+    [
+      [
+        '8 of 40 mobile users buy. P(buy | mobile)?',
+        ['20%', '8%', '40%'],
+        'Use mobile users as the denominator.',
+        '8/40 = 0.20.',
+      ],
+      [
+        '20 buyers among 200 total users. Overall rate?',
+        ['10%', '20%', '90%'],
+        'Events divided by all eligible users.',
+        '20/200 = 10%.',
+      ],
+      [
+        'More low-converting new users arrive; subgroup rates stay unchanged. Overall rate may?',
+        [
+          'Fall because the population mix changed.',
+          'Never change.',
+          'Prove the product worsened for every user.',
+        ],
+        'The overall rate is a weighted average.',
+        'Changing subgroup weights changes the overall rate without changing within-group performance.',
+      ],
+      [
+        'Zone A: 9 late of 30 deliveries. Zone B: 4 late of 80. Which is correct?',
+        [
+          'A has a 30% late rate; B has 5%, so examine differences in route mix and workload.',
+          'A has 9% and B 4%.',
+          'More B deliveries prove B has a higher late rate.',
+        ],
+        'Compare rates within each zone before attributing causes.',
+        '9/30 = 30%, 4/80 = 5%; the difference warrants investigation but is not itself a causal explanation.',
+      ],
+    ],
+  ),
+  lesson(
+    'confidence',
+    'Put uncertainty beside the estimate',
+    'Interpret intervals without claiming certainty or individual-level coverage.',
+    'A confidence interval reports a range from a sampling procedure. Under its assumptions, a 95% frequentist method covers the fixed population parameter in 95% of repeated samples. It does not assign a 95% probability to this fixed parameter.',
+    'A point estimate is one pin on a map; an interval describes how precisely this study locates the effect.',
+    'A conversion difference of +3 points with a 95% interval of −1 to +7 points is compatible with a small loss and a meaningful gain. It is not compelling positive evidence at the matching two-sided 5% test level.',
+    'Report the estimate, interval, population, and assumptions together.',
+    [
+      [
+        'Difference interval −2 to +6 includes?',
+        [
+          'Zero, so both no difference and some positive or negative effects remain compatible.',
+          'Only positive effects.',
+          'Every individual user score.',
+        ],
+        'Check the sign at both endpoints.',
+        'An interval crossing zero does not establish a positive effect at that level.',
+      ],
+      [
+        'A narrower interval usually indicates?',
+        [
+          'Greater precision under comparable assumptions.',
+          'Guaranteed correctness.',
+          'More customer satisfaction.',
+        ],
+        'Width describes uncertainty, not a business outcome.',
+        'Greater precision can come from more information, but bias and assumptions still matter.',
+      ],
+      [
+        'A 95% frequentist interval means?',
+        [
+          'The procedure covers the true parameter in 95% of repeated samples under its assumptions.',
+          '95% of users have that effect.',
+          'This result guarantees a 95% business success rate.',
+        ],
+        'Think about repeated sampling, not individuals.',
+        'Coverage describes the interval-generating procedure.',
+      ],
+      [
+        'Effect +1 point, 95% CI −4 to +6 points. Recommend?',
+        [
+          'Call evidence uncertain, evaluate business risk, and plan more informative measurement.',
+          'Promise a +1 point increase for every user.',
+          'Prove there is no effect.',
+        ],
+        'The interval includes materially different decisions.',
+        'The result is imprecise; honest communication should not convert it into a guarantee or proof of equivalence.',
+      ],
+    ],
+  ),
+  lesson(
+    'testing',
+    'Evidence is not a rollout decision',
+    'Apply a pre-agreed test and separate statistical from business significance.',
+    'A p-value is the probability, under the null model, of results at least as extreme as the observed result. Compare it to a pre-agreed α. A non-significant result does not prove no effect. A significant result does not guarantee practical value.',
+    'A statistical test is one checkpoint; guardrails and costs are other checkpoints. Passing one does not pass them all.',
+    'At α=0.05, p=0.03 supports rejecting the no-effect null if assumptions hold. But if the treatment also doubles refunds, broad rollout may still be a poor choice.',
+    'Predefine metric and duration; assess evidence, effect size, guardrails, and limitations.',
+    [
+      [
+        'p=0.12 at α=0.05 means?',
+        [
+          'Do not reject the null; insufficient evidence is not proof of no effect.',
+          '12% probability the null is true.',
+          'A 12% guaranteed gain.',
+        ],
+        'Compare the two values, then limit the conclusion.',
+        'The p-value exceeds the planned threshold.',
+      ],
+      [
+        'p=0.02 at α=0.05 under a valid test means?',
+        [
+          'Reject the null for the tested metric.',
+          'Guarantee business success.',
+          'Prove every user benefits.',
+        ],
+        'A test addresses a model-level question.',
+        'Evidence against the null is distinct from individual benefit and commercial success.',
+      ],
+      [
+        'Picking the best metric after testing 30 metrics risks?',
+        [
+          'False-positive discoveries from multiple testing and cherry-picking.',
+          'Automatically better science.',
+          'Removing all uncertainty.',
+        ],
+        'More shots at a threshold produce more chance findings.',
+        'Pre-specification and appropriate multiple-test procedures matter.',
+      ],
+      [
+        'A planned test improves revenue significantly but refund rate breaches a safety guardrail.',
+        [
+          'Pause rollout, investigate the harm, and retest a revised treatment.',
+          'Ignore refunds because p<0.05.',
+          'Remove the guardrail from the report.',
+        ],
+        'Business constraints were agreed for a reason.',
+        'A primary-metric improvement does not justify unexamined customer harm.',
+      ],
+    ],
+  ),
+  lesson(
+    'visualization',
+    'Make the decision visible',
+    'Choose honest comparisons with clear units and uncertainty.',
+    'Use bars for category comparisons, lines for ordered time, and distributions for spread. Start bar axes at zero unless an explicitly explained alternative is needed. Separate unrelated units and show uncertainty when it affects the decision.',
+    'A chart is a visual claim. Its scales and missing context can strengthen that claim beyond the evidence.',
+    'Show weekly backlog counts and resolution-hour medians in separate aligned charts. Label units and include open work so faster resolved tickets do not conceal growing queues.',
+    'Choose a chart for the question, label units, preserve context, avoid misleading scales.',
+    [
+      [
+        'Weekly revenue over six months is best shown with?',
+        [
+          'A labeled line chart with ordered dates.',
+          'A 3D pie chart.',
+          'Unordered scattered category bars.',
+        ],
+        'Time has a meaningful order.',
+        'A line chart makes sequential changes visible.',
+      ],
+      [
+        'Comparing 10% and 12% with a bar axis starting at 9.9% can?',
+        [
+          'Exaggerate the visual difference.',
+          'Guarantee an honest comparison.',
+          'Show a 2-point uncertainty interval.',
+        ],
+        'Bar lengths encode magnitudes from a baseline.',
+        'A truncated bar baseline may make a small difference look enormous.',
+      ],
+      [
+        'A decision hinges on uncertain experimental rates. Include?',
+        [
+          'Rates, intervals, sample sizes, and clear labels.',
+          'Only the largest point estimate.',
+          'Only a p-value pie chart.',
+        ],
+        'The reader needs both size and precision.',
+        'Uncertainty and sample sizes provide essential context for the estimate.',
+      ],
+      [
+        'Support volume (tickets) and median duration (hours) in a briefing:',
+        [
+          'Use aligned panels with separate labeled units and comparable periods.',
+          'Mix both on one unlabeled scale.',
+          'Omit the worsening metric.',
+        ],
+        'Different units should not share an unexplained scale.',
+        'Aligned panels preserve the relationship in time without pretending units are interchangeable.',
+      ],
+    ],
+  ),
+  lesson(
+    'reasoning',
+    'Test the story behind the number',
+    'Separate observation, hypothesis, and causal evidence.',
+    'A change happening alongside another change does not prove causation. Look for competing explanations, comparable groups, measurement shifts, and missing populations. Prioritize analyses that can change the actual decision.',
+    'A useful analyst asks: what else could create this pattern, and what evidence would separate those explanations?',
+    'Revenue fell during a product recall. The recall may explain refunds, but price, volume, and customer mix may also change. Split net revenue into drivers and inspect recall-linked returns before spending more on ads.',
+    'Name the observation, possible explanations, next evidence, and decision implication.',
+    [
+      [
+        'Sales rose after a new logo. What is established?',
+        [
+          'An association in time, not a proven logo effect.',
+          'The logo caused all growth.',
+          'No other causes are possible.',
+        ],
+        'Timing alone is weak causal evidence.',
+        'Seasonality, pricing, and other changes could explain the increase.',
+      ],
+      [
+        'Which next analysis best informs a falling net revenue decision?',
+        [
+          'Break down volume, price, and refunds over comparable periods.',
+          'Change chart colors.',
+          'Assume marketing caused it.',
+        ],
+        'Separate drivers that imply different actions.',
+        'A driver breakdown can distinguish demand problems from refund or pricing problems.',
+      ],
+      [
+        'Aggregate performance improves while every comparable subgroup worsens. Check?',
+        [
+          'Changes in group weights or population mix.',
+          'Whether arithmetic can be ignored.',
+          'Only the aggregate headline.',
+        ],
+        'Weighted averages depend on both values and weights.',
+        'Changing mix can reverse an aggregate pattern; subgroup comparisons help detect it.',
+      ],
+      [
+        'Resolved times fall while backlog grows. Is staffing sufficient?',
+        [
+          'Not established: inspect incoming/resolved volume and aging by channel before deciding.',
+          'Yes, any falling median proves enough staff.',
+          'No, one metric determines the exact headcount.',
+        ],
+        'The measured completed population misses waiting work.',
+        'Use flow and backlog evidence to locate bottlenecks before making a capacity recommendation.',
+      ],
+    ],
+  ),
+  lesson(
+    'interpretation',
+    'Translate changes precisely',
+    'Distinguish units, relative percentages, and percentage points.',
+    'A relative percent change is (new−old)/old ×100. Percentage points describe subtraction of two percentage rates. Report the population, unit, and period. Gross and net values answer different questions.',
+    '“Up 20%” and “up 2 points” can both describe 10%→12%, but they emphasize different quantities.',
+    'A 10% booking rate becoming 12% is +2 percentage points and a 20% relative increase. Income 100−10 credits = 90 net; subtract credits before computing net change.',
+    'Compute the agreed metric first, then use a clear baseline and unit.',
+    [
+      [
+        'Conversion 20% → 25% is an absolute change of?',
+        ['+5 percentage points.', '+5% relative.', '+25 percentage points.'],
+        'Subtract rates for the absolute rate change.',
+        '25−20 = 5 points; relative increase is 5/20 = 25%.',
+      ],
+      [
+        'Revenue 80 → 100 changes by?',
+        ['+25% relative.', '+20% relative.', '+20 percentage points.'],
+        'Use the old value as denominator.',
+        '(100−80)/80 = 25%.',
+      ],
+      [
+        'Gross 150 and refunds 30 gives net?',
+        ['120', '180', '30%'],
+        'Refunds reduce gross.',
+        '150−30 = 120, with the same monetary unit.',
+      ],
+      [
+        'Gross 200→210, credits 20→48. What happened to net?',
+        [
+          '180→162, a 10% decrease, despite rising gross.',
+          'Net grew 5%.',
+          'Net fell 18 percentage points.',
+        ],
+        'Subtract credits in each period, then compare.',
+        'The agreed net metric decreased: (162−180)/180 = −10%.',
+      ],
+    ],
+  ),
+  lesson(
+    'clarification',
+    'Turn a vague request into an analysis',
+    'Agree on a decision-ready definition before doing the work.',
+    'Clarify what decision the stakeholder needs, who will use the result, how success is measured, the time frame, and what to include or exclude. Ask a small number of high-value questions instead of a long technical interrogation.',
+    'A clear brief prevents doing the right calculation for the wrong question.',
+    '“Sales are down” becomes: “Compare UTC April vs March net paid revenue after credits by segment; decide whether to fund a discount campaign.” This defines metric, scope, time, grain, and action.',
+    'Clarify decision, metric, population, time, and constraints; confirm the shared interpretation.',
+    [
+      [
+        'Stakeholder says “engagement fell.” Ask first?',
+        [
+          'What decision are you making, and what activity/population defines engagement?',
+          'Which database engine do you like?',
+          'Shall I promise recovery?',
+        ],
+        'Clarify the meaning and use of the result.',
+        'Different engagement definitions can lead to different conclusions and actions.',
+      ],
+      [
+        'Two teams use different revenue totals. Clarify?',
+        [
+          'Gross vs net, statuses, date basis, currency, and time zone.',
+          'Chart colors only.',
+          'Which team seems more confident.',
+        ],
+        'Totals differ when definitions differ.',
+        'Reconcile metric inclusion rules before arguing about arithmetic.',
+      ],
+      [
+        'A dashboard claims faster service. What coverage question matters?',
+        [
+          'Are unresolved items excluded, and how are their waiting times tracked?',
+          'Can we hide complaints?',
+          'Can we use a bigger font?',
+        ],
+        'Completed-only metrics miss part of the customer experience.',
+        'Coverage determines whether the metric supports an overall service claim.',
+      ],
+      [
+        'A manager needs tomorrow’s staffing decision. Best confirmed brief?',
+        [
+          'Compare incoming, resolved, aging backlog and SLA by channel for the agreed week; recommend where to investigate capacity first.',
+          'Build every chart in the database.',
+          'Optimize a metric we never agreed on.',
+        ],
+        'A good brief is bounded and decision-linked.',
+        'An agreed time, metrics, channel grain, and decision keep work useful and feasible.',
+      ],
+    ],
+  ),
+  lesson(
+    'communication',
+    'Give the stakeholder a useful next step',
+    'State the finding, implication, uncertainty, and recommended action.',
+    'A concise analytical brief answers what changed, why it matters to the decision, what remains uncertain, and what to do next. Avoid jargon that does not help the stakeholder decide. Do not turn plausible hypotheses into proven causes.',
+    'A finding is a bridge to a decision. The stakeholder should not have to reverse-engineer your code to cross it.',
+    '“Net income fell 20%, mainly alongside higher credits. We have not isolated the cause. Check outage-linked credits and renewal rates before funding discounts.” This is brief, measured, and actionable.',
+    'Lead with the decision-relevant finding; include limits and a specific next action.',
+    [
+      [
+        'A business manager needs a one-minute update. Lead with?',
+        [
+          'The key finding and decision implication.',
+          'Library versions.',
+          'Every row of raw data.',
+        ],
+        'Match the message to the audience.',
+        'Implementation details rarely answer the business decision.',
+      ],
+      [
+        'An uncertain experiment has a positive point estimate. Say?',
+        [
+          'The estimate is promising, but the interval includes no effect; plan follow-up evidence.',
+          'Success is guaranteed.',
+          'No uncertainty exists.',
+        ],
+        'Mention estimate and uncertainty together.',
+        'A positive point estimate alone does not establish a reliable benefit.',
+      ],
+      [
+        'What makes a next step actionable?',
+        [
+          'A specific investigation linked to the pending decision.',
+          '“Analyze more” with no scope.',
+          'A vague motivational slogan.',
+        ],
+        'The reader needs to know what work would change the choice.',
+        'Specific scope and decision linkage make the recommendation useful.',
+      ],
+      [
+        'Backlog doubles while completed median falls. Choose the brief.',
+        [
+          'Completed work is faster, but open work doubled. Inspect aging and volume by channel before adjusting staffing; current medians exclude waiting work.',
+          'Everything improved; no action needed.',
+          'The SQL query runs successfully.',
+        ],
+        'Include both signals and the reporting limit.',
+        'An honest brief explains the tension and specifies an investigation relevant to staffing.',
+      ],
+    ],
+  ),
+];

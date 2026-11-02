@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-31",
+  "sourceCommit": "7a4200d3165ad436d96fdf8b00815c3d903e8755",
+  "branch": "codex/diagnostic-code-blocks-20261031",
+  "nextBuildId": "hjLr1nvhzO1byPCSDcaBn",
+  "localUrl": "http://localhost:3002/diagnostic-v2",
+  "bank": "python-adaptive-blocks-3.0.1",
+  "engine": "rules-3.0.0",
+  "database": "disposable local skillsetu_audit",
+  "sourceHashes": {
+    "src/lib/diagnostic/block-bank.ts": "79fd0bdb4a9f0f73c19c7a1e216e8614e8ea319fc9f2b421538b8186f442ddb7",
+    "src/lib/diagnostic/engine.ts": "d36d549a60b62780522b1dc56dce36308871ec57306f8fd6c0f4e6fd0ab2d809",
+    "src/lib/diagnostic/service.ts": "eea8f6df88790589151d91ca78bf9ce52488faf4ce2b16245ae11a707f3c0973",
+    "src/components/code-block-composer.tsx": "a6c0fac71cff5cc88b073ee87e07d752aca70a38c0f9ddbd6fa9df7198425238",
+    "src/components/diagnostic-experience.tsx": "935f899dc835bba2e12eb173bb0b534d5688dbc0c04026ff83fd18766b7649aa",
+    "src/components/diagnostic.module.css": "1fa29ce83cb45f226d3f79ecd5e8317f17331946360e45970f39c106ac050566"
+  },
+  "reference": {
+    "file": "C:/Users/raksh/Downloads/Screenshot (91).pdf",
+    "pagesVisuallyInspected": 22,
+    "sha256": "90a5945ecbbb679965d02825fdb3843ce9e40cb47f321b9f8f12ed3c006920a8",
+    "usage": "interaction pattern only; no copied code, content or assets"
+  },
+  "checks": {
+    "unitIntegration": {
+      "passed": 134,
+      "total": 134,
+      "files": 12,
+      "seconds": 58.59
+    },
+    "browserDistinct": {
+      "passed": 11,
+      "total": 11,
+      "finalTargetedRerun": "7/7 in 1.6 minutes; four unchanged checks passed on the same product build in the earlier combined run"
+    },
+    "typecheck": "passed",
+    "lint": "passed",
+    "productionBuild": "passed; VERCEL=1 skipped migration/seed",
+    "authoredSyntax": {
+      "combinations": 120,
+      "items": 12,
+      "method": "static Python AST parse, no execution"
+    },
+    "http": {
+      "diagnostic": 200,
+      "health": 200
+    }
+  },
+  "productionParity": "not verified; no live-build attribution",
+  "productionModified": false,
+  "schemaMigrationRequired": false
+}

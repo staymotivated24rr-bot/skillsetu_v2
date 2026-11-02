@@ -1,0 +1,2227 @@
+[
+  {
+    "profile": "strong",
+    "trace": [
+      {
+        "position": 1,
+        "id": "SS-PY-0016",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-006",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-006; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 2,
+        "id": "SS-PY-0061",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-021",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-021; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 3,
+        "id": "SS-PY-0106",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-036",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "24"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-036; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 4,
+        "id": "SS-PY-0151",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-051",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "3"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-051; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 5,
+        "id": "SS-PY-0196",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-066",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "4"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-066; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 6,
+        "id": "SS-PY-0241",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-081",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-081; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 7,
+        "id": "SS-PY-0286",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-096",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-096; 0 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 8,
+        "id": "SS-PY-0331",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-111",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "4.75"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-111; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      },
+      {
+        "position": 9,
+        "id": "SS-PY-0019",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-007",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "3"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-007; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 10,
+        "id": "SS-PY-0064",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-022",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-022; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 11,
+        "id": "SS-PY-0109",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-037",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "6"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-037; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 12,
+        "id": "SS-PY-0154",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-052",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "5"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-052; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 13,
+        "id": "SS-PY-0199",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-067",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-067; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 14,
+        "id": "SS-PY-0244",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-082",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-082; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 15,
+        "id": "SS-PY-0289",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-097",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-097; 0 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 16,
+        "id": "SS-PY-0334",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-112",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "8"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-112; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      },
+      {
+        "position": 17,
+        "id": "SS-PY-0031",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-011",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-011; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 18,
+        "id": "SS-PY-0076",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-026",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-026; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 19,
+        "id": "SS-PY-0121",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-041",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-041; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 20,
+        "id": "SS-PY-0166",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-056",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-056; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 21,
+        "id": "SS-PY-0211",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-071",
+        "difficulty": 3,
+        "type": "prediction",
+        "answer": {
+          "text": "2"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-071; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 22,
+        "id": "SS-PY-0256",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-086",
+        "difficulty": 3,
+        "type": "prediction",
+        "answer": {
+          "text": "4"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-086; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 23,
+        "id": "SS-PY-0301",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-101",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-101; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 24,
+        "id": "SS-PY-0346",
+        "version": "3.0-distractor-review/item-3/engineering-clarification-1",
+        "competency": "practical",
+        "family": "SS-PY-FAM-116",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-116; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      }
+    ],
+    "stopReason": "Eight-area coverage and repeated independent evidence met. Preliminary draft conclusions only.",
+    "report": {
+      "role": "Python Developer · draft eight-area preview",
+      "bankId": "python-starter-v3-360-draft-2",
+      "engineVersion": "hybrid-4.0.0-draft.1",
+      "answered": 24,
+      "stopReason": "Eight-area coverage and repeated independent evidence met. Preliminary draft conclusions only.",
+      "findings": [
+        {
+          "competencyId": "fundamentals",
+          "name": "Python Fundamentals",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [],
+          "moduleSkillId": "starter-fundamentals",
+          "nextSubskill": "Variables and true division",
+          "nextStep": "Study Variables and true division; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        },
+        {
+          "competencyId": "collections8",
+          "name": "Collections & Mutation",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 1,
+          "prerequisites": [
+            "fundamentals"
+          ],
+          "moduleSkillId": "starter-collections8",
+          "nextSubskill": "List append",
+          "nextStep": "Study List append; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        },
+        {
+          "competencyId": "functions8",
+          "name": "Functions & Recursion",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "fundamentals"
+          ],
+          "moduleSkillId": "starter-functions8",
+          "nextSubskill": "Parameters and return values",
+          "nextStep": "Study Parameters and return values; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        },
+        {
+          "competencyId": "objects",
+          "name": "Object-Oriented Python",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "functions8"
+          ],
+          "moduleSkillId": "starter-objects",
+          "nextSubskill": "Constructors and instance fields",
+          "nextStep": "Study Constructors and instance fields; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        },
+        {
+          "competencyId": "dsa",
+          "name": "DSA Using Python",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "collections8",
+            "functions8"
+          ],
+          "moduleSkillId": "starter-dsa",
+          "nextSubskill": "Linear search",
+          "nextStep": "Study Linear search; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        },
+        {
+          "competencyId": "debugging",
+          "name": "Debugging & Exceptions",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "functions8"
+          ],
+          "moduleSkillId": "starter-debugging",
+          "nextSubskill": "Exception identification",
+          "nextStep": "Study Exception identification; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        },
+        {
+          "competencyId": "testing8",
+          "name": "Testing & Validation",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "debugging"
+          ],
+          "moduleSkillId": "starter-testing8",
+          "nextSubskill": "Assertions",
+          "nextStep": "Study Assertions; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        },
+        {
+          "competencyId": "practical",
+          "name": "Practical Python Coding",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "collections8",
+            "debugging"
+          ],
+          "moduleSkillId": "starter-practical",
+          "nextSubskill": "String transformations",
+          "nextStep": "Study String transformations; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Consistent independent matches across different families, including applied difficulty. Preliminary draft-bank signal only."
+        }
+      ],
+      "learningOrder": [],
+      "evidence": [
+        {
+          "questionId": "SS-PY-0016",
+          "correct": true,
+          "assisted": false,
+          "title": "Short-circuit evaluation",
+          "explanation": "Both conditions must be true for and to return True.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0061",
+          "correct": true,
+          "assisted": false,
+          "title": "Aliasing and mutation",
+          "explanation": "a and b refer to the same list, so the append is visible through a.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0106",
+          "correct": true,
+          "assisted": false,
+          "title": "Basic recursion",
+          "explanation": "The base case stops recursion; all previous calls multiply during unwinding.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0151",
+          "correct": true,
+          "assisted": false,
+          "title": "Method overriding",
+          "explanation": "Child.score overrides Parent.score for Child instances.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0196",
+          "correct": true,
+          "assisted": false,
+          "title": "Binary search",
+          "explanation": "Binary search repeatedly halves an ordered search interval.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0241",
+          "correct": true,
+          "assisted": false,
+          "title": "try-except-else-finally",
+          "explanation": "else runs when try succeeds; finally runs whether or not an exception occurred.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0286",
+          "correct": true,
+          "assisted": false,
+          "title": "Unit testing expected exceptions",
+          "explanation": "assertRaises succeeds when the wrapped code raises the expected exception.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0331",
+          "correct": true,
+          "assisted": false,
+          "title": "JSON serialization and numeric values",
+          "explanation": "JSON round-tripping preserves these integer values; dividing 19 by 4 yields 4.75.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0019",
+          "correct": true,
+          "assisted": false,
+          "title": "While loops",
+          "explanation": "Integer division halves n until it reaches zero.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0064",
+          "correct": true,
+          "assisted": false,
+          "title": "Shallow copies",
+          "explanation": "list.copy creates a separate outer list, so appending to b does not change a.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0109",
+          "correct": true,
+          "assisted": false,
+          "title": "Variable positional arguments",
+          "explanation": "*nums collects positional arguments into a tuple.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0154",
+          "correct": true,
+          "assisted": false,
+          "title": "super() calls",
+          "explanation": "super().value() calls the parent implementation before adding 2.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0199",
+          "correct": true,
+          "assisted": false,
+          "title": "Two-sum hash map",
+          "explanation": "A hash set tracks previously seen complements to find a pair.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0244",
+          "correct": true,
+          "assisted": false,
+          "title": "Exception subclasses",
+          "explanation": "ValueError is a subclass of Exception.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0289",
+          "correct": true,
+          "assisted": false,
+          "title": "Table-driven tests",
+          "explanation": "Each (input, expected) pair is checked using the same assertion.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0334",
+          "correct": true,
+          "assisted": false,
+          "title": "CSV-like text processing",
+          "explanation": "Skipping the header and parsing column 2 gives numeric scores to sum.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0031",
+          "correct": true,
+          "assisted": false,
+          "title": "Late evaluation and closures",
+          "explanation": "Each lambda closes over the same loop variable; it is evaluated when called.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0076",
+          "correct": true,
+          "assisted": false,
+          "title": "Nested shallow copies",
+          "explanation": "Shallow copying duplicates only the outer list; nested objects remain shared.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0121",
+          "correct": true,
+          "assisted": false,
+          "title": "Memoization",
+          "explanation": "Caching avoids repeated evaluations for the same Fibonacci input.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0166",
+          "correct": true,
+          "assisted": false,
+          "title": "Method resolution order",
+          "explanation": "The C3 MRO visits D, B, C, A, object; B.label is selected first.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0211",
+          "correct": true,
+          "assisted": false,
+          "title": "Min heaps",
+          "explanation": "heapq implements a min-heap; heappop removes the smallest value.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0256",
+          "correct": true,
+          "assisted": false,
+          "title": "Finally overrides return",
+          "explanation": "Returning from finally overrides the pending return from try; avoid this pattern.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0301",
+          "correct": true,
+          "assisted": false,
+          "title": "Metamorphic testing",
+          "explanation": "Metamorphic tests validate relationships between outputs for related inputs.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0346",
+          "correct": true,
+          "assisted": false,
+          "title": "Security-conscious Python",
+          "explanation": "Avoid shell injection, arbitrary code evaluation and disclosure of secrets.",
+          "misconception": null
+        }
+      ]
+    }
+  },
+  {
+    "profile": "struggling",
+    "trace": [
+      {
+        "position": 1,
+        "id": "SS-PY-0016",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-006",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-006; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 2,
+        "id": "SS-PY-0061",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-021",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-021; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 3,
+        "id": "SS-PY-0106",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-036",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-036; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 4,
+        "id": "SS-PY-0151",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-051",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-051; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 5,
+        "id": "SS-PY-0196",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-066",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-066; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 6,
+        "id": "SS-PY-0241",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-081",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-081; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 7,
+        "id": "SS-PY-0286",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-096",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-096; 0 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 8,
+        "id": "SS-PY-0331",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-111",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999.00"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-111; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      },
+      {
+        "position": 9,
+        "id": "SS-PY-0019",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-007",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-007; 1 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 10,
+        "id": "SS-PY-0064",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-022",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-022; 1 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 11,
+        "id": "SS-PY-0109",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-037",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-037; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 12,
+        "id": "SS-PY-0154",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-052",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-052; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 13,
+        "id": "SS-PY-0199",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-067",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-067; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 14,
+        "id": "SS-PY-0244",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-082",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-082; 1 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 15,
+        "id": "SS-PY-0289",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-097",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-097; 1 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 16,
+        "id": "SS-PY-0334",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-112",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-112; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      },
+      {
+        "position": 17,
+        "id": "SS-PY-0001",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-001",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999.0"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-001; 1 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 18,
+        "id": "SS-PY-0046",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-016",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-016; 2 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 19,
+        "id": "SS-PY-0091",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-031",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-031; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 20,
+        "id": "SS-PY-0136",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-046",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-046; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 21,
+        "id": "SS-PY-0181",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-061",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-061; 1 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 22,
+        "id": "SS-PY-0226",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-076",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-076; 2 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 23,
+        "id": "SS-PY-0271",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-091",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-091; 2 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 24,
+        "id": "SS-PY-0316",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-106",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 1 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-106; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      }
+    ],
+    "stopReason": "Eight-area coverage and repeated independent evidence met. Preliminary draft conclusions only.",
+    "report": {
+      "role": "Python Developer · draft eight-area preview",
+      "bankId": "python-starter-v3-360-draft-2",
+      "engineVersion": "hybrid-4.0.0-draft.1",
+      "answered": 24,
+      "stopReason": "Eight-area coverage and repeated independent evidence met. Preliminary draft conclusions only.",
+      "findings": [
+        {
+          "competencyId": "fundamentals",
+          "name": "Python Fundamentals",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 2,
+          "prerequisites": [],
+          "moduleSkillId": "starter-fundamentals",
+          "nextSubskill": "Short-circuit evaluation",
+          "nextStep": "Study Short-circuit evaluation; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Treats a printed bool as its underlying integer representation.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        },
+        {
+          "competencyId": "collections8",
+          "name": "Collections & Mutation",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 1,
+          "prerequisites": [
+            "fundamentals"
+          ],
+          "moduleSkillId": "starter-collections8",
+          "nextSubskill": "Aliasing and mutation",
+          "nextStep": "Study Aliasing and mutation; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Assumes b = a creates an independent copy.",
+              "observations": 1,
+              "confirmed": false
+            },
+            {
+              "label": "Mixes up which list was mutated.",
+              "observations": 1,
+              "confirmed": false
+            },
+            {
+              "label": "Assumes the final element remains 2.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        },
+        {
+          "competencyId": "functions8",
+          "name": "Functions & Recursion",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 1,
+          "prerequisites": [
+            "fundamentals"
+          ],
+          "moduleSkillId": "starter-functions8",
+          "nextSubskill": "Basic recursion",
+          "nextStep": "Study Basic recursion; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        },
+        {
+          "competencyId": "objects",
+          "name": "Object-Oriented Python",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 1,
+          "prerequisites": [
+            "functions8"
+          ],
+          "moduleSkillId": "starter-objects",
+          "nextSubskill": "Method overriding",
+          "nextStep": "Study Method overriding; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        },
+        {
+          "competencyId": "dsa",
+          "name": "DSA Using Python",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 2,
+          "prerequisites": [
+            "collections8",
+            "functions8"
+          ],
+          "moduleSkillId": "starter-dsa",
+          "nextSubskill": "Binary search",
+          "nextStep": "Study Binary search; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Treats a printed boolean result as numeric 1.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        },
+        {
+          "competencyId": "debugging",
+          "name": "Debugging & Exceptions",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 2,
+          "prerequisites": [
+            "functions8"
+          ],
+          "moduleSkillId": "starter-debugging",
+          "nextSubskill": "try-except-else-finally",
+          "nextStep": "Study try-except-else-finally; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Assumes else does not run without an error.",
+              "observations": 1,
+              "confirmed": false
+            },
+            {
+              "label": "Assumes the raised exception is printed without handler.",
+              "observations": 1,
+              "confirmed": false
+            },
+            {
+              "label": "Confuses this failure with IndexError; check how the operation fails.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        },
+        {
+          "competencyId": "testing8",
+          "name": "Testing & Validation",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 1,
+          "prerequisites": [
+            "debugging"
+          ],
+          "moduleSkillId": "starter-testing8",
+          "nextSubskill": "Unit testing expected exceptions",
+          "nextStep": "Study Unit testing expected exceptions; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Assumes the expected error is printed after the test.",
+              "observations": 1,
+              "confirmed": false
+            },
+            {
+              "label": "Assumes at least one square assertion fails.",
+              "observations": 1,
+              "confirmed": false
+            },
+            {
+              "label": "Assumes assert also prints True before the next statement.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        },
+        {
+          "competencyId": "practical",
+          "name": "Practical Python Coding",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 2,
+          "prerequisites": [
+            "collections8",
+            "debugging"
+          ],
+          "moduleSkillId": "starter-practical",
+          "nextSubskill": "JSON serialization and numeric values",
+          "nextStep": "Study JSON serialization and numeric values; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Assumes print() includes quotation marks around the string.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Repeated independent difficulty across families. Confirm with a practical task; this does not establish a persistent misconception."
+        }
+      ],
+      "learningOrder": [
+        "fundamentals",
+        "collections8",
+        "functions8",
+        "objects",
+        "dsa",
+        "debugging",
+        "testing8",
+        "practical"
+      ],
+      "evidence": [
+        {
+          "questionId": "SS-PY-0016",
+          "correct": false,
+          "assisted": false,
+          "title": "Short-circuit evaluation",
+          "explanation": "Both conditions must be true for and to return True.",
+          "misconception": "Treats a printed bool as its underlying integer representation."
+        },
+        {
+          "questionId": "SS-PY-0061",
+          "correct": false,
+          "assisted": false,
+          "title": "Aliasing and mutation",
+          "explanation": "a and b refer to the same list, so the append is visible through a.",
+          "misconception": "Assumes b = a creates an independent copy."
+        },
+        {
+          "questionId": "SS-PY-0106",
+          "correct": false,
+          "assisted": false,
+          "title": "Basic recursion",
+          "explanation": "The base case stops recursion; all previous calls multiply during unwinding.",
+          "misconception": "Unconfirmed difficulty with Basic recursion"
+        },
+        {
+          "questionId": "SS-PY-0151",
+          "correct": false,
+          "assisted": false,
+          "title": "Method overriding",
+          "explanation": "Child.score overrides Parent.score for Child instances.",
+          "misconception": "Unconfirmed difficulty with Method overriding"
+        },
+        {
+          "questionId": "SS-PY-0196",
+          "correct": false,
+          "assisted": false,
+          "title": "Binary search",
+          "explanation": "Binary search repeatedly halves an ordered search interval.",
+          "misconception": "Unconfirmed difficulty with Binary search"
+        },
+        {
+          "questionId": "SS-PY-0241",
+          "correct": false,
+          "assisted": false,
+          "title": "try-except-else-finally",
+          "explanation": "else runs when try succeeds; finally runs whether or not an exception occurred.",
+          "misconception": "Assumes else does not run without an error."
+        },
+        {
+          "questionId": "SS-PY-0286",
+          "correct": false,
+          "assisted": false,
+          "title": "Unit testing expected exceptions",
+          "explanation": "assertRaises succeeds when the wrapped code raises the expected exception.",
+          "misconception": "Assumes the expected error is printed after the test."
+        },
+        {
+          "questionId": "SS-PY-0331",
+          "correct": false,
+          "assisted": false,
+          "title": "JSON serialization and numeric values",
+          "explanation": "JSON round-tripping preserves these integer values; dividing 19 by 4 yields 4.75.",
+          "misconception": "Unconfirmed difficulty with JSON serialization and numeric values"
+        },
+        {
+          "questionId": "SS-PY-0019",
+          "correct": false,
+          "assisted": false,
+          "title": "While loops",
+          "explanation": "Integer division halves n until it reaches zero.",
+          "misconception": "Unconfirmed difficulty with While loops"
+        },
+        {
+          "questionId": "SS-PY-0064",
+          "correct": false,
+          "assisted": false,
+          "title": "Shallow copies",
+          "explanation": "list.copy creates a separate outer list, so appending to b does not change a.",
+          "misconception": "Mixes up which list was mutated."
+        },
+        {
+          "questionId": "SS-PY-0109",
+          "correct": false,
+          "assisted": false,
+          "title": "Variable positional arguments",
+          "explanation": "*nums collects positional arguments into a tuple.",
+          "misconception": "Unconfirmed difficulty with Variable positional arguments"
+        },
+        {
+          "questionId": "SS-PY-0154",
+          "correct": false,
+          "assisted": false,
+          "title": "super() calls",
+          "explanation": "super().value() calls the parent implementation before adding 2.",
+          "misconception": "Unconfirmed difficulty with super() calls"
+        },
+        {
+          "questionId": "SS-PY-0199",
+          "correct": false,
+          "assisted": false,
+          "title": "Two-sum hash map",
+          "explanation": "A hash set tracks previously seen complements to find a pair.",
+          "misconception": "Treats a printed boolean result as numeric 1."
+        },
+        {
+          "questionId": "SS-PY-0244",
+          "correct": false,
+          "assisted": false,
+          "title": "Exception subclasses",
+          "explanation": "ValueError is a subclass of Exception.",
+          "misconception": "Assumes the raised exception is printed without handler."
+        },
+        {
+          "questionId": "SS-PY-0289",
+          "correct": false,
+          "assisted": false,
+          "title": "Table-driven tests",
+          "explanation": "Each (input, expected) pair is checked using the same assertion.",
+          "misconception": "Assumes at least one square assertion fails."
+        },
+        {
+          "questionId": "SS-PY-0334",
+          "correct": false,
+          "assisted": false,
+          "title": "CSV-like text processing",
+          "explanation": "Skipping the header and parsing column 2 gives numeric scores to sum.",
+          "misconception": "Unconfirmed difficulty with CSV-like text processing"
+        },
+        {
+          "questionId": "SS-PY-0001",
+          "correct": false,
+          "assisted": false,
+          "title": "Variables and true division",
+          "explanation": "The / operator returns a float for numeric operands; 5 / 2 is 2.5.",
+          "misconception": "Unconfirmed difficulty with Variables and true division"
+        },
+        {
+          "questionId": "SS-PY-0046",
+          "correct": false,
+          "assisted": false,
+          "title": "List append",
+          "explanation": "append mutates the list by adding one element at the end.",
+          "misconception": "Assumes the final element remains 2."
+        },
+        {
+          "questionId": "SS-PY-0091",
+          "correct": false,
+          "assisted": false,
+          "title": "Parameters and return values",
+          "explanation": "return sends a value back to the caller.",
+          "misconception": "Unconfirmed difficulty with Parameters and return values"
+        },
+        {
+          "questionId": "SS-PY-0136",
+          "correct": false,
+          "assisted": false,
+          "title": "Constructors and instance fields",
+          "explanation": "The constructor initializes an instance attribute on the new Box.",
+          "misconception": "Unconfirmed difficulty with Constructors and instance fields"
+        },
+        {
+          "questionId": "SS-PY-0181",
+          "correct": false,
+          "assisted": false,
+          "title": "Linear search",
+          "explanation": "list.index returns the zero-based position of the first matching value.",
+          "misconception": "Unconfirmed difficulty with Linear search"
+        },
+        {
+          "questionId": "SS-PY-0226",
+          "correct": false,
+          "assisted": false,
+          "title": "Exception identification",
+          "explanation": "Identify the operation that fails: conversion, zero division, or list indexing.",
+          "misconception": "Confuses this failure with IndexError; check how the operation fails."
+        },
+        {
+          "questionId": "SS-PY-0271",
+          "correct": false,
+          "assisted": false,
+          "title": "Assertions",
+          "explanation": "An assert statement has no effect when its condition evaluates to True.",
+          "misconception": "Assumes assert also prints True before the next statement."
+        },
+        {
+          "questionId": "SS-PY-0316",
+          "correct": false,
+          "assisted": false,
+          "title": "String transformations",
+          "explanation": "lower creates a lowercase version of the string.",
+          "misconception": "Assumes print() includes quotation marks around the string."
+        }
+      ]
+    }
+  },
+  {
+    "profile": "mixed",
+    "trace": [
+      {
+        "position": 1,
+        "id": "SS-PY-0016",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-006",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-006; 0 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 2,
+        "id": "SS-PY-0061",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-021",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-021; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 3,
+        "id": "SS-PY-0106",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-036",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "24"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-036; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 4,
+        "id": "SS-PY-0151",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-051",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-051; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 5,
+        "id": "SS-PY-0196",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-066",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "4"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-066; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 6,
+        "id": "SS-PY-0241",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-081",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-081; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 7,
+        "id": "SS-PY-0286",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-096",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-096; 0 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 8,
+        "id": "SS-PY-0331",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-111",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "4.75"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 2 (hold until repeated evidence); 0 prior responses; unused family SS-PY-FAM-111; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      },
+      {
+        "position": 9,
+        "id": "SS-PY-0019",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-007",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "3"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-007; 1 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 10,
+        "id": "SS-PY-0064",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-022",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-022; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 11,
+        "id": "SS-PY-0109",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-037",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "6"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-037; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 12,
+        "id": "SS-PY-0154",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-052",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "5"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-052; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 13,
+        "id": "SS-PY-0199",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-067",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-067; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 14,
+        "id": "SS-PY-0244",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-082",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-082; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 15,
+        "id": "SS-PY-0289",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-097",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-097; 1 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 16,
+        "id": "SS-PY-0334",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-112",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 2 (hold until repeated evidence); 1 prior responses; unused family SS-PY-FAM-112; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      },
+      {
+        "position": 17,
+        "id": "SS-PY-0022",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-008",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 0
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Python Fundamentals; requested difficulty 2 (hold until repeated evidence); 2 prior responses; unused family SS-PY-FAM-008; 1 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 18,
+        "id": "SS-PY-0067",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-023",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 2
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 2 prior responses; unused family SS-PY-FAM-023; 1 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 19,
+        "id": "SS-PY-0121",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-041",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Functions & Recursion; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-041; 0 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 20,
+        "id": "SS-PY-0157",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-053",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "4"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Object-Oriented Python; requested difficulty 2 (hold until repeated evidence); 2 prior responses; unused family SS-PY-FAM-053; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 21,
+        "id": "SS-PY-0202",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-068",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": {
+          "text": "9"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 2 prior responses; unused family SS-PY-FAM-068; 1 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 22,
+        "id": "SS-PY-0256",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-086",
+        "difficulty": 3,
+        "type": "prediction",
+        "answer": {
+          "text": "-99999"
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Debugging & Exceptions; requested difficulty 3 (two consistent independent observations); 2 prior responses; unused family SS-PY-FAM-086; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 23,
+        "id": "SS-PY-0292",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "testing8",
+        "family": "SS-PY-FAM-098",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Testing & Validation; requested difficulty 2 (hold until repeated evidence); 2 prior responses; unused family SS-PY-FAM-098; 1 unconfirmed/repeated option hypotheses; prerequisite context: debugging."
+      },
+      {
+        "position": 24,
+        "id": "SS-PY-0337",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "practical",
+        "family": "SS-PY-FAM-113",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Balanced mandatory eight-area coverage; Practical Python Coding; requested difficulty 2 (hold until repeated evidence); 2 prior responses; unused family SS-PY-FAM-113; 0 unconfirmed/repeated option hypotheses; prerequisite context: collections8, debugging."
+      },
+      {
+        "position": 25,
+        "id": "SS-PY-0031",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "fundamentals",
+        "family": "SS-PY-FAM-011",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Investigate unresolved independent evidence; Python Fundamentals; requested difficulty 3 (two consistent independent observations); 3 prior responses; unused family SS-PY-FAM-011; 1 unconfirmed/repeated option hypotheses; prerequisite context: none unresolved."
+      },
+      {
+        "position": 26,
+        "id": "SS-PY-0070",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "collections8",
+        "family": "SS-PY-FAM-024",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Investigate unresolved independent evidence; Collections & Mutation; requested difficulty 2 (hold until repeated evidence); 3 prior responses; unused family SS-PY-FAM-024; 1 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 27,
+        "id": "SS-PY-0124",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "functions8",
+        "family": "SS-PY-FAM-042",
+        "difficulty": 3,
+        "type": "prediction",
+        "answer": {
+          "text": "7"
+        },
+        "rationale": "Investigate unresolved independent evidence; Functions & Recursion; requested difficulty 3 (hold until repeated evidence); 3 prior responses; unused family SS-PY-FAM-042; 1 unconfirmed/repeated option hypotheses; prerequisite context: fundamentals."
+      },
+      {
+        "position": 28,
+        "id": "SS-PY-0166",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "objects",
+        "family": "SS-PY-FAM-056",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Investigate unresolved independent evidence; Object-Oriented Python; requested difficulty 3 (two consistent independent observations); 3 prior responses; unused family SS-PY-FAM-056; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      },
+      {
+        "position": 29,
+        "id": "SS-PY-0205",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "dsa",
+        "family": "SS-PY-FAM-069",
+        "difficulty": 2,
+        "type": "decision",
+        "answer": {
+          "selected": 1
+        },
+        "rationale": "Investigate unresolved independent evidence; DSA Using Python; requested difficulty 2 (hold until repeated evidence); 3 prior responses; unused family SS-PY-FAM-069; 1 unconfirmed/repeated option hypotheses; prerequisite context: collections8, functions8."
+      },
+      {
+        "position": 30,
+        "id": "SS-PY-0259",
+        "version": "3.0-distractor-review/item-3",
+        "competency": "debugging",
+        "family": "SS-PY-FAM-087",
+        "difficulty": 3,
+        "type": "decision",
+        "answer": {
+          "selected": 3
+        },
+        "rationale": "Investigate unresolved independent evidence; Debugging & Exceptions; requested difficulty 3 (hold until repeated evidence); 3 prior responses; unused family SS-PY-FAM-087; 0 unconfirmed/repeated option hypotheses; prerequisite context: functions8."
+      }
+    ],
+    "stopReason": "Maximum 30 responses reached; unresolved evidence remains uncertain.",
+    "report": {
+      "role": "Python Developer · draft eight-area preview",
+      "bankId": "python-starter-v3-360-draft-2",
+      "engineVersion": "hybrid-4.0.0-draft.1",
+      "answered": 30,
+      "stopReason": "Maximum 30 responses reached; unresolved evidence remains uncertain.",
+      "findings": [
+        {
+          "competencyId": "fundamentals",
+          "name": "Python Fundamentals",
+          "status": "Insufficient evidence",
+          "count": 4,
+          "independent": 4,
+          "correct": 2,
+          "types": 2,
+          "prerequisites": [],
+          "moduleSkillId": "starter-fundamentals",
+          "nextSubskill": "Short-circuit evaluation",
+          "nextStep": "Study Short-circuit evaluation; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Treats a printed bool as its underlying integer representation.",
+              "observations": 1,
+              "confirmed": false
+            },
+            {
+              "label": "Assumes every lambda captured the first loop value.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        },
+        {
+          "competencyId": "collections8",
+          "name": "Collections & Mutation",
+          "status": "Insufficient evidence",
+          "count": 4,
+          "independent": 4,
+          "correct": 3,
+          "types": 1,
+          "prerequisites": [
+            "fundamentals"
+          ],
+          "moduleSkillId": "starter-collections8",
+          "nextSubskill": "Shallow copies",
+          "nextStep": "Study Shallow copies; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Mixes up which list was mutated.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        },
+        {
+          "competencyId": "functions8",
+          "name": "Functions & Recursion",
+          "status": "Insufficient evidence",
+          "count": 4,
+          "independent": 4,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "fundamentals"
+          ],
+          "moduleSkillId": "starter-functions8",
+          "nextSubskill": "Memoization",
+          "nextStep": "Study Memoization; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Counts only non-base recursive inputs.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        },
+        {
+          "competencyId": "objects",
+          "name": "Object-Oriented Python",
+          "status": "Insufficient evidence",
+          "count": 4,
+          "independent": 4,
+          "correct": 2,
+          "types": 2,
+          "prerequisites": [
+            "functions8"
+          ],
+          "moduleSkillId": "starter-objects",
+          "nextSubskill": "Method overriding",
+          "nextStep": "Study Method overriding; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Omits one class from the MRO length.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        },
+        {
+          "competencyId": "dsa",
+          "name": "DSA Using Python",
+          "status": "Insufficient evidence",
+          "count": 4,
+          "independent": 4,
+          "correct": 3,
+          "types": 3,
+          "prerequisites": [
+            "collections8",
+            "functions8"
+          ],
+          "moduleSkillId": "starter-dsa",
+          "nextSubskill": "Two-sum hash map",
+          "nextStep": "Study Two-sum hash map; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Treats a printed boolean result as numeric 1.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        },
+        {
+          "competencyId": "debugging",
+          "name": "Debugging & Exceptions",
+          "status": "Insufficient evidence",
+          "count": 4,
+          "independent": 4,
+          "correct": 3,
+          "types": 2,
+          "prerequisites": [
+            "functions8"
+          ],
+          "moduleSkillId": "starter-debugging",
+          "nextSubskill": "Finally overrides return",
+          "nextStep": "Study Finally overrides return; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        },
+        {
+          "competencyId": "testing8",
+          "name": "Testing & Validation",
+          "status": "Insufficient evidence",
+          "count": 3,
+          "independent": 3,
+          "correct": 2,
+          "types": 2,
+          "prerequisites": [
+            "debugging"
+          ],
+          "moduleSkillId": "starter-testing8",
+          "nextSubskill": "Unit testing expected exceptions",
+          "nextStep": "Study Unit testing expected exceptions; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [
+            {
+              "label": "Assumes the expected error is printed after the test.",
+              "observations": 1,
+              "confirmed": false
+            }
+          ],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        },
+        {
+          "competencyId": "practical",
+          "name": "Practical Python Coding",
+          "status": "Insufficient evidence",
+          "count": 3,
+          "independent": 3,
+          "correct": 2,
+          "types": 2,
+          "prerequisites": [
+            "collections8",
+            "debugging"
+          ],
+          "moduleSkillId": "starter-practical",
+          "nextSubskill": "CSV-like text processing",
+          "nextStep": "Study CSV-like text processing; explain a boundary case, then verify on an unseen task without hints.",
+          "hypotheses": [],
+          "reason": "Conflicting responses or too little applied success. More independent evidence is needed."
+        }
+      ],
+      "learningOrder": [
+        "fundamentals",
+        "collections8",
+        "functions8",
+        "objects",
+        "dsa",
+        "debugging",
+        "testing8",
+        "practical"
+      ],
+      "evidence": [
+        {
+          "questionId": "SS-PY-0016",
+          "correct": false,
+          "assisted": false,
+          "title": "Short-circuit evaluation",
+          "explanation": "Both conditions must be true for and to return True.",
+          "misconception": "Treats a printed bool as its underlying integer representation."
+        },
+        {
+          "questionId": "SS-PY-0061",
+          "correct": true,
+          "assisted": false,
+          "title": "Aliasing and mutation",
+          "explanation": "a and b refer to the same list, so the append is visible through a.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0106",
+          "correct": true,
+          "assisted": false,
+          "title": "Basic recursion",
+          "explanation": "The base case stops recursion; all previous calls multiply during unwinding.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0151",
+          "correct": false,
+          "assisted": false,
+          "title": "Method overriding",
+          "explanation": "Child.score overrides Parent.score for Child instances.",
+          "misconception": "Unconfirmed difficulty with Method overriding"
+        },
+        {
+          "questionId": "SS-PY-0196",
+          "correct": true,
+          "assisted": false,
+          "title": "Binary search",
+          "explanation": "Binary search repeatedly halves an ordered search interval.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0241",
+          "correct": true,
+          "assisted": false,
+          "title": "try-except-else-finally",
+          "explanation": "else runs when try succeeds; finally runs whether or not an exception occurred.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0286",
+          "correct": false,
+          "assisted": false,
+          "title": "Unit testing expected exceptions",
+          "explanation": "assertRaises succeeds when the wrapped code raises the expected exception.",
+          "misconception": "Assumes the expected error is printed after the test."
+        },
+        {
+          "questionId": "SS-PY-0331",
+          "correct": true,
+          "assisted": false,
+          "title": "JSON serialization and numeric values",
+          "explanation": "JSON round-tripping preserves these integer values; dividing 19 by 4 yields 4.75.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0019",
+          "correct": true,
+          "assisted": false,
+          "title": "While loops",
+          "explanation": "Integer division halves n until it reaches zero.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0064",
+          "correct": false,
+          "assisted": false,
+          "title": "Shallow copies",
+          "explanation": "list.copy creates a separate outer list, so appending to b does not change a.",
+          "misconception": "Mixes up which list was mutated."
+        },
+        {
+          "questionId": "SS-PY-0109",
+          "correct": true,
+          "assisted": false,
+          "title": "Variable positional arguments",
+          "explanation": "*nums collects positional arguments into a tuple.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0154",
+          "correct": true,
+          "assisted": false,
+          "title": "super() calls",
+          "explanation": "super().value() calls the parent implementation before adding 2.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0199",
+          "correct": false,
+          "assisted": false,
+          "title": "Two-sum hash map",
+          "explanation": "A hash set tracks previously seen complements to find a pair.",
+          "misconception": "Treats a printed boolean result as numeric 1."
+        },
+        {
+          "questionId": "SS-PY-0244",
+          "correct": true,
+          "assisted": false,
+          "title": "Exception subclasses",
+          "explanation": "ValueError is a subclass of Exception.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0289",
+          "correct": true,
+          "assisted": false,
+          "title": "Table-driven tests",
+          "explanation": "Each (input, expected) pair is checked using the same assertion.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0334",
+          "correct": false,
+          "assisted": false,
+          "title": "CSV-like text processing",
+          "explanation": "Skipping the header and parsing column 2 gives numeric scores to sum.",
+          "misconception": "Unconfirmed difficulty with CSV-like text processing"
+        },
+        {
+          "questionId": "SS-PY-0022",
+          "correct": true,
+          "assisted": false,
+          "title": "Slicing",
+          "explanation": "Slice end index is exclusive and step 2 skips alternate values.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0067",
+          "correct": true,
+          "assisted": false,
+          "title": "Dictionary comprehensions",
+          "explanation": "The comprehension creates entries for odd x only.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0121",
+          "correct": false,
+          "assisted": false,
+          "title": "Memoization",
+          "explanation": "Caching avoids repeated evaluations for the same Fibonacci input.",
+          "misconception": "Counts only non-base recursive inputs."
+        },
+        {
+          "questionId": "SS-PY-0157",
+          "correct": true,
+          "assisted": false,
+          "title": "Class methods",
+          "explanation": "A classmethod receives the class as cls and can access class attributes.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0202",
+          "correct": true,
+          "assisted": false,
+          "title": "Sliding windows",
+          "explanation": "Compute the maximum sum of each contiguous window of k elements.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0256",
+          "correct": false,
+          "assisted": false,
+          "title": "Finally overrides return",
+          "explanation": "Returning from finally overrides the pending return from try; avoid this pattern.",
+          "misconception": "Unconfirmed difficulty with Finally overrides return"
+        },
+        {
+          "questionId": "SS-PY-0292",
+          "correct": true,
+          "assisted": false,
+          "title": "Adversarial and edge cases",
+          "explanation": "Choose a test designed to reveal the stated failure mode rather than only normal operation.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0337",
+          "correct": true,
+          "assisted": false,
+          "title": "File I/O and context managers",
+          "explanation": "The with statement closes the file; mode controls reading, replacing, or appending.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0031",
+          "correct": false,
+          "assisted": false,
+          "title": "Late evaluation and closures",
+          "explanation": "Each lambda closes over the same loop variable; it is evaluated when called.",
+          "misconception": "Assumes every lambda captured the first loop value."
+        },
+        {
+          "questionId": "SS-PY-0070",
+          "correct": true,
+          "assisted": false,
+          "title": "Set operations",
+          "explanation": "& calculates the intersection; sorted makes display order deterministic.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0124",
+          "correct": true,
+          "assisted": false,
+          "title": "Decorators",
+          "explanation": "@decorate replaces double with wrapped; wrapped adds one to the original result.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0166",
+          "correct": false,
+          "assisted": false,
+          "title": "Method resolution order",
+          "explanation": "The C3 MRO visits D, B, C, A, object; B.label is selected first.",
+          "misconception": "Omits one class from the MRO length."
+        },
+        {
+          "questionId": "SS-PY-0205",
+          "correct": true,
+          "assisted": false,
+          "title": "Algorithmic complexity",
+          "explanation": "Use the specified algorithm and average-case qualifier where applicable.",
+          "misconception": null
+        },
+        {
+          "questionId": "SS-PY-0259",
+          "correct": true,
+          "assisted": false,
+          "title": "Exception chaining",
+          "explanation": "raise ... from exc stores the original ValueError as the new exception cause.",
+          "misconception": null
+        }
+      ]
+    }
+  }
+]

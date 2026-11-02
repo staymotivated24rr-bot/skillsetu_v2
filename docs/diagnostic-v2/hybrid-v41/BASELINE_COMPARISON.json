@@ -1,0 +1,95 @@
+[
+  {
+    "profile": "beginner",
+    "before": {
+      "engine": "hybrid-4.0.0-draft.1",
+      "count": 24,
+      "statuses": [
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap"
+      ]
+    },
+    "after": {
+      "engine": "hybrid-4.1.0-draft.1",
+      "count": 26,
+      "statuses": [
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap"
+      ]
+    }
+  },
+  {
+    "profile": "advanced",
+    "before": {
+      "engine": "hybrid-4.0.0-draft.1",
+      "count": 24,
+      "statuses": [
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength"
+      ]
+    },
+    "after": {
+      "engine": "hybrid-4.1.0-draft.1",
+      "count": 24,
+      "statuses": [
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength",
+        "Demonstrated strength"
+      ]
+    }
+  },
+  {
+    "profile": "unsure",
+    "before": {
+      "engine": "hybrid-4.0.0-draft.1",
+      "count": 24,
+      "statuses": [
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap",
+        "Likely gap"
+      ]
+    },
+    "after": {
+      "engine": "hybrid-4.1.0-draft.1",
+      "count": 30,
+      "statuses": [
+        "Insufficient evidence",
+        "Insufficient evidence",
+        "Insufficient evidence",
+        "Insufficient evidence",
+        "Insufficient evidence",
+        "Insufficient evidence",
+        "Insufficient evidence",
+        "Insufficient evidence"
+      ]
+    }
+  }
+]

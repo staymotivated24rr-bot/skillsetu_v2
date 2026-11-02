@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-01",
+  "branch": "codex/learning-studio-app",
+  "baseCommit": "ac48edf",
+  "buildId": "yBxsindCOLu29M-_zRQ9Q",
+  "unitIntegration": {
+    "seconds": 43.2,
+    "files": 19,
+    "passed": 194
+  },
+  "browser": {
+    "distinctCases": 15,
+    "mainPassed": 12,
+    "lastFocusedSeconds": 19.9,
+    "legacyPythonDuration": "4.8m",
+    "viewportWidths": [
+      1440,
+      1024,
+      768,
+      390,
+      320
+    ],
+    "engine": "Chromium-based Microsoft Edge",
+    "lastFocusedPassed": 6,
+    "note": "Focused reruns overlap earlier cases; do not sum run totals as unique tests",
+    "mainDuration": "2.0m",
+    "legacyPythonPassed": 2
+  },
+  "lint": "passed",
+  "typecheck": "passed",
+  "build": "passed with migration/seed disabled",
+  "print": {
+    "finalRenderMatchesInspectedPages": true,
+    "pagesInspected": 6
+  },
+  "data": {
+    "development": "existing local diagnostic store; synthetic identities only in preliminary visual checks",
+    "production": "not accessed, changed or deployed",
+    "finalQA": "localhost skillsetu_test",
+    "bankSchemaHistory": "no changes"
+  },
+  "sourceManifest": [
+    {
+      "path": "src/app/diagnostic-v2/learn/page.tsx",
+      "sha256": "3ba07a6e771fc5f53ad9317702297b20e9246e9a660c3ac3f3e666884be6934d"
+    },
+    {
+      "path": "src/app/layout.tsx",
+      "sha256": "eb5cc12937bfb5dba182955af605fab2537fc16a78d36b11a8275231719842bb"
+    },
+    {
+      "path": "src/app/studio.css",
+      "sha256": "afa92790c0c72ddbfdc68762972736fb027d97acbf314ab221ee1ee307a2509c"
+    },
+    {
+      "path": "src/components/guided-repair.tsx",
+      "sha256": "1754bf528a0186c6f9c7ad538f625489e98fa9bbf4ff571864291991ac7762bd"
+    },
+    {
+      "path": "src/components/learning-companion.tsx",
+      "sha256": "7e707914adc9d29f2450d10dfed98d20b640ca477cf37cf39c61d45738fb895b"
+    },
+    {
+      "path": "src/components/skillsetu.tsx",
+      "sha256": "01958a9d1cdbd02f9f462618432b617f3fec111fdbfa87249a2b5e7508d58208"
+    }
+  ]
+}

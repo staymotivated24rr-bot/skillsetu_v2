@@ -1,0 +1,1322 @@
+{
+  "strong": {
+    "trace": [
+      {
+        "id": "values-patch-2",
+        "competency": "values",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "4",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in values."
+      },
+      {
+        "id": "values-workflow-3",
+        "competency": "values",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in values."
+      },
+      {
+        "id": "values-patch-3",
+        "competency": "values",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "reading is None",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in values."
+      },
+      {
+        "id": "collections-patch-2",
+        "competency": "collections",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "copy",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in collections."
+      },
+      {
+        "id": "collections-workflow-3",
+        "competency": "collections",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in collections."
+      },
+      {
+        "id": "collections-patch-3",
+        "competency": "collections",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "row.get('note', '')",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in collections."
+      },
+      {
+        "id": "functions-patch-2",
+        "competency": "functions",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "None",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in functions."
+      },
+      {
+        "id": "functions-workflow-3",
+        "competency": "functions",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in functions."
+      },
+      {
+        "id": "functions-patch-3",
+        "competency": "functions",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "sorted(items)",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in functions."
+      },
+      {
+        "id": "errors-patch-2",
+        "competency": "errors",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "KeyError",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in errors."
+      },
+      {
+        "id": "errors-workflow-3",
+        "competency": "errors",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in errors."
+      },
+      {
+        "id": "errors-patch-3",
+        "competency": "errors",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "raise",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in errors."
+      },
+      {
+        "id": "validation-patch-2",
+        "competency": "validation",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "int",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in validation."
+      },
+      {
+        "id": "validation-workflow-3",
+        "competency": "validation",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in validation."
+      },
+      {
+        "id": "validation-patch-3",
+        "competency": "validation",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "<",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in validation."
+      },
+      {
+        "id": "testing-patch-2",
+        "competency": "testing",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "0",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in testing."
+      },
+      {
+        "id": "testing-workflow-3",
+        "competency": "testing",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": [
+          "s0",
+          "s1",
+          "s2",
+          "s3"
+        ],
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in testing."
+      },
+      {
+        "id": "testing-patch-3",
+        "competency": "testing",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "ValueError",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in testing."
+      }
+    ],
+    "stopReason": "Minimum length and coverage met; repeated evidence is consistent across every competency.",
+    "report": {
+      "role": "Python Developer",
+      "bankId": "python-adaptive-1.0.0",
+      "engineVersion": "rules-1.0.0",
+      "answered": 18,
+      "stopReason": "Minimum length and coverage met; repeated evidence is consistent across every competency.",
+      "findings": [
+        {
+          "competencyId": "values",
+          "name": "Values & control flow",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "reason": "Consistent unaided responses, including at least two applied tasks. This is a preliminary signal.",
+          "prerequisites": [],
+          "moduleSkillId": "py-fundamentals"
+        },
+        {
+          "competencyId": "collections",
+          "name": "Collections & mutation",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "reason": "Consistent unaided responses, including at least two applied tasks. This is a preliminary signal.",
+          "prerequisites": [
+            "values"
+          ],
+          "moduleSkillId": "py-structures"
+        },
+        {
+          "competencyId": "functions",
+          "name": "Function contracts",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "reason": "Consistent unaided responses, including at least two applied tasks. This is a preliminary signal.",
+          "prerequisites": [
+            "values"
+          ],
+          "moduleSkillId": "py-functions"
+        },
+        {
+          "competencyId": "errors",
+          "name": "Failure handling",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "reason": "Consistent unaided responses, including at least two applied tasks. This is a preliminary signal.",
+          "prerequisites": [
+            "functions"
+          ],
+          "moduleSkillId": "py-exceptions"
+        },
+        {
+          "competencyId": "validation",
+          "name": "Input validation",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "reason": "Consistent unaided responses, including at least two applied tasks. This is a preliminary signal.",
+          "prerequisites": [
+            "collections"
+          ],
+          "moduleSkillId": "py-validation"
+        },
+        {
+          "competencyId": "testing",
+          "name": "Testing & verification",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "correct": 3,
+          "types": 2,
+          "reason": "Consistent unaided responses, including at least two applied tasks. This is a preliminary signal.",
+          "prerequisites": [
+            "functions",
+            "errors"
+          ],
+          "moduleSkillId": "py-testing"
+        }
+      ],
+      "learningOrder": [],
+      "evidence": [
+        {
+          "questionId": "values-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "The stop value of range is excluded.",
+          "misconception": null
+        },
+        {
+          "questionId": "values-workflow-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "Reproduce and trace before changing the boundary; verify several input sizes.",
+          "misconception": null
+        },
+        {
+          "questionId": "values-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "Identity with None separates absence from falsy but valid values.",
+          "misconception": null
+        },
+        {
+          "questionId": "collections-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "list.copy produces a new outer list; nested objects would still be shared.",
+          "misconception": null
+        },
+        {
+          "questionId": "collections-workflow-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "Changing a collection during iteration can skip neighbours; a new list avoids that interaction.",
+          "misconception": null
+        },
+        {
+          "questionId": "collections-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "dict.get supplies the default only for an absent key; it does not replace an explicit None.",
+          "misconception": null
+        },
+        {
+          "questionId": "functions-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "None lets the function allocate a fresh list for each omitted argument.",
+          "misconception": null
+        },
+        {
+          "questionId": "functions-workflow-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "Repeated calls expose state sharing; preserve the contract for explicit arguments too.",
+          "misconception": null
+        },
+        {
+          "questionId": "functions-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "sorted returns a new list; list.sort mutates and returns None.",
+          "misconception": null
+        },
+        {
+          "questionId": "errors-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "A missing dictionary key raises KeyError.",
+          "misconception": null
+        },
+        {
+          "questionId": "errors-workflow-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "The context manager closes the handle when the block exits, including on failure.",
+          "misconception": null
+        },
+        {
+          "questionId": "errors-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "A bare raise propagates the original active exception.",
+          "misconception": null
+        },
+        {
+          "questionId": "validation-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "bool subclasses int. An exact int type check rejects bool for this deliberately strict contract.",
+          "misconception": null
+        },
+        {
+          "questionId": "validation-workflow-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "Validate the whole batch before committing; a transaction protects the write boundary.",
+          "misconception": null
+        },
+        {
+          "questionId": "validation-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "Reject values strictly below zero; rejecting <= 0 would discard a permitted boundary.",
+          "misconception": null
+        },
+        {
+          "questionId": "testing-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "The empty collection contains zero valid rows; derive the expected value from the contract.",
+          "misconception": null
+        },
+        {
+          "questionId": "testing-workflow-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "An independently derived expectation avoids repeating the implementation's mistake in its test.",
+          "misconception": null
+        },
+        {
+          "questionId": "testing-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "The test names the promised failure class, rather than accepting any unrelated crash.",
+          "misconception": null
+        }
+      ]
+    }
+  },
+  "struggling": {
+    "trace": [
+      {
+        "id": "values-patch-2",
+        "competency": "values",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in values."
+      },
+      {
+        "id": "values-decision-1",
+        "competency": "values",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in values."
+      },
+      {
+        "id": "values-trace-1",
+        "competency": "values",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in values."
+      },
+      {
+        "id": "collections-patch-2",
+        "competency": "collections",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in collections."
+      },
+      {
+        "id": "collections-decision-1",
+        "competency": "collections",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in collections."
+      },
+      {
+        "id": "collections-trace-1",
+        "competency": "collections",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in collections."
+      },
+      {
+        "id": "functions-patch-2",
+        "competency": "functions",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in functions."
+      },
+      {
+        "id": "functions-decision-1",
+        "competency": "functions",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in functions."
+      },
+      {
+        "id": "functions-trace-1",
+        "competency": "functions",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in functions."
+      },
+      {
+        "id": "errors-patch-2",
+        "competency": "errors",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in errors."
+      },
+      {
+        "id": "errors-decision-1",
+        "competency": "errors",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in errors."
+      },
+      {
+        "id": "errors-trace-1",
+        "competency": "errors",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in errors."
+      },
+      {
+        "id": "validation-patch-2",
+        "competency": "validation",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in validation."
+      },
+      {
+        "id": "validation-decision-1",
+        "competency": "validation",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in validation."
+      },
+      {
+        "id": "validation-trace-1",
+        "competency": "validation",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in validation."
+      },
+      {
+        "id": "testing-patch-2",
+        "competency": "testing",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in testing."
+      },
+      {
+        "id": "testing-decision-1",
+        "competency": "testing",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in testing."
+      },
+      {
+        "id": "testing-trace-1",
+        "competency": "testing",
+        "difficulty": 1,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in testing."
+      },
+      {
+        "id": "values-trace-2",
+        "competency": "values",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 1; 3 prior responses in values."
+      }
+    ],
+    "stopReason": "Minimum length and coverage met; repeated evidence is consistent across every competency.",
+    "report": {
+      "role": "Python Developer",
+      "bankId": "python-adaptive-1.0.0",
+      "engineVersion": "rules-1.0.0",
+      "answered": 19,
+      "stopReason": "Minimum length and coverage met; repeated evidence is consistent across every competency.",
+      "findings": [
+        {
+          "competencyId": "values",
+          "name": "Values & control flow",
+          "status": "Likely gap",
+          "count": 4,
+          "independent": 3,
+          "correct": 0,
+          "types": 2,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [],
+          "moduleSkillId": "py-fundamentals"
+        },
+        {
+          "competencyId": "collections",
+          "name": "Collections & mutation",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "values"
+          ],
+          "moduleSkillId": "py-structures"
+        },
+        {
+          "competencyId": "functions",
+          "name": "Function contracts",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "values"
+          ],
+          "moduleSkillId": "py-functions"
+        },
+        {
+          "competencyId": "errors",
+          "name": "Failure handling",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "functions"
+          ],
+          "moduleSkillId": "py-exceptions"
+        },
+        {
+          "competencyId": "validation",
+          "name": "Input validation",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "collections"
+          ],
+          "moduleSkillId": "py-validation"
+        },
+        {
+          "competencyId": "testing",
+          "name": "Testing & verification",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 0,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "functions",
+            "errors"
+          ],
+          "moduleSkillId": "py-testing"
+        }
+      ],
+      "learningOrder": [
+        "values",
+        "collections",
+        "functions",
+        "errors",
+        "validation",
+        "testing"
+      ],
+      "evidence": [
+        {
+          "questionId": "values-patch-2",
+          "correct": false,
+          "assisted": true,
+          "title": "Repair the boundary",
+          "explanation": "The stop value of range is excluded.",
+          "misconception": "truthiness-or-exclusive-boundary"
+        },
+        {
+          "questionId": "values-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "Zero is a valid reading. None represents an absent value.",
+          "misconception": "truthiness-or-exclusive-boundary"
+        },
+        {
+          "questionId": "values-trace-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace a batch counter",
+          "explanation": "Tracing this expression gives 3.",
+          "misconception": "truthiness-or-exclusive-boundary"
+        },
+        {
+          "questionId": "collections-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "list.copy produces a new outer list; nested objects would still be shared.",
+          "misconception": "shared-mutation-or-lookup-contract"
+        },
+        {
+          "questionId": "collections-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "A dictionary explicitly maps stable IDs to their invoices.",
+          "misconception": "shared-mutation-or-lookup-contract"
+        },
+        {
+          "questionId": "collections-trace-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace list growth",
+          "explanation": "Tracing this expression gives 2.",
+          "misconception": "shared-mutation-or-lookup-contract"
+        },
+        {
+          "questionId": "functions-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "None lets the function allocate a fresh list for each omitted argument.",
+          "misconception": "return-or-shared-default-contract"
+        },
+        {
+          "questionId": "functions-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "Printing displays a value; returning makes it available to the caller.",
+          "misconception": "return-or-shared-default-contract"
+        },
+        {
+          "questionId": "functions-trace-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace a returned value",
+          "explanation": "Tracing this expression gives 5.",
+          "misconception": "return-or-shared-default-contract"
+        },
+        {
+          "questionId": "errors-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "A missing dictionary key raises KeyError.",
+          "misconception": "exception-scope-or-cleanup"
+        },
+        {
+          "questionId": "errors-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "A narrow handler preserves unrelated failures and avoids silently inventing data.",
+          "misconception": "exception-scope-or-cleanup"
+        },
+        {
+          "questionId": "errors-trace-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Identify the exception class. Enter its Python name.",
+          "explanation": "Tracing this expression gives ValueError.",
+          "misconception": "exception-scope-or-cleanup"
+        },
+        {
+          "questionId": "validation-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "bool subclasses int. An exact int type check rejects bool for this deliberately strict contract.",
+          "misconception": "input-type-or-boundary-confusion"
+        },
+        {
+          "questionId": "validation-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "Zero and absent data are different states.",
+          "misconception": "input-type-or-boundary-confusion"
+        },
+        {
+          "questionId": "validation-trace-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Is an empty list truthy? Enter True or False.",
+          "explanation": "Tracing this expression gives False.",
+          "misconception": "input-type-or-boundary-confusion"
+        },
+        {
+          "questionId": "testing-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "The empty collection contains zero valid rows; derive the expected value from the contract.",
+          "misconception": "weak-or-circular-verification"
+        },
+        {
+          "questionId": "testing-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "A regression case must fail under the original defect and pass after its repair.",
+          "misconception": "weak-or-circular-verification"
+        },
+        {
+          "questionId": "testing-trace-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace an assertion. Enter True or False for the tested expression.",
+          "explanation": "Tracing this expression gives True.",
+          "misconception": "weak-or-circular-verification"
+        },
+        {
+          "questionId": "values-trace-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace the behaviour",
+          "explanation": "The requested result is 5. Trace every operation, including state retained between calls.",
+          "misconception": "truthiness-or-exclusive-boundary"
+        }
+      ]
+    }
+  },
+  "mixed": {
+    "trace": [
+      {
+        "id": "values-patch-2",
+        "competency": "values",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "4",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in values."
+      },
+      {
+        "id": "values-workflow-3",
+        "competency": "values",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": "unsure",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in values."
+      },
+      {
+        "id": "values-trace-2",
+        "competency": "values",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": "5",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 2; 2 prior responses in values."
+      },
+      {
+        "id": "collections-patch-2",
+        "competency": "collections",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in collections."
+      },
+      {
+        "id": "collections-decision-1",
+        "competency": "collections",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": 1,
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in collections."
+      },
+      {
+        "id": "collections-trace-2",
+        "competency": "collections",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in collections."
+      },
+      {
+        "id": "functions-patch-2",
+        "competency": "functions",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "None",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in functions."
+      },
+      {
+        "id": "functions-workflow-3",
+        "competency": "functions",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": "unsure",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in functions."
+      },
+      {
+        "id": "functions-trace-2",
+        "competency": "functions",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": "2",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 2; 2 prior responses in functions."
+      },
+      {
+        "id": "errors-patch-2",
+        "competency": "errors",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in errors."
+      },
+      {
+        "id": "errors-decision-1",
+        "competency": "errors",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": 1,
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in errors."
+      },
+      {
+        "id": "errors-trace-2",
+        "competency": "errors",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in errors."
+      },
+      {
+        "id": "validation-patch-2",
+        "competency": "validation",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "int",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in validation."
+      },
+      {
+        "id": "validation-workflow-3",
+        "competency": "validation",
+        "difficulty": 3,
+        "type": "ordering",
+        "answer": "unsure",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in validation."
+      },
+      {
+        "id": "validation-trace-2",
+        "competency": "validation",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": "True",
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 2; 2 prior responses in validation."
+      },
+      {
+        "id": "testing-patch-2",
+        "competency": "testing",
+        "difficulty": 2,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in testing."
+      },
+      {
+        "id": "testing-decision-1",
+        "competency": "testing",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": 1,
+        "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in testing."
+      },
+      {
+        "id": "testing-trace-2",
+        "competency": "testing",
+        "difficulty": 2,
+        "type": "prediction",
+        "answer": "unsure",
+        "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in testing."
+      },
+      {
+        "id": "values-patch-3",
+        "competency": "values",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "reading is None",
+        "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in values."
+      },
+      {
+        "id": "functions-patch-3",
+        "competency": "functions",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "unsure",
+        "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in functions."
+      },
+      {
+        "id": "validation-patch-3",
+        "competency": "validation",
+        "difficulty": 3,
+        "type": "completion",
+        "answer": "<",
+        "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in validation."
+      },
+      {
+        "id": "values-decision-1",
+        "competency": "values",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 4 prior responses in values."
+      },
+      {
+        "id": "functions-decision-1",
+        "competency": "functions",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": 1,
+        "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 2; 4 prior responses in functions."
+      },
+      {
+        "id": "validation-decision-1",
+        "competency": "validation",
+        "difficulty": 1,
+        "type": "decision",
+        "answer": "unsure",
+        "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 4 prior responses in validation."
+      }
+    ],
+    "stopReason": "Target length met with repeated investigation; unresolved inconsistencies are reported honestly.",
+    "report": {
+      "role": "Python Developer",
+      "bankId": "python-adaptive-1.0.0",
+      "engineVersion": "rules-1.0.0",
+      "answered": 24,
+      "stopReason": "Target length met with repeated investigation; unresolved inconsistencies are reported honestly.",
+      "findings": [
+        {
+          "competencyId": "values",
+          "name": "Values & control flow",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "correct": 3,
+          "types": 4,
+          "reason": "Sparse, assisted, foundation-only or inconsistent evidence. Further assessment is needed.",
+          "prerequisites": [],
+          "moduleSkillId": "py-fundamentals"
+        },
+        {
+          "competencyId": "collections",
+          "name": "Collections & mutation",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 1,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "values"
+          ],
+          "moduleSkillId": "py-structures"
+        },
+        {
+          "competencyId": "functions",
+          "name": "Function contracts",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "correct": 3,
+          "types": 4,
+          "reason": "Sparse, assisted, foundation-only or inconsistent evidence. Further assessment is needed.",
+          "prerequisites": [
+            "values"
+          ],
+          "moduleSkillId": "py-functions"
+        },
+        {
+          "competencyId": "errors",
+          "name": "Failure handling",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 1,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "functions"
+          ],
+          "moduleSkillId": "py-exceptions"
+        },
+        {
+          "competencyId": "validation",
+          "name": "Input validation",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "correct": 3,
+          "types": 4,
+          "reason": "Sparse, assisted, foundation-only or inconsistent evidence. Further assessment is needed.",
+          "prerequisites": [
+            "collections"
+          ],
+          "moduleSkillId": "py-validation"
+        },
+        {
+          "competencyId": "testing",
+          "name": "Testing & verification",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "correct": 1,
+          "types": 3,
+          "reason": "Repeated difficulty across different task types. Confirm with a fresh practical task.",
+          "prerequisites": [
+            "functions",
+            "errors"
+          ],
+          "moduleSkillId": "py-testing"
+        }
+      ],
+      "learningOrder": [
+        "values",
+        "collections",
+        "functions",
+        "errors",
+        "validation",
+        "testing"
+      ],
+      "evidence": [
+        {
+          "questionId": "values-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "The stop value of range is excluded.",
+          "misconception": null
+        },
+        {
+          "questionId": "values-workflow-3",
+          "correct": false,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "Reproduce and trace before changing the boundary; verify several input sizes.",
+          "misconception": "truthiness-or-exclusive-boundary"
+        },
+        {
+          "questionId": "values-trace-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Trace the behaviour",
+          "explanation": "The requested result is 5. Trace every operation, including state retained between calls.",
+          "misconception": null
+        },
+        {
+          "questionId": "collections-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "list.copy produces a new outer list; nested objects would still be shared.",
+          "misconception": "shared-mutation-or-lookup-contract"
+        },
+        {
+          "questionId": "collections-decision-1",
+          "correct": true,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "A dictionary explicitly maps stable IDs to their invoices.",
+          "misconception": null
+        },
+        {
+          "questionId": "collections-trace-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace the behaviour",
+          "explanation": "The requested result is 3. Trace every operation, including state retained between calls.",
+          "misconception": "shared-mutation-or-lookup-contract"
+        },
+        {
+          "questionId": "functions-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "None lets the function allocate a fresh list for each omitted argument.",
+          "misconception": null
+        },
+        {
+          "questionId": "functions-workflow-3",
+          "correct": false,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "Repeated calls expose state sharing; preserve the contract for explicit arguments too.",
+          "misconception": "return-or-shared-default-contract"
+        },
+        {
+          "questionId": "functions-trace-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Trace the behaviour",
+          "explanation": "The requested result is 2. Trace every operation, including state retained between calls.",
+          "misconception": null
+        },
+        {
+          "questionId": "errors-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "A missing dictionary key raises KeyError.",
+          "misconception": "exception-scope-or-cleanup"
+        },
+        {
+          "questionId": "errors-decision-1",
+          "correct": true,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "A narrow handler preserves unrelated failures and avoids silently inventing data.",
+          "misconception": null
+        },
+        {
+          "questionId": "errors-trace-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace the behaviour",
+          "explanation": "The requested result is 3. Trace every operation, including state retained between calls.",
+          "misconception": "exception-scope-or-cleanup"
+        },
+        {
+          "questionId": "validation-patch-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "bool subclasses int. An exact int type check rejects bool for this deliberately strict contract.",
+          "misconception": null
+        },
+        {
+          "questionId": "validation-workflow-3",
+          "correct": false,
+          "assisted": false,
+          "title": "Plan a safe repair",
+          "explanation": "Validate the whole batch before committing; a transaction protects the write boundary.",
+          "misconception": "input-type-or-boundary-confusion"
+        },
+        {
+          "questionId": "validation-trace-2",
+          "correct": true,
+          "assisted": false,
+          "title": "Trace the behaviour",
+          "explanation": "The requested result is True. Trace every operation, including state retained between calls.",
+          "misconception": null
+        },
+        {
+          "questionId": "testing-patch-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Repair the boundary",
+          "explanation": "The empty collection contains zero valid rows; derive the expected value from the contract.",
+          "misconception": "weak-or-circular-verification"
+        },
+        {
+          "questionId": "testing-decision-1",
+          "correct": true,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "A regression case must fail under the original defect and pass after its repair.",
+          "misconception": null
+        },
+        {
+          "questionId": "testing-trace-2",
+          "correct": false,
+          "assisted": false,
+          "title": "Trace the behaviour",
+          "explanation": "The requested result is 0. Trace every operation, including state retained between calls.",
+          "misconception": "weak-or-circular-verification"
+        },
+        {
+          "questionId": "values-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "Identity with None separates absence from falsy but valid values.",
+          "misconception": null
+        },
+        {
+          "questionId": "functions-patch-3",
+          "correct": false,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "sorted returns a new list; list.sort mutates and returns None.",
+          "misconception": "return-or-shared-default-contract"
+        },
+        {
+          "questionId": "validation-patch-3",
+          "correct": true,
+          "assisted": false,
+          "title": "Apply the contract",
+          "explanation": "Reject values strictly below zero; rejecting <= 0 would discard a permitted boundary.",
+          "misconception": null
+        },
+        {
+          "questionId": "values-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "Zero is a valid reading. None represents an absent value.",
+          "misconception": "truthiness-or-exclusive-boundary"
+        },
+        {
+          "questionId": "functions-decision-1",
+          "correct": true,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "Printing displays a value; returning makes it available to the caller.",
+          "misconception": null
+        },
+        {
+          "questionId": "validation-decision-1",
+          "correct": false,
+          "assisted": false,
+          "title": "Choose a safe contract",
+          "explanation": "Zero and absent data are different states.",
+          "misconception": "input-type-or-boundary-confusion"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "file": "previews/blank-desktop.png",
+    "sha256": "745df06b03d4b76ea7c3d16aaca355e36a74abd7e37533152240083b44630ac6"
+  },
+  {
+    "file": "previews/blank-editor.png",
+    "sha256": "8281c5c067db93ba99142a40a2cef1d42ea12eb5061ce8a4fec2b7ac601992dd"
+  },
+  {
+    "file": "previews/desktop.png",
+    "sha256": "6bb03c2bb5352b1819d8890090037ccd971a781acb9a893293c34d83d71364de"
+  },
+  {
+    "file": "previews/final-report.png",
+    "sha256": "86ff6f0cecf416dcc14875dc3735b50f13af3a481b59f94638b0b05cdb97a8a2"
+  },
+  {
+    "file": "previews/final-review.png",
+    "sha256": "585b5601eff3a5ab30de93313c27595ed0640601bffde5718e201a8ef4229e22"
+  },
+  {
+    "file": "previews/mobile.png",
+    "sha256": "bd0b085523fd5d364cbc2e2ab0acdf7c1ff06df982dc6b5818c73c8b52b3206c"
+  },
+  {
+    "file": "previews/neutral-save.png",
+    "sha256": "038a00aafc48de9b42653d065d9fcc442d8768e3cd8ac67b6f055a1864c77681"
+  }
+]

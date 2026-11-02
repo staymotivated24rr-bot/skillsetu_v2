@@ -1,0 +1,92 @@
+{
+  "date": "2026-11-01",
+  "branch": "codex/diagnostic-audit-fixes",
+  "baseCommit": "1c8b717",
+  "localBuildId": "AMiprOc3I0bmVbpPh4vLl",
+  "productionDeployment": "not inspected or changed",
+  "originalDevelopmentDatabase": "localhost/skillsetu_local; no migration, seed or learner submission in this task",
+  "verificationDatabase": "localhost/skillsetu_test",
+  "unitIntegration": {
+    "durationSeconds": 68.68,
+    "failed": 0,
+    "files": 18,
+    "passed": 189
+  },
+  "browser": {
+    "engine": "installed Chromium-based Microsoft Edge",
+    "note": "See README for exact run history; only test assertion changed before legacy rerun",
+    "finalCasesPassed": 11,
+    "obsoleteAssertionFailures": 1,
+    "combinedRunPassed": 10,
+    "correctedLegacyRerunPassed": 1,
+    "viewports": [
+      "1440x1000",
+      "390x1000",
+      "1440x844",
+      "390x844",
+      "320x844 legacy review"
+    ]
+  },
+  "lint": "passed",
+  "typecheck": "passed",
+  "build": "passed; no migration/seed guard active",
+  "draftApproval": "pending; existing local-only gate preserved",
+  "bankSourceSha256": "a6c7f4a13d45284702f0b3566c8d8f1e8f63943b2baa48bc2c64bb699667a3b0",
+  "sourceManifest": [
+    {
+      "path": "src/app/diagnostic-v2/learn/page.tsx",
+      "sha256": "d7e1cb66b3b7979b807dc21cafbe37f772e229510da334de86bbaadc80248759"
+    },
+    {
+      "path": "src/components/diagnostic-experience.tsx",
+      "sha256": "f1258ca4597ce1e49e5034f43a6c4f22ee5333f5af6eb3bfc6936b5164ee2bee"
+    },
+    {
+      "path": "src/components/diagnostic-option.tsx",
+      "sha256": "37f86edb227aa6dc04a9088805ce1f29a215a1a1f6bd54f4b7275947309f460a"
+    },
+    {
+      "path": "src/components/diagnostic-question-review.tsx",
+      "sha256": "7706c0efc7841653fc1cc060400565656abb81cddac3d128a0ade6941a926431"
+    },
+    {
+      "path": "src/components/diagnostic.module.css",
+      "sha256": "a20de07b8d2ad23af5c07d9f42a4bef150cdfffbfd38068c36390d9ca0bde4fe"
+    },
+    {
+      "path": "src/components/guided-repair.tsx",
+      "sha256": "2f6f6f233e446d95b56b7c065e5e44ae4c6e5fb9cf5526941c80698d0d1cff99"
+    },
+    {
+      "path": "src/lib/diagnostic/engine.ts",
+      "sha256": "0f5a7ac951aae742d2c899253cf4e08eefc45947c857c8eecb33996d94a21452"
+    },
+    {
+      "path": "src/lib/diagnostic/numeric.ts",
+      "sha256": "4c941ea0dce0a7406b13b488b634e185f28b8115d59ed72da2416a05e61dbb0e"
+    },
+    {
+      "path": "src/lib/diagnostic/option-presentation.ts",
+      "sha256": "588b7d3a8beba59fcbe9a3172b0dc12ff383571f478bbabbf3bca026ef4b2761"
+    },
+    {
+      "path": "src/lib/diagnostic/presentation.ts",
+      "sha256": "4451ab0c89806df46bc7becb0cacc1f86e11a5ce02b6bebcea7fc9bd7ac282b3"
+    },
+    {
+      "path": "src/lib/diagnostic/starter-v3/lessons.ts",
+      "sha256": "3735fde8a7aad78ec3e9cd6f5fb019ed606119548c231831cacbee8e8fd2ed16"
+    }
+  ],
+  "runtimeStartCorrection": {
+    "baseCommit": "331a176",
+    "command": "npm run dev:diagnostic",
+    "database": "localhost/skillsetu_audit; existing tables and history; no migrations or resets",
+    "reason": "Main .env database lacked diagnostic tables despite HEAD 200",
+    "browser": "localhost start, first question, refresh/resume, legacy compatibility and mobile passed; 1/1, 5.7 seconds",
+    "unitIntegration": "194/194 across 19 files; 61.62 seconds",
+    "lint": "passed",
+    "types": "passed",
+    "applicationSource": "unchanged; startup tooling only"
+  }
+}

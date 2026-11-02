@@ -1,0 +1,162 @@
+import type { Skill } from './types';
+export const skills: Skill[] = [
+  {
+    id: 'sql-filter',
+    name: 'SQL · filtering',
+    category: 'SQL',
+    description: 'Select the right rows, respect dates, and handle missing values.',
+    target: 75,
+    importance: 5,
+    prerequisites: [],
+  },
+  {
+    id: 'sql-aggregate',
+    name: 'SQL · aggregation',
+    category: 'SQL',
+    description: 'Choose the right grain; GROUP BY, HAVING, and nested summaries.',
+    target: 75,
+    importance: 5,
+    prerequisites: ['sql-filter'],
+  },
+  {
+    id: 'sql-joins',
+    name: 'SQL · joins',
+    category: 'SQL',
+    description: 'Combine tables without dropping records or duplicating measures.',
+    target: 75,
+    importance: 5,
+    prerequisites: ['sql-filter'],
+  },
+  {
+    id: 'sql-windows',
+    name: 'SQL · window functions',
+    category: 'SQL',
+    description: 'Rank and compare rows while preserving their detail.',
+    target: 65,
+    importance: 3,
+    prerequisites: ['sql-aggregate'],
+  },
+  {
+    id: 'sheet-formulas',
+    name: 'Spreadsheets · formulas',
+    category: 'Spreadsheets',
+    description: 'Use conditional sums, reliable references, and reconciliation checks.',
+    target: 70,
+    importance: 4,
+    prerequisites: [],
+  },
+  {
+    id: 'data-quality',
+    name: 'Data quality',
+    category: 'Spreadsheets',
+    description: 'Detect duplicates, missingness, units, and denominator errors.',
+    target: 75,
+    importance: 5,
+    prerequisites: [],
+  },
+  {
+    id: 'python',
+    name: 'Python · data frames',
+    category: 'Python',
+    description: 'Filter, group, and interpret pandas operations.',
+    target: 65,
+    importance: 4,
+    prerequisites: ['data-quality'],
+  },
+  {
+    id: 'descriptive',
+    name: 'Descriptive statistics',
+    category: 'Statistics',
+    description: 'Use appropriate centers and recognize skew and outliers.',
+    target: 70,
+    importance: 4,
+    prerequisites: [],
+  },
+  {
+    id: 'probability',
+    name: 'Probability',
+    category: 'Statistics',
+    description: 'Reason about conditional rates and changing base populations.',
+    target: 65,
+    importance: 3,
+    prerequisites: ['descriptive'],
+  },
+  {
+    id: 'confidence',
+    name: 'Confidence intervals',
+    category: 'Statistics',
+    description: 'Describe uncertainty without overstating what an interval means.',
+    target: 70,
+    importance: 4,
+    prerequisites: ['probability'],
+  },
+  {
+    id: 'testing',
+    name: 'Hypothesis testing',
+    category: 'Statistics',
+    description: 'Evaluate experiments with a defined metric and a planned decision rule.',
+    target: 70,
+    importance: 5,
+    prerequisites: ['confidence'],
+  },
+  {
+    id: 'visualization',
+    name: 'Data visualization',
+    category: 'Visualization',
+    description: 'Choose readable charts and honest comparisons.',
+    target: 70,
+    importance: 4,
+    prerequisites: ['interpretation'],
+  },
+  {
+    id: 'reasoning',
+    name: 'Analytical reasoning',
+    category: 'Reasoning',
+    description: 'Separate evidence from causal claims and prioritize useful investigations.',
+    target: 75,
+    importance: 5,
+    prerequisites: [],
+  },
+  {
+    id: 'interpretation',
+    name: 'Data interpretation',
+    category: 'Reasoning',
+    description: 'Read metrics in context; distinguish absolute and relative changes.',
+    target: 75,
+    importance: 5,
+    prerequisites: [],
+  },
+  {
+    id: 'clarification',
+    name: 'Requirement clarification',
+    category: 'Workplace skills',
+    description:
+      'Agree on decision, audience, metric, time period, and exclusions before analysis.',
+    target: 75,
+    importance: 5,
+    prerequisites: [],
+  },
+  {
+    id: 'communication',
+    name: 'Stakeholder communication',
+    category: 'Workplace skills',
+    description: 'Explain findings, uncertainty, and a concrete next action in plain language.',
+    target: 75,
+    importance: 5,
+    prerequisites: ['interpretation'],
+  },
+];
+export const employerTargets: Record<string, number> = Object.fromEntries(
+  skills.map((s) => [
+    s.id,
+    s.category === 'SQL'
+      ? s.id === 'sql-windows'
+        ? 70
+        : 80
+      : s.id === 'python'
+        ? 65
+        : s.category === 'Statistics'
+          ? 70
+          : s.target,
+  ]),
+);

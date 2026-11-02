@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env
+.env.*
+!.env.example
+!.env.test.example
+prisma/*.db*
+playwright-report/
+test-results/
+*.tsbuildinfo
+
+public/python/

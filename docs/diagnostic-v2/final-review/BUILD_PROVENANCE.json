@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-31",
+  "sourceCommit": "3bd67230fb4c75a4125a129bfe2dbe720e4e89cb",
+  "branch": "codex/diagnostic-code-blocks-20261031",
+  "nextBuildId": "3jj2WCWPnxPjN7bnd3K0n",
+  "url": "http://localhost:3002/diagnostic-v2",
+  "database": "local disposable skillsetu_audit",
+  "bank": "python-adaptive-blocks-3.0.1 (unchanged)",
+  "sourceHashes": {
+    "src/components/diagnostic-question-review.tsx": "83b868ca32f9ee85a72ddb042e06029ad12a89ac22e717d8458aa080543e2922",
+    "src/components/diagnostic-experience.tsx": "4ba5d4060c16ae1134ca55928b30f96965b311440f5684b81ee7ad556e719e64",
+    "src/components/diagnostic.module.css": "fc0cf4f72ae2b7c800eef8b10d2b4395e4107adcd90409ca34edfeff15d3c86e",
+    "src/lib/diagnostic/report-review.ts": "e6178a3ed25f169e565f40843e3599f018379b9fc8fb850ae08b0aa23d23e9fc",
+    "src/lib/diagnostic/service.ts": "d5d525c22b527d3644873b203d22822802d8aa7509c7e741a2002724692f6e7f",
+    "src/lib/diagnostic/types.ts": "45d86c3f33369f5a6097f134e6a87365ba81e33df86b89ce30abbbcb696a927d"
+  },
+  "checks": {
+    "unitIntegration": {
+      "passed": 139,
+      "total": 139,
+      "files": 13,
+      "seconds": 81.23
+    },
+    "browser": {
+      "passed": 12,
+      "total": 12,
+      "duration": "2.1 minutes"
+    },
+    "reviewCaptureRerun": {
+      "passed": 1,
+      "total": 1,
+      "seconds": 14.2
+    },
+    "lint": "passed",
+    "typecheck": "passed",
+    "productionBuild": "passed with migrations and seed skipped",
+    "http": {
+      "page": 200,
+      "health": 200
+    }
+  },
+  "history": "stored report JSON, bank snapshots and response payloads are read-only; no regrading or backfill",
+  "productionParity": "not inspected; no attribution to the live deployment",
+  "productionModified": false,
+  "schemaMigrationRequired": false,
+  "previews": [
+    {
+      "file": "previews/question-desktop.png",
+      "sha256": "53fbd91951607d61e482318001491432471e9a5ce50f680231013b17fddd0069"
+    },
+    {
+      "file": "previews/question-mobile.png",
+      "sha256": "8d0e9504c780decfa3e94791f27fffa72ac99b4664d337420520ef3b8728f18d"
+    },
+    {
+      "file": "previews/report.png",
+      "sha256": "c2ba2896531e8dd6c79f0accc673ff0979dbcb58aa65a414acc7da73d11d4e8a"
+    },
+    {
+      "file": "previews/score.png",
+      "sha256": "74ffbc21526fe74b271cbc78c4e967d56f058b5a20b65f25c2b3ddf2300bd224"
+    }
+  ]
+}

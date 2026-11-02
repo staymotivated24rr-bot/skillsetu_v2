@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-30",
+  "baseCommit": "08f3575",
+  "localUrl": "http://localhost:3002/diagnostic-v2",
+  "nextBuildId": "rBmPQ5IUTOoBkEL_leYfi",
+  "sourceHashes": {
+    "src/components/diagnostic-experience.tsx": "617b26665af5e9a128dac80b3da3a5a5ab8bf0a1e209bce4adca1a0a4451126b",
+    "src/components/diagnostic.module.css": "7ae97b3323514104d1cf54e6cb22ca20ef0b311b1d07aa88cbfd9dd7d2546b2e"
+  },
+  "database": "skillsetu_audit on local PostgreSQL; disposable",
+  "productionParity": "not verified; no changes attributed to the production deployment",
+  "productionModified": false,
+  "bankSchemaServiceGradingChanged": false
+}

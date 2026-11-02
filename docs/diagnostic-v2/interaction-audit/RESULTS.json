@@ -1,0 +1,5624 @@
+{
+  "summary": {
+    "start": "2026-10-30T18:07:31.212Z",
+    "end": "2026-10-30T18:10:31.937Z",
+    "bank": "python-adaptive-reviewed-2.0.0",
+    "totalAuthoredQuestions": 48,
+    "uniqueQuestionsExercised": 48,
+    "caseCount": 143,
+    "passedCases": 143,
+    "failedCases": 0,
+    "successfulRecordedActions": 635,
+    "findings": 6,
+    "preexistingRecordsChecked": 2807,
+    "preexistingRecordsChanged": 0,
+    "createdDisposableRuns": 149,
+    "buildId": "rBmPQ5IUTOoBkEL_leYfi",
+    "scope": "Published reviewed bank and diagnostic/linked repair UI; fixtures are not adaptive journey evidence; no learner code execution"
+  },
+  "cases": [
+    {
+      "questionId": "review2-values-trace-1",
+      "title": "Trace a batch counter",
+      "competency": "values",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-trace-1",
+      "title": "Trace a batch counter",
+      "competency": "values",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-trace-1",
+      "title": "Trace a batch counter",
+      "competency": "values",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "values",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "values",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "values",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-3",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "values",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "values",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "values",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-patch-2",
+      "title": "Repair the boundary",
+      "competency": "values",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-patch-2",
+      "title": "Repair the boundary",
+      "competency": "values",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-patch-2",
+      "title": "Repair the boundary",
+      "competency": "values",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-patch-3",
+      "title": "Apply the contract",
+      "competency": "values",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-patch-3",
+      "title": "Apply the contract",
+      "competency": "values",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-patch-3",
+      "title": "Apply the contract",
+      "competency": "values",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-patch-3",
+      "title": "Apply the contract",
+      "competency": "values",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "values",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "authored-sequence",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "values",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "reverse-sequence",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-trace-1",
+      "title": "Trace list growth",
+      "competency": "collections",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-trace-1",
+      "title": "Trace list growth",
+      "competency": "collections",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-trace-1",
+      "title": "Trace list growth",
+      "competency": "collections",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "collections",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "collections",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "collections",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-3",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "collections",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "collections",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "collections",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-patch-2",
+      "title": "Repair the boundary",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-patch-2",
+      "title": "Repair the boundary",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-patch-2",
+      "title": "Repair the boundary",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-patch-3",
+      "title": "Apply the contract",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-patch-3",
+      "title": "Apply the contract",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-patch-3",
+      "title": "Apply the contract",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-3",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-patch-3",
+      "title": "Apply the contract",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-4",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-patch-3",
+      "title": "Apply the contract",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-patch-3",
+      "title": "Apply the contract",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "collections",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "authored-sequence",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "collections",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "reverse-sequence",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-trace-1",
+      "title": "Trace a returned value",
+      "competency": "functions",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-trace-1",
+      "title": "Trace a returned value",
+      "competency": "functions",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-trace-1",
+      "title": "Trace a returned value",
+      "competency": "functions",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "functions",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "functions",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "functions",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-3",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "functions",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "functions",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "functions",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-patch-2",
+      "title": "Repair the boundary",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-patch-2",
+      "title": "Repair the boundary",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-patch-2",
+      "title": "Repair the boundary",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-patch-3",
+      "title": "Apply the contract",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-patch-3",
+      "title": "Apply the contract",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-patch-3",
+      "title": "Apply the contract",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-patch-3",
+      "title": "Apply the contract",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "functions",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "authored-sequence",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "functions",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "reverse-sequence",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-trace-1",
+      "title": "Identify the exception class. Enter its Python name.",
+      "competency": "errors",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-trace-1",
+      "title": "Identify the exception class. Enter its Python name.",
+      "competency": "errors",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-trace-1",
+      "title": "Identify the exception class. Enter its Python name.",
+      "competency": "errors",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "errors",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "errors",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "errors",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-3",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "errors",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "errors",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "errors",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-patch-2",
+      "title": "Repair the boundary",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-patch-2",
+      "title": "Repair the boundary",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-patch-2",
+      "title": "Repair the boundary",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-patch-3",
+      "title": "Apply the contract",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-patch-3",
+      "title": "Apply the contract",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-patch-3",
+      "title": "Apply the contract",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "errors",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "authored-sequence",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "errors",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "reverse-sequence",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-trace-1",
+      "title": "Is an empty list truthy? Enter True or False.",
+      "competency": "validation",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-trace-1",
+      "title": "Is an empty list truthy? Enter True or False.",
+      "competency": "validation",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-trace-1",
+      "title": "Is an empty list truthy? Enter True or False.",
+      "competency": "validation",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "validation",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "validation",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "validation",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-3",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "validation",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "validation",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "validation",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-patch-2",
+      "title": "Repair the boundary",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-patch-2",
+      "title": "Repair the boundary",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-patch-2",
+      "title": "Repair the boundary",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-patch-3",
+      "title": "Apply the contract",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-patch-3",
+      "title": "Apply the contract",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-patch-3",
+      "title": "Apply the contract",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "validation",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "authored-sequence",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "validation",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "reverse-sequence",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-trace-1",
+      "title": "Trace an assertion. Enter True or False for the tested expression.",
+      "competency": "testing",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-trace-1",
+      "title": "Trace an assertion. Enter True or False for the tested expression.",
+      "competency": "testing",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-trace-1",
+      "title": "Trace an assertion. Enter True or False for the tested expression.",
+      "competency": "testing",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "testing",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "testing",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-2",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-decision-1",
+      "title": "Choose a safe contract",
+      "competency": "testing",
+      "type": "decision",
+      "interaction": null,
+      "difficulty": 1,
+      "variant": "option-3",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "testing",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "testing",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-trace-2",
+      "title": "Trace the behaviour",
+      "competency": "testing",
+      "type": "prediction",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-patch-2",
+      "title": "Repair the boundary",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-patch-2",
+      "title": "Repair the boundary",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-patch-2",
+      "title": "Repair the boundary",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-patch-3",
+      "title": "Apply the contract",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-patch-3",
+      "title": "Apply the contract",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-patch-3",
+      "title": "Apply the contract",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "testing",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "authored-sequence",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-workflow-3",
+      "title": "Plan a safe repair",
+      "competency": "testing",
+      "type": "ordering",
+      "interaction": null,
+      "difficulty": 3,
+      "variant": "reverse-sequence",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-parallel-loop-boundary",
+      "title": "Manipulate the dispatch boundary",
+      "competency": "values",
+      "type": "completion",
+      "interaction": "loop-boundary",
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-parallel-loop-boundary",
+      "title": "Manipulate the dispatch boundary",
+      "competency": "values",
+      "type": "completion",
+      "interaction": "loop-boundary",
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-parallel-loop-boundary",
+      "title": "Manipulate the dispatch boundary",
+      "competency": "values",
+      "type": "completion",
+      "interaction": "loop-boundary",
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-parallel-state-cards",
+      "title": "Step through a filtered counter",
+      "competency": "values",
+      "type": "completion",
+      "interaction": "state-cards",
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-values-parallel-state-cards",
+      "title": "Step through a filtered counter",
+      "competency": "values",
+      "type": "completion",
+      "interaction": "state-cards",
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-values-parallel-state-cards",
+      "title": "Step through a filtered counter",
+      "competency": "values",
+      "type": "completion",
+      "interaction": "state-cards",
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-parallel-error-location",
+      "title": "Locate the skipped neighbour",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-parallel-error-location",
+      "title": "Locate the skipped neighbour",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-parallel-error-location",
+      "title": "Locate the skipped neighbour",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-parallel-dictionary-default",
+      "title": "Preserve an explicit missing value",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-collections-parallel-dictionary-default",
+      "title": "Preserve an explicit missing value",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-collections-parallel-dictionary-default",
+      "title": "Preserve an explicit missing value",
+      "competency": "collections",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-parallel-state-cards",
+      "title": "Track independent calls",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": "state-cards",
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-parallel-state-cards",
+      "title": "Track independent calls",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": "state-cards",
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-parallel-state-cards",
+      "title": "Track independent calls",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": "state-cards",
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-parallel-return-contract",
+      "title": "Preserve caller ordering",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-functions-parallel-return-contract",
+      "title": "Preserve caller ordering",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-functions-parallel-return-contract",
+      "title": "Preserve caller ordering",
+      "competency": "functions",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-parallel-error-location",
+      "title": "Identify a narrow handler",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-parallel-error-location",
+      "title": "Identify a narrow handler",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-parallel-error-location",
+      "title": "Identify a narrow handler",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-parallel-cleanup",
+      "title": "Trace failure cleanup",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-errors-parallel-cleanup",
+      "title": "Trace failure cleanup",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-errors-parallel-cleanup",
+      "title": "Trace failure cleanup",
+      "competency": "errors",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-parallel-exact-type",
+      "title": "Reject boolean quantities",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-parallel-exact-type",
+      "title": "Reject boolean quantities",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-parallel-exact-type",
+      "title": "Reject boolean quantities",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-parallel-range-check",
+      "title": "Guard a batch limit",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-validation-parallel-range-check",
+      "title": "Guard a batch limit",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-validation-parallel-range-check",
+      "title": "Guard a batch limit",
+      "competency": "validation",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-parallel-boundary",
+      "title": "Choose an independent empty-case expectation",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-parallel-boundary",
+      "title": "Choose an independent empty-case expectation",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-parallel-boundary",
+      "title": "Choose an independent empty-case expectation",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": null,
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-parallel-error-location",
+      "title": "Locate the circular expectation",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "accepted-format-1",
+      "result": "pass",
+      "assisted": true
+    },
+    {
+      "questionId": "review2-testing-parallel-error-location",
+      "title": "Locate the circular expectation",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "unsure",
+      "result": "pass",
+      "assisted": false
+    },
+    {
+      "questionId": "review2-testing-parallel-error-location",
+      "title": "Locate the circular expectation",
+      "competency": "testing",
+      "type": "completion",
+      "interaction": "error-location",
+      "difficulty": 2,
+      "variant": "semantic-mismatch",
+      "result": "pass",
+      "assisted": false
+    }
+  ],
+  "events": [
+    {
+      "scope": "review2-values-trace-1/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-1/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-3",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-3",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-decision-1/option-3",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-trace-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/accepted-format-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/accepted-format-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/accepted-format-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-patch-3/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "move 2 up then 1 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "move 3 up then 2 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "move 4 up then 3 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "move 1 down then 2 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "move 2 down then 3 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "move 3 down then 4 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/authored-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/reverse-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/reverse-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-workflow-3/reverse-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-1/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-3",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-3",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-decision-1/option-3",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-trace-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-3",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-3",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-3",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-4",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-4",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/accepted-format-4",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-patch-3/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "move 2 up then 1 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "move 3 up then 2 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "move 4 up then 3 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "move 1 down then 2 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "move 2 down then 3 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "move 3 down then 4 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/authored-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/reverse-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/reverse-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-workflow-3/reverse-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-1/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-3",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-3",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-decision-1/option-3",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-trace-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/accepted-format-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/accepted-format-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/accepted-format-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-patch-3/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "move 2 up then 1 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "move 3 up then 2 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "move 4 up then 3 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "move 1 down then 2 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "move 2 down then 3 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "move 3 down then 4 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/authored-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/reverse-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/reverse-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-workflow-3/reverse-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-1/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-3",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-3",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-decision-1/option-3",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-trace-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-patch-3/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "move 2 up then 1 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "move 3 up then 2 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "move 4 up then 3 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "move 1 down then 2 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "move 2 down then 3 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "move 3 down then 4 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/authored-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/reverse-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/reverse-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-workflow-3/reverse-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-1/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-3",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-3",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-decision-1/option-3",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-trace-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-patch-3/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "move 2 up then 1 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "move 3 up then 2 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "move 4 up then 3 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "move 1 down then 2 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "move 2 down then 3 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "move 3 down then 4 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/authored-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/reverse-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/reverse-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-workflow-3/reverse-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-1/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-2",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-2",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-2",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-3",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-3",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-decision-1/option-3",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-trace-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-2/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-patch-3/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "move 2 up then 1 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "move 3 up then 2 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "move 4 up then 3 down",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "move 1 down then 2 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "move 2 down then 3 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "move 3 down then 4 up",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/authored-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/reverse-sequence",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/reverse-sequence",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-workflow-3/reverse-sequence",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 0",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 2",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 3",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 4",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 5",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 6",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "slider stop 7",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 0",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 2",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 3",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 4",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 5",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 6",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 7",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop -1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "number stop 8",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-loop-boundary/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "next state 1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "next state 2",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "next state 3",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "next state 4",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-values-parallel-state-cards/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 2",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 3",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-error-location/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-collections-parallel-dictionary-default/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "next state 1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "next state 2",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "next state 3",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "next state 4",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "next state 5",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "previous state",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-state-cards/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-functions-parallel-return-contract/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 2",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 3",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 4",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 5",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-error-location/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-errors-parallel-cleanup/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-exact-type/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-validation-parallel-range-check/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-boundary/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "mobile learning map open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 1",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 2",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "inspect source line 3",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "process hint saves assistance without submitting",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/accepted-format-1",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/unsure",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/unsure",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/unsure",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/semantic-mismatch",
+      "action": "why task disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/semantic-mismatch",
+      "action": "submit saves exactly one graded response",
+      "result": "pass"
+    },
+    {
+      "scope": "review2-testing-parallel-error-location/semantic-mismatch",
+      "action": "continue discovery button",
+      "result": "pass"
+    },
+    {
+      "scope": "strong",
+      "action": "bookmark report link",
+      "result": "pass"
+    },
+    {
+      "scope": "strong",
+      "action": "submitted evidence disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "strong",
+      "action": "brand navigation and browser back",
+      "result": "pass"
+    },
+    {
+      "scope": "strong",
+      "action": "independent fresh diagnostic button",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "bookmark report link",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "submitted evidence disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-0-choice-0",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-0-choice-0",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-0-choice-0",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-0-choice-1",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-0-choice-1",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-0-choice-1",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-0",
+      "action": "return to skill map preserves sealed report",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-1-choice-0",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-1-choice-0",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-1-choice-0",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-1-choice-1",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-1-choice-1",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-1-choice-1",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-1",
+      "action": "return to skill map preserves sealed report",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-2-choice-0",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-2-choice-0",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-2-choice-0",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-2-choice-1",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-2-choice-1",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-2-choice-1",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-2",
+      "action": "return to skill map preserves sealed report",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-3-choice-0",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-3-choice-0",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-3-choice-0",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-3-choice-1",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-3-choice-1",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-3-choice-1",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-3",
+      "action": "return to skill map preserves sealed report",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-4-choice-0",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-4-choice-0",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-4-choice-0",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-4-choice-1",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-4-choice-1",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-4-choice-1",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-4",
+      "action": "return to skill map preserves sealed report",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-5-choice-0",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-5-choice-0",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-5-choice-0",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-5-choice-1",
+      "action": "prediction required and compare example",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-5-choice-1",
+      "action": "select practice option and check reasoning",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-5-choice-1",
+      "action": "try another case",
+      "result": "pass"
+    },
+    {
+      "scope": "lesson-5",
+      "action": "return to skill map preserves sealed report",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "learning-order link 0",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "learning-order link 1",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "learning-order link 2",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "learning-order link 3",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "learning-order link 4",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "learning-order link 5",
+      "result": "pass"
+    },
+    {
+      "scope": "struggling",
+      "action": "prior-informed reassessment button",
+      "result": "pass"
+    },
+    {
+      "scope": "mixed",
+      "action": "bookmark report link",
+      "result": "pass"
+    },
+    {
+      "scope": "mixed",
+      "action": "submitted evidence disclosure open/close",
+      "result": "pass"
+    },
+    {
+      "scope": "recovery",
+      "result": "fail",
+      "error": "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('alert')\nExpected: visible\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" class=\"quzEJW_error\">…</div> aka getByText('Failed to fetchReconnect &')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n  - Expect \"toBeVisible\" getByRole('alert') with timeout 5000ms\n  - waiting for getByRole('alert')\n"
+    }
+  ],
+  "journeys": [
+    {
+      "profile": "strong",
+      "result": "pass",
+      "answered": 18,
+      "stopReason": "Minimum length and coverage met; repeated evidence is consistent across every competency.",
+      "findings": [
+        {
+          "competency": "values",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "types": 2
+        },
+        {
+          "competency": "collections",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "types": 2
+        },
+        {
+          "competency": "functions",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "types": 2
+        },
+        {
+          "competency": "errors",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "types": 2
+        },
+        {
+          "competency": "validation",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "types": 2
+        },
+        {
+          "competency": "testing",
+          "status": "Demonstrated strength",
+          "count": 3,
+          "independent": 3,
+          "types": 2
+        }
+      ],
+      "trace": [
+        {
+          "position": 1,
+          "questionId": "review2-values-parallel-loop-boundary",
+          "competency": "values",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Independent fresh diagnostic. No previous-report routing or credit. Collect required competency coverage. Requested difficulty 2; 0 prior responses in values."
+        },
+        {
+          "position": 2,
+          "questionId": "review2-values-workflow-3",
+          "competency": "values",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in values."
+        },
+        {
+          "position": 3,
+          "questionId": "review2-values-patch-3",
+          "competency": "values",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in values."
+        },
+        {
+          "position": 4,
+          "questionId": "review2-collections-parallel-dictionary-default",
+          "competency": "collections",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in collections."
+        },
+        {
+          "position": 5,
+          "questionId": "review2-collections-workflow-3",
+          "competency": "collections",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in collections."
+        },
+        {
+          "position": 6,
+          "questionId": "review2-collections-patch-3",
+          "competency": "collections",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in collections."
+        },
+        {
+          "position": 7,
+          "questionId": "review2-functions-parallel-return-contract",
+          "competency": "functions",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in functions."
+        },
+        {
+          "position": 8,
+          "questionId": "review2-functions-workflow-3",
+          "competency": "functions",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in functions."
+        },
+        {
+          "position": 9,
+          "questionId": "review2-functions-patch-3",
+          "competency": "functions",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in functions."
+        },
+        {
+          "position": 10,
+          "questionId": "review2-errors-parallel-cleanup",
+          "competency": "errors",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in errors."
+        },
+        {
+          "position": 11,
+          "questionId": "review2-errors-workflow-3",
+          "competency": "errors",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in errors."
+        },
+        {
+          "position": 12,
+          "questionId": "review2-errors-patch-3",
+          "competency": "errors",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in errors."
+        },
+        {
+          "position": 13,
+          "questionId": "review2-validation-parallel-exact-type",
+          "competency": "validation",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in validation."
+        },
+        {
+          "position": 14,
+          "questionId": "review2-validation-workflow-3",
+          "competency": "validation",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in validation."
+        },
+        {
+          "position": 15,
+          "questionId": "review2-validation-patch-3",
+          "competency": "validation",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in validation."
+        },
+        {
+          "position": 16,
+          "questionId": "review2-testing-parallel-boundary",
+          "competency": "testing",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in testing."
+        },
+        {
+          "position": 17,
+          "questionId": "review2-testing-workflow-3",
+          "competency": "testing",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 1 prior responses in testing."
+        },
+        {
+          "position": 18,
+          "questionId": "review2-testing-patch-3",
+          "competency": "testing",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 3; 2 prior responses in testing."
+        }
+      ]
+    },
+    {
+      "profile": "struggling",
+      "result": "pass",
+      "answered": 19,
+      "stopReason": "Minimum length and coverage met; repeated evidence is consistent across every competency.",
+      "findings": [
+        {
+          "competency": "values",
+          "status": "Likely gap",
+          "count": 4,
+          "independent": 3,
+          "types": 3
+        },
+        {
+          "competency": "collections",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "types": 3
+        },
+        {
+          "competency": "functions",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "types": 3
+        },
+        {
+          "competency": "errors",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "types": 3
+        },
+        {
+          "competency": "validation",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "types": 3
+        },
+        {
+          "competency": "testing",
+          "status": "Likely gap",
+          "count": 3,
+          "independent": 3,
+          "types": 3
+        }
+      ],
+      "trace": [
+        {
+          "position": 1,
+          "questionId": "review2-values-parallel-loop-boundary",
+          "competency": "values",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Independent fresh diagnostic. No previous-report routing or credit. Collect required competency coverage. Requested difficulty 2; 0 prior responses in values."
+        },
+        {
+          "position": 2,
+          "questionId": "review2-values-decision-1",
+          "competency": "values",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in values."
+        },
+        {
+          "position": 3,
+          "questionId": "review2-values-trace-1",
+          "competency": "values",
+          "difficulty": 1,
+          "type": "prediction",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in values."
+        },
+        {
+          "position": 4,
+          "questionId": "review2-collections-parallel-dictionary-default",
+          "competency": "collections",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in collections."
+        },
+        {
+          "position": 5,
+          "questionId": "review2-collections-decision-1",
+          "competency": "collections",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in collections."
+        },
+        {
+          "position": 6,
+          "questionId": "review2-collections-trace-1",
+          "competency": "collections",
+          "difficulty": 1,
+          "type": "prediction",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in collections."
+        },
+        {
+          "position": 7,
+          "questionId": "review2-functions-parallel-return-contract",
+          "competency": "functions",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in functions."
+        },
+        {
+          "position": 8,
+          "questionId": "review2-functions-decision-1",
+          "competency": "functions",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in functions."
+        },
+        {
+          "position": 9,
+          "questionId": "review2-functions-trace-1",
+          "competency": "functions",
+          "difficulty": 1,
+          "type": "prediction",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in functions."
+        },
+        {
+          "position": 10,
+          "questionId": "review2-errors-parallel-cleanup",
+          "competency": "errors",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in errors."
+        },
+        {
+          "position": 11,
+          "questionId": "review2-errors-decision-1",
+          "competency": "errors",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in errors."
+        },
+        {
+          "position": 12,
+          "questionId": "review2-errors-trace-1",
+          "competency": "errors",
+          "difficulty": 1,
+          "type": "prediction",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in errors."
+        },
+        {
+          "position": 13,
+          "questionId": "review2-validation-parallel-exact-type",
+          "competency": "validation",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in validation."
+        },
+        {
+          "position": 14,
+          "questionId": "review2-validation-decision-1",
+          "competency": "validation",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in validation."
+        },
+        {
+          "position": 15,
+          "questionId": "review2-validation-trace-1",
+          "competency": "validation",
+          "difficulty": 1,
+          "type": "prediction",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in validation."
+        },
+        {
+          "position": 16,
+          "questionId": "review2-testing-parallel-boundary",
+          "competency": "testing",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in testing."
+        },
+        {
+          "position": 17,
+          "questionId": "review2-testing-decision-1",
+          "competency": "testing",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in testing."
+        },
+        {
+          "position": 18,
+          "questionId": "review2-testing-trace-1",
+          "competency": "testing",
+          "difficulty": 1,
+          "type": "prediction",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 2 prior responses in testing."
+        },
+        {
+          "position": 19,
+          "questionId": "review2-values-parallel-state-cards",
+          "competency": "values",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 1; 3 prior responses in values."
+        }
+      ]
+    },
+    {
+      "profile": "mixed",
+      "result": "pass",
+      "answered": 30,
+      "stopReason": "Maximum length reached; unresolved areas remain insufficient evidence.",
+      "findings": [
+        {
+          "competency": "values",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "types": 4
+        },
+        {
+          "competency": "collections",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "types": 4
+        },
+        {
+          "competency": "functions",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "types": 4
+        },
+        {
+          "competency": "errors",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "types": 4
+        },
+        {
+          "competency": "validation",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "types": 4
+        },
+        {
+          "competency": "testing",
+          "status": "Insufficient evidence",
+          "count": 5,
+          "independent": 5,
+          "types": 4
+        }
+      ],
+      "trace": [
+        {
+          "position": 1,
+          "questionId": "review2-values-parallel-loop-boundary",
+          "competency": "values",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Independent fresh diagnostic. No previous-report routing or credit. Collect required competency coverage. Requested difficulty 2; 0 prior responses in values."
+        },
+        {
+          "position": 2,
+          "questionId": "review2-values-decision-1",
+          "competency": "values",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "authored-match",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in values."
+        },
+        {
+          "position": 3,
+          "questionId": "review2-values-trace-2",
+          "competency": "values",
+          "difficulty": 2,
+          "type": "prediction",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in values."
+        },
+        {
+          "position": 4,
+          "questionId": "review2-collections-parallel-dictionary-default",
+          "competency": "collections",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in collections."
+        },
+        {
+          "position": 5,
+          "questionId": "review2-collections-decision-1",
+          "competency": "collections",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "authored-match",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in collections."
+        },
+        {
+          "position": 6,
+          "questionId": "review2-collections-trace-2",
+          "competency": "collections",
+          "difficulty": 2,
+          "type": "prediction",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in collections."
+        },
+        {
+          "position": 7,
+          "questionId": "review2-functions-parallel-return-contract",
+          "competency": "functions",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in functions."
+        },
+        {
+          "position": 8,
+          "questionId": "review2-functions-decision-1",
+          "competency": "functions",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "authored-match",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in functions."
+        },
+        {
+          "position": 9,
+          "questionId": "review2-functions-trace-2",
+          "competency": "functions",
+          "difficulty": 2,
+          "type": "prediction",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in functions."
+        },
+        {
+          "position": 10,
+          "questionId": "review2-errors-parallel-cleanup",
+          "competency": "errors",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in errors."
+        },
+        {
+          "position": 11,
+          "questionId": "review2-errors-decision-1",
+          "competency": "errors",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "authored-match",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in errors."
+        },
+        {
+          "position": 12,
+          "questionId": "review2-errors-trace-2",
+          "competency": "errors",
+          "difficulty": 2,
+          "type": "prediction",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in errors."
+        },
+        {
+          "position": 13,
+          "questionId": "review2-validation-parallel-exact-type",
+          "competency": "validation",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in validation."
+        },
+        {
+          "position": 14,
+          "questionId": "review2-validation-decision-1",
+          "competency": "validation",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "authored-match",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in validation."
+        },
+        {
+          "position": 15,
+          "questionId": "review2-validation-trace-2",
+          "competency": "validation",
+          "difficulty": 2,
+          "type": "prediction",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in validation."
+        },
+        {
+          "position": 16,
+          "questionId": "review2-testing-parallel-boundary",
+          "competency": "testing",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Collect required competency coverage. Requested difficulty 2; 0 prior responses in testing."
+        },
+        {
+          "position": 17,
+          "questionId": "review2-testing-decision-1",
+          "competency": "testing",
+          "difficulty": 1,
+          "type": "decision",
+          "answerClass": "authored-match",
+          "rationale": "Verify the suspected gap with a different, easier task. Requested difficulty 1; 1 prior responses in testing."
+        },
+        {
+          "position": 18,
+          "questionId": "review2-testing-trace-2",
+          "competency": "testing",
+          "difficulty": 2,
+          "type": "prediction",
+          "answerClass": "authored-match",
+          "rationale": "Verify deeper understanding with another task before drawing a conclusion. Requested difficulty 2; 2 prior responses in testing."
+        },
+        {
+          "position": 19,
+          "questionId": "review2-values-workflow-3",
+          "competency": "values",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in values."
+        },
+        {
+          "position": 20,
+          "questionId": "review2-collections-workflow-3",
+          "competency": "collections",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in collections."
+        },
+        {
+          "position": 21,
+          "questionId": "review2-functions-workflow-3",
+          "competency": "functions",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in functions."
+        },
+        {
+          "position": 22,
+          "questionId": "review2-errors-workflow-3",
+          "competency": "errors",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in errors."
+        },
+        {
+          "position": 23,
+          "questionId": "review2-validation-workflow-3",
+          "competency": "validation",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in validation."
+        },
+        {
+          "position": 24,
+          "questionId": "review2-testing-workflow-3",
+          "competency": "testing",
+          "difficulty": 3,
+          "type": "ordering",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 3 prior responses in testing."
+        },
+        {
+          "position": 25,
+          "questionId": "review2-values-parallel-state-cards",
+          "competency": "values",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 2; 4 prior responses in values."
+        },
+        {
+          "position": 26,
+          "questionId": "review2-collections-patch-3",
+          "competency": "collections",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 4 prior responses in collections."
+        },
+        {
+          "position": 27,
+          "questionId": "review2-functions-patch-3",
+          "competency": "functions",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 4 prior responses in functions."
+        },
+        {
+          "position": 28,
+          "questionId": "review2-errors-parallel-error-location",
+          "competency": "errors",
+          "difficulty": 2,
+          "type": "completion",
+          "answerClass": "non-match-or-unsure",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 2; 4 prior responses in errors."
+        },
+        {
+          "position": 29,
+          "questionId": "review2-validation-patch-3",
+          "competency": "validation",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 4 prior responses in validation."
+        },
+        {
+          "position": 30,
+          "questionId": "review2-testing-patch-3",
+          "competency": "testing",
+          "difficulty": 3,
+          "type": "completion",
+          "answerClass": "authored-match",
+          "rationale": "Resolve inconsistent or limited evidence with a fresh task. Requested difficulty 3; 4 prior responses in testing."
+        }
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "resume-control-desync",
+      "scope": "review2-values-parallel-loop-boundary",
+      "summary": "Candidate boundary resets while saved answer is restored",
+      "details": {
+        "savedAnswerPreserved": true,
+        "candidateResetTo": "3"
+      }
+    },
+    {
+      "id": "scratch-not-persisted",
+      "scope": "review2-values-parallel-state-cards",
+      "summary": "Transition scratch notes are not restored by refresh",
+      "details": {
+        "answerPreserved": true
+      }
+    },
+    {
+      "id": "resume-localization-desync",
+      "scope": "review2-collections-parallel-error-location",
+      "summary": "Source-line selection is lost on refresh while the answer remains saved",
+      "details": {
+        "savedAnswerPreserved": true
+      }
+    },
+    {
+      "id": "scratch-not-persisted",
+      "scope": "review2-functions-parallel-state-cards",
+      "summary": "Transition scratch notes are not restored by refresh",
+      "details": {
+        "answerPreserved": true
+      }
+    },
+    {
+      "id": "resume-localization-desync",
+      "scope": "review2-errors-parallel-error-location",
+      "summary": "Source-line selection is lost on refresh while the answer remains saved",
+      "details": {
+        "savedAnswerPreserved": true
+      }
+    },
+    {
+      "id": "resume-localization-desync",
+      "scope": "review2-testing-parallel-error-location",
+      "summary": "Source-line selection is lost on refresh while the answer remains saved",
+      "details": {
+        "savedAnswerPreserved": true
+      }
+    }
+  ],
+  "logs": [],
+  "preservation": {
+    "changed": [],
+    "baselineDigest": "d6a47b45fb34549e64503e17e7c0b5dd3dca3c7738d2f0c07db2a06f30e038ab",
+    "preexistingRecordCount": 2807
+  }
+}

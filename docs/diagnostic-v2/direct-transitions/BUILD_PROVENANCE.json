@@ -1,0 +1,46 @@
+{
+  "recordedAtUTC": "2026-10-31T15:24:50.247Z",
+  "gitHeadDuringBuild": "aaa57f1c351deb4caca19b70351f03e17e7eb394",
+  "buildId": "bS0BNAu4WO1LA5nNjHZaO",
+  "applicationSourceSHA256NormalizedLF": {
+    "src/components/diagnostic-experience.tsx": "bac52482b3ab1c7394cb66137f920ff8bc93391c6afb393c918826859df21812"
+  },
+  "buildNote": "The reviewed working-copy change was built locally; application source did not change afterward.",
+  "tests": {
+    "unitIntegration": {
+      "passed": 158,
+      "total": 158,
+      "files": 15,
+      "seconds": 74.92
+    },
+    "eightAreaBrowser": {
+      "passed": 3,
+      "total": 3,
+      "seconds": 24.2
+    },
+    "legacyBrowser": {
+      "passed": 12,
+      "total": 12,
+      "duration": "1.7 minutes"
+    },
+    "lint": "passed",
+    "typecheck": "passed",
+    "build": "passed; migrations and seed skipped"
+  },
+  "localUrl": "http://localhost:3002/diagnostic-v2",
+  "health": 200,
+  "production": {
+    "accessed": false,
+    "modified": false,
+    "deployed": false,
+    "commitParity": "not inspected"
+  },
+  "preserved": [
+    "authored banks",
+    "selection/grading",
+    "snapshots",
+    "responses",
+    "sealed reports",
+    "learning progress"
+  ]
+}

@@ -1,0 +1,63 @@
+name: Review CI
+
+on:
+  push:
+    branches:
+      - review/vercel-hardening-2026-10-02
+      - migration/neon-postgres
+      - feat/interactive-diagnostic-v2
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: skillsetu_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d skillsetu_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      DIAGNOSTIC_V2_ENABLED: 'true'
+      DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/skillsetu_test?schema=public
+      TEST_DATABASE_URL: postgresql://postgres:postgres@127.0.0.1:5432/skillsetu_test?schema=public
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Build from a fresh install before database setup
+        run: npm run build
+      - run: npm run db:migrate
+      - run: npm run db:seed
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm audit --omit=dev --omit=optional --audit-level=high
+      - run: npm test
+      - run: npx playwright install --with-deps chromium
+      - name: Production browser acceptance and regression journeys
+        run: npm run test:e2e
+        env:
+          CI: '1'
+          E2E_BASE_URL: http://127.0.0.1:3004
+          E2E_SERVER_COMMAND: npm run start -- --port 3004
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: |
+            playwright-report/
+            test-results/

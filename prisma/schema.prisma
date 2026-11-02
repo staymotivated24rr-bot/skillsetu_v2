@@ -1,0 +1,329 @@
+generator client {
+  provider = "prisma-client-js"
+  output = "../node_modules/.prisma/client"
+}
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+model User {
+  id        String @id @default(uuid())
+  name      String
+  selectedRoleId String @default("data-analyst")
+  createdAt DateTime @default(now())
+  attempts  AssessmentAttempt[]
+  progress  LessonProgress[]
+  paths     LearningPath[]
+  repairs   RepairRun[]
+  diagnosticSessions DiagnosticSession[]
+}
+model Role {
+  id           String @id
+  name         String
+  description  String
+  requirements RoleSkillRequirement[]
+  assessments  Assessment[]
+  profiles     EmployerProfile[]
+}
+model SkillCategory {
+  id     String @id
+  name   String
+  skills SkillNode[]
+}
+model SkillNode {
+  id            String @id
+  name          String
+  description   String
+  categoryId    String
+  prerequisites String
+  category      SkillCategory @relation(fields: [categoryId], references: [id])
+  requirements  RoleSkillRequirement[]
+  mappings      QuestionSkillMapping[]
+  scores        SkillScore[]
+  lesson        Lesson?
+  employerRequirements EmployerSkillRequirement[]
+}
+model RoleSkillRequirement {
+  roleId     String
+  skillId    String
+  target     Int
+  importance Int
+  role       Role @relation(fields: [roleId], references: [id])
+  skill      SkillNode @relation(fields: [skillId], references: [id])
+  @@id([roleId, skillId])
+}
+model Assessment {
+  id        String @id
+  roleId    String
+  kind      String
+  role      Role @relation(fields: [roleId], references: [id])
+  scenarios Scenario[]
+  attempts  AssessmentAttempt[]
+}
+model Scenario {
+  id            String @id
+  assessmentId  String
+  title         String
+  stakeholder   String
+  stakeholderRole String
+  company       String
+  brief         String
+  data          String
+  position      Int
+  assessment    Assessment @relation(fields: [assessmentId], references: [id])
+  questions     AssessmentQuestion[]
+}
+model AssessmentQuestion {
+  id          String @id
+  scenarioId  String
+  position    Int
+  phase       String
+  prompt      String
+  context     String
+  options     String
+  correct     Int
+  explanation String
+  scenario    Scenario @relation(fields: [scenarioId], references: [id])
+  mappings    QuestionSkillMapping[]
+  answers     AssessmentAnswer[]
+}
+model QuestionSkillMapping {
+  questionId String
+  skillId    String
+  weight     Float @default(1)
+  question   AssessmentQuestion @relation(fields: [questionId], references: [id])
+  skill      SkillNode @relation(fields: [skillId], references: [id])
+  @@id([questionId, skillId])
+}
+model AssessmentAttempt {
+  bankId       String?
+  bank         AssessmentBank? @relation(fields: [bankId], references: [id])
+  assessmentVersion String @default("legacy-v1")
+  contentVersion String @default("legacy-v1")
+  roleIdSnapshot String?
+  skillSnapshot String?
+  evidence TaskEvidence[]
+  id           String @id @default(uuid())
+  userId       String
+  assessmentId String
+  status       String @default("in_progress")
+  startedAt    DateTime @default(now())
+  completedAt  DateTime?
+  score        Int?
+  user         User @relation(fields: [userId], references: [id])
+  assessment   Assessment @relation(fields: [assessmentId], references: [id])
+  answers      AssessmentAnswer[]
+  scores       SkillScore[]
+  report       ReadinessReport?
+  path         LearningPath?
+  @@index([userId, status])
+}
+model AssessmentAnswer {
+  id          String @id @default(uuid())
+  attemptId   String
+  questionId  String
+  selected    Int
+  correct     Boolean
+  score       Float
+  answeredAt  DateTime @default(now())
+  attempt     AssessmentAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  question    AssessmentQuestion @relation(fields: [questionId], references: [id])
+  @@unique([attemptId, questionId])
+}
+model SkillScore {
+  attemptId String
+  skillId   String
+  score     Int
+  evidence  Int
+  quality   String?
+  attempt   AssessmentAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  skill     SkillNode @relation(fields: [skillId], references: [id])
+  @@id([attemptId, skillId])
+}
+model LearningPath {
+  id        String @id @default(uuid())
+  userId    String
+  attemptId String @unique
+  skillIds  String
+  createdAt DateTime @default(now())
+  user      User @relation(fields: [userId], references: [id])
+  attempt   AssessmentAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+}
+model Lesson {
+  id        String @id
+  skillId   String @unique
+  title     String
+  minutes   Int
+  content   String
+  skill     SkillNode @relation(fields: [skillId], references: [id])
+  progress  LessonProgress[]
+}
+model LessonProgress {
+  id        String @id @default(uuid())
+  userId    String
+  lessonId  String
+  mode      String @default("interactive")
+  run       Int @default(1)
+  status    String @default("started")
+  updatedAt DateTime @updatedAt
+  user      User @relation(fields: [userId], references: [id])
+  lesson    Lesson @relation(fields: [lessonId], references: [id])
+  answers   PracticeAnswer[]
+  @@unique([userId, lessonId])
+}
+model PracticeAnswer {
+  id         String @id @default(uuid())
+  progressId String
+  run        Int
+  itemId     String
+  selected   Int
+  correct    Boolean
+  first      Boolean
+  answeredAt DateTime @default(now())
+  progress   LessonProgress @relation(fields: [progressId], references: [id], onDelete: Cascade)
+}
+model ReadinessReport {
+  attemptId String @id
+  indicator String
+  createdAt DateTime @default(now())
+  attempt   AssessmentAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+}
+model College {
+  id      String @id
+  name    String
+  cohorts Cohort[]
+}
+model Cohort {
+  roleId String @default("data-analyst")
+  id        String @id
+  collegeId String
+  name      String
+  college   College @relation(fields: [collegeId], references: [id])
+  members   CohortMember[]
+}
+model CohortMember {
+  id              String @id
+  cohortId        String
+  alias           String
+  diagnosed       Boolean
+  initialScores   String
+  currentScores   String
+  modulesCompleted Int
+  modulesAssigned Int
+  cohort          Cohort @relation(fields: [cohortId], references: [id])
+}
+model EmployerProfile {
+  id           String @id
+  roleId       String
+  name         String
+  description  String
+  role         Role @relation(fields: [roleId], references: [id])
+  requirements EmployerSkillRequirement[]
+}
+model EmployerSkillRequirement {
+  profileId String
+  skillId   String
+  target    Int
+  profile   EmployerProfile @relation(fields: [profileId], references: [id])
+  skill     SkillNode @relation(fields: [skillId], references: [id])
+  @@id([profileId, skillId])
+}
+
+model AssessmentBank {
+  id String @id
+  roleId String
+  kind String
+  version String
+  contentVersion String
+  content String
+  digest String
+  attempts AssessmentAttempt[]
+}
+model TaskEvidence {
+  id String @id @default(uuid())
+  attemptId String
+  taskId String
+  payload String
+  score Float
+  response String
+  taskType String
+  scenario String
+  transfer Boolean
+  mappings String
+  bankId String
+  assessmentVersion String
+  answeredAt DateTime @default(now())
+  attempt AssessmentAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  @@unique([attemptId, taskId])
+}
+model RepairRun {
+  id String @id @default(uuid())
+  userId String
+  skillId String
+  moduleVersion String
+  contentSnapshot String
+  mode String @default("interactive")
+  run Int @default(1)
+  status String @default("started")
+  answers RepairAnswer[]
+  user User @relation(fields: [userId], references: [id])
+  @@unique([userId, skillId])
+}
+model RepairAnswer {
+  id String @id @default(uuid())
+  repairId String
+  run Int
+  taskId String
+  payload String
+  score Float
+  first Boolean
+  response String
+  answeredAt DateTime @default(now())
+  repair RepairRun @relation(fields: [repairId], references: [id], onDelete: Cascade)
+}
+
+// Isolated diagnostic pilot: opaque session tokens, immutable bank/report snapshots.
+model DiagnosticSession {
+  id        String @id @default(uuid())
+  tokenHash String @unique
+  userId    String
+  user      User @relation(fields: [userId], references: [id])
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  runs      DiagnosticRun[]
+}
+model DiagnosticRun {
+  id String @id @default(uuid())
+  sessionId String
+  session DiagnosticSession @relation(fields: [sessionId], references: [id])
+  roleId String
+  bankId String
+  engineVersion String
+  bankSnapshot String
+  bankDigest String
+  status String @default("in_progress")
+  currentQuestionId String?
+  currentRationale String
+  hintUsed Boolean @default(false)
+  draft String @default("{}")
+  report String?
+  startedAt DateTime @default(now())
+  completedAt DateTime?
+  responses DiagnosticResponse[]
+  @@index([sessionId, startedAt])
+}
+model DiagnosticResponse {
+  id String @id @default(uuid())
+  runId String
+  run DiagnosticRun @relation(fields: [runId], references: [id])
+  questionId String
+  position Int
+  payload String
+  correct Boolean
+  assisted Boolean
+  misconception String?
+  rationale String
+  answeredAt DateTime @default(now())
+  @@unique([runId, questionId])
+  @@unique([runId, position])
+}

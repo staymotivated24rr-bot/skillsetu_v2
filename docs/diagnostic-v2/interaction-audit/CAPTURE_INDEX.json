@@ -1,0 +1,317 @@
+[
+  {
+    "file": "screenshots/lesson-0.png",
+    "bytes": 168038,
+    "sha256": "780551ac670652421252081919c91f2b3f15808454d43794be1857ec12e32721"
+  },
+  {
+    "file": "screenshots/lesson-1.png",
+    "bytes": 165842,
+    "sha256": "9acd589ff7c6de1033be6ce8dbc56b14a47ca3f2c94f090b45869148f3ef48a1"
+  },
+  {
+    "file": "screenshots/lesson-2.png",
+    "bytes": 166757,
+    "sha256": "34492f1b34bca7f64169e17036526170dd543acd0b6dc1b8b1958e380bddc9d5"
+  },
+  {
+    "file": "screenshots/lesson-3.png",
+    "bytes": 150193,
+    "sha256": "90345de48f39a11843f48a4872ffcebba4a7465c6f595f55bd899249cc706a11"
+  },
+  {
+    "file": "screenshots/lesson-4.png",
+    "bytes": 151424,
+    "sha256": "ac0ad3df02c0a6115683285e60284a73701c113c4e799927a3006a0f6f8ea3cf"
+  },
+  {
+    "file": "screenshots/lesson-5.png",
+    "bytes": 164773,
+    "sha256": "f6b445d62cc968b306780c39ed2d08981b60b464cb9c5de62caa33e11f95b4cf"
+  },
+  {
+    "file": "screenshots/natural-mixed-report.png",
+    "bytes": 257114,
+    "sha256": "9545d7bfee6d54a8692dd059e6bf16510920cf4003a8c4a48dfdf9a3bb1db966"
+  },
+  {
+    "file": "screenshots/natural-strong-report.png",
+    "bytes": 217451,
+    "sha256": "4751860d47a2100d0c388ddf82d958a33749f9d48995efd2da832ec5e0c6a881"
+  },
+  {
+    "file": "screenshots/natural-struggling-report.png",
+    "bytes": 213287,
+    "sha256": "04978392421631c282776cad5a4e85bea4dcb7a65376df2f4e2d6f4693af442b"
+  },
+  {
+    "file": "screenshots/network-error.png",
+    "bytes": 182309,
+    "sha256": "b98973c48a6512b9b21080051d06dddec7199e874b0f1f8cd3b8367b0ea3ab39"
+  },
+  {
+    "file": "screenshots/recovery-failure.png",
+    "bytes": 184042,
+    "sha256": "f93b8ec2b68436ed2625c0c6036d5e71e966085b3e42ace4f11a87cc076720de"
+  },
+  {
+    "file": "screenshots/report-cover.png",
+    "bytes": 87737,
+    "sha256": "fa06760f47e16300b19e28b685a4839bd1012d4fcb6556655bd0a2d6579806b2"
+  },
+  {
+    "file": "screenshots/resume-scratch.png",
+    "bytes": 212130,
+    "sha256": "7a675ec9dd73de6d00e128ee2987fd967097e977eb297bfdc6c83c3f913b2550"
+  },
+  {
+    "file": "screenshots/resume-source-line.png",
+    "bytes": 171690,
+    "sha256": "b0a8377dbd4c97809731f83619872624fac8ea001d4703fb25be35badcddef49"
+  },
+  {
+    "file": "screenshots/review2-collections-decision-1.png",
+    "bytes": 80870,
+    "sha256": "d18bc3af8e65a828360926cd2a9be85b9b75dd689618ca149706dbb7eedb2373"
+  },
+  {
+    "file": "screenshots/review2-collections-parallel-dictionary-default.png",
+    "bytes": 76851,
+    "sha256": "b67d00dfca65d183c1d16369bfd673a96df2456e77c9d251a7d40f2904f6dd01"
+  },
+  {
+    "file": "screenshots/review2-collections-parallel-error-location.png",
+    "bytes": 165952,
+    "sha256": "3b26040a2a3c1d9337090b033e2e4758dc05f7bb553c77df07e0d97c6dfcea19"
+  },
+  {
+    "file": "screenshots/review2-collections-patch-2.png",
+    "bytes": 83566,
+    "sha256": "9d763225264365b37defc605d59904835df1f8a0fccd75ff0b1b8e0a0466c114"
+  },
+  {
+    "file": "screenshots/review2-collections-patch-3.png",
+    "bytes": 153165,
+    "sha256": "bbb6ecc05f53aa04fd083f2b3994404e64d4b80ba866345d6f70565d7a019ae5"
+  },
+  {
+    "file": "screenshots/review2-collections-trace-1.png",
+    "bytes": 151088,
+    "sha256": "86fd708809af27df7313926daa844b7625619f4be58139785f0f336fe6d7a33f"
+  },
+  {
+    "file": "screenshots/review2-collections-trace-2.png",
+    "bytes": 152948,
+    "sha256": "e05c275983a14c210faf83dc49e279a6e6c3056fa7b487344485c8c08424d51e"
+  },
+  {
+    "file": "screenshots/review2-collections-workflow-3.png",
+    "bytes": 96672,
+    "sha256": "ce4cc38a8a7bf56919cdff5192f6349c15e2314c917071d0f0e87442b46a0e4a"
+  },
+  {
+    "file": "screenshots/review2-errors-decision-1.png",
+    "bytes": 82243,
+    "sha256": "41c6611ed5d2f70607273b585b2e4ed9ff849fce735bc410ad7829f9bf1e8e9a"
+  },
+  {
+    "file": "screenshots/review2-errors-parallel-cleanup.png",
+    "bytes": 84083,
+    "sha256": "0ae517132f165bd170471f2a0c05bd9627af01fa42281de0a1aa397a12802170"
+  },
+  {
+    "file": "screenshots/review2-errors-parallel-error-location.png",
+    "bytes": 173260,
+    "sha256": "1827af27b93edd8cc5c846e6df4e03a82030ac87e5cd1cc0e95bd913e7893c3c"
+  },
+  {
+    "file": "screenshots/review2-errors-patch-2.png",
+    "bytes": 84304,
+    "sha256": "57fa6eb255f7c0ad5e062e5a85a9cc411833f11f6f773ced576e30c08e4816d0"
+  },
+  {
+    "file": "screenshots/review2-errors-patch-3.png",
+    "bytes": 154000,
+    "sha256": "3850e39f91dcfbaa651394428c2e37c0c6edb986b48823169933c1173acbf3bf"
+  },
+  {
+    "file": "screenshots/review2-errors-trace-1.png",
+    "bytes": 154944,
+    "sha256": "d767a7f78bc3c0009b5c99331d3699647d95b00cfe6218a57542febaead1e6de"
+  },
+  {
+    "file": "screenshots/review2-errors-trace-2.png",
+    "bytes": 153683,
+    "sha256": "cc4c252db997af126894cf9e659fba41510bfa9fc2298e14dc4f8a6ce5159a22"
+  },
+  {
+    "file": "screenshots/review2-errors-workflow-3.png",
+    "bytes": 95936,
+    "sha256": "c15725cc23f5c353071c5631180fe2889afed6b5d5b3da6e020862099192f9a2"
+  },
+  {
+    "file": "screenshots/review2-functions-decision-1.png",
+    "bytes": 88785,
+    "sha256": "b285cadf95837ad9f1e7a670cf0229745c817830e29c52a9362deda7cf93fcff"
+  },
+  {
+    "file": "screenshots/review2-functions-parallel-return-contract.png",
+    "bytes": 82364,
+    "sha256": "58502d5cb0d44700066e62d8ec6d1d36f0bbf9c8688c3206b5389f907713770c"
+  },
+  {
+    "file": "screenshots/review2-functions-parallel-state-cards.png",
+    "bytes": 216140,
+    "sha256": "a2129bea461289687af963029dfcd31cca344765dad76934a684970e3646db1d"
+  },
+  {
+    "file": "screenshots/review2-functions-patch-2.png",
+    "bytes": 85890,
+    "sha256": "9b113f0dbb3e13f37cf3fdee8458db28647942a44690f45db464f57936b5186e"
+  },
+  {
+    "file": "screenshots/review2-functions-patch-3.png",
+    "bytes": 153220,
+    "sha256": "b3e2d6acfdf1f90f3757c317a49f15964e976dc2d2700e88de95f722d8fc9985"
+  },
+  {
+    "file": "screenshots/review2-functions-trace-1.png",
+    "bytes": 150978,
+    "sha256": "117ea5e174702fd642941013e9f6e60705c0a4c4feeee99bd4634535249209f4"
+  },
+  {
+    "file": "screenshots/review2-functions-trace-2.png",
+    "bytes": 154091,
+    "sha256": "a39cc376bf069b8259e1db3522b3a703e58a9709d1321b430e48bab42e53b947"
+  },
+  {
+    "file": "screenshots/review2-functions-workflow-3.png",
+    "bytes": 87636,
+    "sha256": "56ed600a9dbe632b682d8c630fcc7a113f413b48196cbdd297252225d5ef11f2"
+  },
+  {
+    "file": "screenshots/review2-testing-decision-1.png",
+    "bytes": 81807,
+    "sha256": "4c754619cca56ac71b96ae36fb78a0b269406698bea0e4fd61149239b24662ca"
+  },
+  {
+    "file": "screenshots/review2-testing-parallel-boundary.png",
+    "bytes": 156737,
+    "sha256": "7bb6fa1d61840b85558342d795661ccb666e571e5eb5f18ee43ce2b0c00961f3"
+  },
+  {
+    "file": "screenshots/review2-testing-parallel-error-location.png",
+    "bytes": 104040,
+    "sha256": "fd6002fbbfedd6448c977840aadaaf97385d0e1714269b42662c82d854f7e0ed"
+  },
+  {
+    "file": "screenshots/review2-testing-patch-2.png",
+    "bytes": 85744,
+    "sha256": "234a0ba88408d418ab12db232ed054b822fc08d63308b3791cded97cd1223e38"
+  },
+  {
+    "file": "screenshots/review2-testing-patch-3.png",
+    "bytes": 154243,
+    "sha256": "9623638ebec150582910860566befbfd77f362c701fe036a01db89f8d37b3626"
+  },
+  {
+    "file": "screenshots/review2-testing-trace-1.png",
+    "bytes": 156510,
+    "sha256": "ec1c9be09638098743f36edd704fcc9d1f067b0e65facbc477d90ebb94bdc9c3"
+  },
+  {
+    "file": "screenshots/review2-testing-trace-2.png",
+    "bytes": 151875,
+    "sha256": "21315d01315499409e51dd1f6d6616513ab7026271fc287465c2765248ac7db8"
+  },
+  {
+    "file": "screenshots/review2-testing-workflow-3.png",
+    "bytes": 87132,
+    "sha256": "4a4ba78611331850062c322640f256031d9e864ae220a0cac0cae687586aafaf"
+  },
+  {
+    "file": "screenshots/review2-validation-decision-1.png",
+    "bytes": 77721,
+    "sha256": "db6efd119ac3e035a61bc314289278820f440d76fd3cffea677cc16ad20bec4c"
+  },
+  {
+    "file": "screenshots/review2-validation-parallel-exact-type.png",
+    "bytes": 152495,
+    "sha256": "9e1936ea257818d6ef9e4c0fcb5440d2642ae1503eb862ca9c6a4a9ece61d798"
+  },
+  {
+    "file": "screenshots/review2-validation-parallel-range-check.png",
+    "bytes": 81643,
+    "sha256": "1e9bee9287a5d4d94cb7cb45dc6ef9bac7ed841d089f95af10d8a8d18edba9d8"
+  },
+  {
+    "file": "screenshots/review2-validation-patch-2.png",
+    "bytes": 84921,
+    "sha256": "cb639aaccead5e49b84a2333f299db884d5c30a654fa7647ea589abf66b9bf5f"
+  },
+  {
+    "file": "screenshots/review2-validation-patch-3.png",
+    "bytes": 153707,
+    "sha256": "bfe1824adeee2a6f073c747461971af0e83f49e2bf7d891ba70370caa2c7cb81"
+  },
+  {
+    "file": "screenshots/review2-validation-trace-1.png",
+    "bytes": 153016,
+    "sha256": "d6f81b2588795767f7ed89ffd2ae05cea6380f8371072f98d58387ed4bdc37f1"
+  },
+  {
+    "file": "screenshots/review2-validation-trace-2.png",
+    "bytes": 150094,
+    "sha256": "5b2e80f794e7a1212bd87e9eaca641010586810c30659929843418496d69f6f3"
+  },
+  {
+    "file": "screenshots/review2-validation-workflow-3.png",
+    "bytes": 95624,
+    "sha256": "277596f70ba414836ad5117df1c1045578822e73165c57d9a8016bfda5982817"
+  },
+  {
+    "file": "screenshots/review2-values-decision-1.png",
+    "bytes": 78960,
+    "sha256": "0dc9a5067b732686df99fe0adf2b14b8246553a8c86dd67b82db305956c35eb3"
+  },
+  {
+    "file": "screenshots/review2-values-parallel-loop-boundary-resume-discrepancy.png",
+    "bytes": 178079,
+    "sha256": "cd7fe454a7010c18e93ab6f3d3cfe7492b30644bdfac8a183f67b0f4e59edd4c"
+  },
+  {
+    "file": "screenshots/review2-values-parallel-loop-boundary.png",
+    "bytes": 174307,
+    "sha256": "ef79ff5f9d0f14c44ab0b8c2962745add0d9a8cbe2b0b4bfb7116de3ffc34930"
+  },
+  {
+    "file": "screenshots/review2-values-parallel-state-cards.png",
+    "bytes": 101773,
+    "sha256": "ee7306f2f2c752e2749b841098a2580a3c68c5dd84a3b58baa8c259d63d2412a"
+  },
+  {
+    "file": "screenshots/review2-values-patch-2.png",
+    "bytes": 83697,
+    "sha256": "ef483a66ece7c4e0208537d0dd4e623ec3cb8129ddf6c972cf8aaad4ba3957fb"
+  },
+  {
+    "file": "screenshots/review2-values-patch-3.png",
+    "bytes": 153640,
+    "sha256": "b2e421dc4f02966f90d8b633b8a383ac5c9773b86f19f136b676bd3899021ce9"
+  },
+  {
+    "file": "screenshots/review2-values-trace-1.png",
+    "bytes": 151460,
+    "sha256": "f2c7bbbb4b8a1811b2e66dbf5c85c01e14ef82064511500d75b31f7d9e65f36d"
+  },
+  {
+    "file": "screenshots/review2-values-trace-2.png",
+    "bytes": 152694,
+    "sha256": "c50c818cce1bb8cbebb5bac8f61b7a69e109194d084dc9b71d34a9981cb48c6b"
+  },
+  {
+    "file": "screenshots/review2-values-workflow-3.png",
+    "bytes": 86729,
+    "sha256": "ab2ef7ee2b539485c26f03c5bbbf0ecec1d749c4127a2208bcc90eefdb09a799"
+  }
+]
