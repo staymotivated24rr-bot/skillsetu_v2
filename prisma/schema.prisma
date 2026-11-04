@@ -291,6 +291,7 @@ model DiagnosticSession {
   expiresAt DateTime
   createdAt DateTime @default(now())
   runs      DiagnosticRun[]
+  learningPlans DiagnosticLearningPlan[]
 }
 model DiagnosticRun {
   id String @id @default(uuid())
@@ -310,6 +311,7 @@ model DiagnosticRun {
   startedAt DateTime @default(now())
   completedAt DateTime?
   responses DiagnosticResponse[]
+  learningPlans DiagnosticLearningPlan[]
   @@index([sessionId, startedAt])
 }
 model DiagnosticResponse {
@@ -326,4 +328,94 @@ model DiagnosticResponse {
   answeredAt DateTime @default(now())
   @@unique([runId, questionId])
   @@unique([runId, position])
+}
+
+// Additive, diagnostic-owned practice. Never used as assessment evidence.
+model LearningModuleVersion {
+  id String @id
+  sourceId String
+  version String
+  roleId String
+  schemaVersion Int
+  contentSnapshot String
+  digest String
+  evaluatorVersion String
+  reviewState String
+  targets DiagnosticLearningTarget[]
+  @@unique([sourceId, version])
+}
+model DiagnosticLearningPlan {
+  id String @id @default(uuid())
+  sessionId String
+  session DiagnosticSession @relation(fields: [sessionId], references: [id])
+  sourceRunId String?
+  sourceRun DiagnosticRun? @relation(fields: [sourceRunId], references: [id], onDelete: Restrict)
+  kind String
+  roleId String
+  mappingVersion String
+  reportDigest String?
+  recommendationSnapshot String
+  recommendationDigest String
+  createdAt DateTime @default(now())
+  targets DiagnosticLearningTarget[]
+  @@unique([sourceRunId, mappingVersion])
+  @@index([sessionId, createdAt])
+}
+model DiagnosticLearningTarget {
+  id String @id @default(uuid())
+  planId String
+  plan DiagnosticLearningPlan @relation(fields: [planId], references: [id])
+  position Int
+  moduleVersionId String
+  module LearningModuleVersion @relation(fields: [moduleVersionId], references: [id])
+  objective String
+  coverage String
+  runs DiagnosticLearningRun[]
+  @@unique([planId, position])
+}
+model DiagnosticLearningRun {
+  id String @id @default(uuid())
+  targetId String
+  target DiagnosticLearningTarget @relation(fields: [targetId], references: [id])
+  ordinal Int
+  status String @default("started")
+  currentStepId String
+  draft String @default("{}")
+  draftRevision Int @default(0)
+  policyVersion String
+  createdAt DateTime @default(now())
+  completedAt DateTime?
+  submissions DiagnosticLearningSubmission[]
+  events DiagnosticLearningEvent[]
+  @@unique([targetId, ordinal])
+}
+model DiagnosticLearningSubmission {
+  id String @id @default(uuid())
+  runId String
+  run DiagnosticLearningRun @relation(fields: [runId], references: [id])
+  stepId String
+  attempt Int
+  idempotencyKey String
+  payloadHash String
+  payload String
+  correct Boolean
+  assisted Boolean
+  first Boolean
+  feedback String
+  createdAt DateTime @default(now())
+  @@unique([runId, idempotencyKey])
+  @@unique([runId, stepId, attempt])
+}
+model DiagnosticLearningEvent {
+  id String @id @default(uuid())
+  runId String
+  run DiagnosticLearningRun @relation(fields: [runId], references: [id])
+  stepId String
+  sequence Int
+  kind String
+  idempotencyKey String
+  metadata String
+  createdAt DateTime @default(now())
+  @@unique([runId, sequence])
+  @@unique([runId, idempotencyKey])
 }

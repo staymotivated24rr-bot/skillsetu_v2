@@ -1,0 +1,130 @@
+.pathway {
+  margin-block: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid #476170;
+  border-radius: 24px;
+  background: #132b37;
+  color: #f7f5eb;
+  overflow-wrap: anywhere;
+}
+.pathway h2 {
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+}
+/* The report has a warm reading canvas; this nested workspace owns its contrast. */
+.pathway.pathway :is(h2, h3, h4, p, li, summary, strong) {
+  color: #f7f5eb;
+}
+.pathway.pathway a {
+  color: #d3ecf5;
+}
+.pathway.pathway a.launch {
+  color: #13232b;
+}
+.items {
+  display: grid;
+  gap: 1rem;
+  padding-left: 1.25rem;
+}
+.items li {
+  padding: 1.2rem;
+  border: 1px solid #527080;
+  border-radius: 16px;
+  background: #193340;
+}
+.items h3 {
+  margin-top: 0.5rem;
+}
+.tag,
+.meta {
+  color: #c4d9e2;
+  font-size: 0.9rem;
+}
+.launch {
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  background: #ccf279;
+  color: #13232b;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.controls button {
+  min-height: 44px;
+  padding: 12px 16px;
+  background: #eaf2da;
+  color: #13232b;
+  border: 1px solid #a4bb88;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.controls button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.pathway a:focus-visible,
+.pathway button:focus-visible,
+.pathway summary:focus-visible {
+  outline: 3px solid #ccf279;
+  outline-offset: 4px;
+}
+@media (max-width: 390px) {
+  .items {
+    padding-left: 1rem;
+  }
+  .items li {
+    padding: 0.8rem;
+  }
+}
+
+.conceptPath {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+.conceptPath li {
+  display: grid;
+  grid-template-columns: 2.8rem minmax(0, 1fr);
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #476170;
+}
+.conceptPath li[data-recommended='true'] {
+  border-left: 3px solid #ccf279;
+  padding-left: 0.8rem;
+}
+.node {
+  display: grid;
+  place-items: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 14px;
+  background: #ccf279;
+  color: #13232b;
+  font-weight: 700;
+}
+.optional {
+  display: inline-block;
+  padding: 0.8rem 0;
+  min-height: 44px;
+}
+.pathway summary {
+  cursor: pointer;
+  padding-block: 0.8rem;
+  min-height: 44px;
+}
+@media (max-width: 390px) {
+  .conceptPath li {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: 0.65rem;
+  }
+  .node {
+    width: 2rem;
+    height: 2rem;
+  }
+}

@@ -93,7 +93,9 @@ test('local draft journey keeps numeric format separate, resumes and reviews eve
     fullPage: true,
     animations: 'disabled',
   });
+  await page.locator('summary').filter({ hasText: 'Evidence and next steps' }).first().click();
   const link = page.getByRole('link', { name: 'Explore the SkillSetu module' }).first();
   await link.click();
-  await expect(page.getByRole('region', { name: 'Guided subskill repair' })).toBeVisible();
+  await expect(page.locator('main h1')).toBeVisible();
+  await expect(page.getByRole('region', { name: 'Guided subskill repair' })).toHaveCount(0);
 });

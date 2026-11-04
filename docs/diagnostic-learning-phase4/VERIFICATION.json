@@ -1,0 +1,67 @@
+{
+  "date": "2026-11-03",
+  "branch": "codex/diagnostic-learning-pathway",
+  "head": "7c91a18c4bb9d46d0561f90f1dd9624ca0fc7050",
+  "uncommittedImplementation": true,
+  "buildId": "ULpPd6DSNJiQuBnHb4cw7",
+  "mappingVersion": "diagnostic-learning-1-draft.1",
+  "schemaChangesThisPhase": 0,
+  "protectedFiles": 34,
+  "changedProtectedFiles": 0,
+  "sourceHashes": {
+    "src/lib/learning-studio/pathway.ts": "204ca6663ba7a2922a870b3649d13c3cdda7ddd68626ccf18bdddbf6ca5ca225",
+    "src/lib/learning-studio/service.ts": "b5bc12f329f32147e4f206603ab7e8a42d1e789f9ca6b8d218f64cce7e813c61",
+    "src/app/api/diagnostic-v2/learning/route.ts": "2d8cc657f8c678460b2a6f0fce14e381217bfe4f7909207c41227e5ef04b3739",
+    "src/app/diagnostic-v2/page.tsx": "1d51edbfcf451629b92f2b260a57606ceeaab478fbd1357d37bd1633abdf99e9",
+    "src/app/diagnostic-v2/learn/variables/page.tsx": "451a85b2dfd90578e8b44946ab895329fb2ea0f4314df5f98493887a2a529871",
+    "src/components/diagnostic-experience.tsx": "2f304b968f5c7a4487683cc85bcdaa1039127ef50aa2e851012d73d1bd8046b5",
+    "src/components/diagnostic-learning-pathway.tsx": "9716205407e26a981d849da1232f5cb8480b984772ab139a5396c2f180c2868c",
+    "src/components/diagnostic-learning-pathway.module.css": "10f475e479b1e47eb4fb03f4e74e0ff287c182809d82081dd7a5de96401c2b53",
+    "src/components/interactive-lesson-studio.tsx": "b912a64e65fa46c601f6609b8c02036644911020caa9a3fd49c6203167812ea3",
+    "tests/diagnostic-learning-pathway.test.ts": "3a67e8c5f6343d7e48126068ee8458365482dbff90f573bbf2fe6d3c88a08bb2",
+    "tests/diagnostic-learning-pathway-service.test.ts": "512675e7c02b80a586ef11d6bc8018dffdef2b6970378dae8bb67489a3efb79e",
+    "e2e/diagnostic-learning-pathway.spec.ts": "81f74000eee3e4d75024abe81379e02226246df43259f600b4ed114e95a6f3d7"
+  },
+  "unitIntegration": {
+    "seconds": 86.81,
+    "passed": 219,
+    "failed": 0,
+    "files": 25
+  },
+  "chromium": {
+    "skipped": 0,
+    "duration": "3.0m",
+    "passed": 23,
+    "failed": 0
+  },
+  "finalPathwayRerun": {
+    "seconds": 17.3,
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "passed": 3,
+    "failed": 0
+  },
+  "lint": "pass",
+  "typecheck": "pass",
+  "productionCompilation": "pass - existing generated Prisma client, database-write guard",
+  "pdfPagesInspected": 5,
+  "runtime": {
+    "url": "http://127.0.0.1:3007/diagnostic-v2",
+    "readOnlyHttpChecks": {
+      "diagnostic": 200,
+      "learningApi": 200,
+      "unauthenticatedSource": 401,
+      "lesson": 200,
+      "demonstration": 200
+    },
+    "databaseHost": "127.0.0.1:15434",
+    "database": "skillsetu_studio_dev"
+  },
+  "testDatabase": "skillsetu_variables_test on 127.0.0.1:15434",
+  "deployment": false,
+  "push": false,
+  "pullRequest": false
+}

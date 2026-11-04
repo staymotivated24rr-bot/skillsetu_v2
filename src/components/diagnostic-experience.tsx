@@ -1,4 +1,6 @@
 'use client';
+import { DiagnosticLearningPathway } from './diagnostic-learning-pathway';
+import { AdaptiveLearningRecommendation } from './adaptive-learning-recommendation';
 import { DiagnosticScore, DiagnosticQuestionReview } from './diagnostic-question-review';
 import { DiagnosticOption } from './diagnostic-option';
 import { numericFormatError } from '@/lib/diagnostic/numeric';
@@ -47,7 +49,13 @@ async function request(
   if (!response.ok) throw new Error(data.error ?? 'Could not connect. Please retry.');
   return data;
 }
-export function DiagnosticExperience({ draftPreview = false }: { draftPreview?: boolean }) {
+export function DiagnosticExperience({
+  draftPreview = false,
+  learningEnabled = false,
+}: {
+  draftPreview?: boolean;
+  learningEnabled?: boolean;
+}) {
   const [phase, setPhase] = useState<Phase>('LOADING'),
     [run, setRun] = useState<RunView | null>(null);
   const [session, setSession] = useState(false),
@@ -102,7 +110,7 @@ export function DiagnosticExperience({ draftPreview = false }: { draftPreview?: 
       window.history.replaceState(
         null,
         '',
-        '/diagnostic-v2' + (draftPreview ? '?preview=starter-v3' : ''),
+        '/diagnostic-v2' + (draftPreview ? '?preview=starter-v3' : '?preview=legacy'),
       );
       setRun(data.run!);
       setPhase(data.run!.status === 'completed' ? 'COMPLETED' : 'QUESTION');
@@ -215,7 +223,7 @@ export function DiagnosticExperience({ draftPreview = false }: { draftPreview?: 
                     Resume diagnostic <ArrowRight size={18} />
                   </button>
                   <Link
-                    href={`/diagnostic-v2?run=${run.id}${draftPreview ? '&preview=starter-v3' : ''}`}
+                    href={`/diagnostic-v2?run=${run.id}${draftPreview ? '&preview=starter-v3' : '&preview=legacy'}`}
                   >
                     Bookmark this saved attempt
                   </Link>
@@ -489,7 +497,7 @@ export function DiagnosticExperience({ draftPreview = false }: { draftPreview?: 
             <DiagnosticScore report={run.report} />
             <p>
               <Link
-                href={`/diagnostic-v2?run=${run.id}${draftPreview ? '&preview=starter-v3' : ''}`}
+                href={`/diagnostic-v2?run=${run.id}${draftPreview ? '&preview=starter-v3' : '&preview=legacy'}`}
               >
                 Bookmark this report
               </Link>{' '}
@@ -497,6 +505,25 @@ export function DiagnosticExperience({ draftPreview = false }: { draftPreview?: 
             </p>
             <p className={styles.note}>
               {run.report.stopReason} · Bank {run.report.bankId}
+            </p>
+            <h2>Assessed skill map</h2>
+            <p>
+              {countLabel(
+                run.report.findings.filter((f) => f.status === 'Demonstrated strength').length,
+                'strength',
+              )}{' '}
+              ·{' '}
+              {countLabel(
+                run.report.findings.filter((f) => f.status === 'Likely gap').length,
+                'likely gap',
+              )}{' '}
+              ·{' '}
+              {countLabel(
+                run.report.findings.filter((f) => f.status === 'Insufficient evidence').length,
+                'area needing more evidence',
+                'areas needing more evidence',
+              )}
+              . These are preliminary diagnostic findings.
             </p>
             <div className={styles.findings}>
               {run.report.findings.map((f) => (
@@ -509,64 +536,80 @@ export function DiagnosticExperience({ draftPreview = false }: { draftPreview?: 
                     {f.status}
                   </span>
                   <h2>{f.name}</h2>
-                  <p>{diagnosticSentence(f.reason)}</p>
-                  <p>{f.nextStep}</p>
-                  {f.hypotheses?.map((h) => (
-                    <p key={h.label} className={styles.note}>
-                      {h.state === 'mixed'
-                        ? 'Mixed evidence (not confirmed)'
-                        : h.confirmed
-                          ? 'Repeated hypothesis (still preliminary)'
-                          : 'Unconfirmed observation'}
-                      : {h.label} ·{' '}
-                      {countLabel(h.observations, 'independent family', 'independent families')}
-                      {h.counterExamples
-                        ? `; ${countLabel(h.counterExamples, 'contrasting independent probe')}`
-                        : ''}
-                      .
-                    </p>
-                  ))}
-                  <p className={styles.note}>
-                    {countLabel(f.count, 'response')} · {f.independent} unaided ·{' '}
-                    {countLabel(f.correct, 'unaided match', 'unaided matches')} ·{' '}
-                    {countLabel(f.types, 'task type')}
-                  </p>
-                  {f.unsure !== undefined && (
+                  <details>
+                    <summary>Evidence and next steps</summary>
+                    <p>{diagnosticSentence(f.reason)}</p>
+                    <p>{f.nextStep}</p>
+                    {f.hypotheses?.map((h) => (
+                      <p key={h.label} className={styles.note}>
+                        {h.state === 'mixed'
+                          ? 'Mixed evidence (not confirmed)'
+                          : h.confirmed
+                            ? 'Repeated hypothesis (still preliminary)'
+                            : 'Unconfirmed observation'}
+                        : {h.label} ·{' '}
+                        {countLabel(h.observations, 'independent family', 'independent families')}
+                        {h.counterExamples
+                          ? `; ${countLabel(h.counterExamples, 'contrasting independent probe')}`
+                          : ''}
+                        .
+                      </p>
+                    ))}
                     <p className={styles.note}>
-                      {countLabel(f.incorrect ?? 0, 'independent miss', 'independent misses')} ·{' '}
-                      {f.unsure} unsure · {countLabel(f.assistedCount ?? 0, 'assisted answer')}{' '}
-                      (excluding unsure) ·{' '}
-                      {countLabel(f.familyCount ?? 0, 'independent family', 'independent families')}
-                      . Unsure responses do not establish a gap.
+                      {countLabel(f.count, 'response')} · {f.independent} unaided ·{' '}
+                      {countLabel(f.correct, 'unaided match', 'unaided matches')} ·{' '}
+                      {countLabel(f.types, 'task type')}
                     </p>
-                  )}
-                  {f.difficultyEvidence?.map((level) => (
-                    <p className={styles.note} key={level.level}>
-                      {['Beginner', 'Intermediate', 'Advanced'][level.level - 1]}:{' '}
-                      {countLabel(level.correct, 'unaided match', 'unaided matches')},{' '}
-                      {countLabel(level.incorrect, 'unaided miss', 'unaided misses')}
-                      {level.unsure ? `, ${level.unsure} unsure` : ''}
-                      {level.assisted ? `, ${level.assisted} assisted` : ''}.
-                    </p>
-                  ))}
-                  {f.prerequisites.length > 0 && (
-                    <p className={styles.note}>
-                      Prerequisites:{' '}
-                      {f.prerequisites
-                        .map((id) => run.report!.findings.find((s) => s.competencyId === id)?.name)
-                        .join(', ')}
-                    </p>
-                  )}
-                  <Link
-                    href={`/diagnostic-v2/learn?skill=${encodeURIComponent(f.moduleSkillId) + '&subskill=' + encodeURIComponent(f.nextSubskill ?? '')}`}
-                  >
-                    Explore the SkillSetu module <ArrowRight size={14} />
-                  </Link>
+                    {f.unsure !== undefined && (
+                      <p className={styles.note}>
+                        {countLabel(f.incorrect ?? 0, 'independent miss', 'independent misses')} ·{' '}
+                        {f.unsure} unsure · {countLabel(f.assistedCount ?? 0, 'assisted answer')}{' '}
+                        (excluding unsure) ·{' '}
+                        {countLabel(
+                          f.familyCount ?? 0,
+                          'independent family',
+                          'independent families',
+                        )}
+                        . Unsure responses do not establish a gap.
+                      </p>
+                    )}
+                    {f.difficultyEvidence?.map((level) => (
+                      <p className={styles.note} key={level.level}>
+                        {['Beginner', 'Intermediate', 'Advanced'][level.level - 1]}:{' '}
+                        {countLabel(level.correct, 'unaided match', 'unaided matches')},{' '}
+                        {countLabel(level.incorrect, 'unaided miss', 'unaided misses')}
+                        {level.unsure ? `, ${level.unsure} unsure` : ''}
+                        {level.assisted ? `, ${level.assisted} assisted` : ''}.
+                      </p>
+                    ))}
+                    {f.prerequisites.length > 0 && (
+                      <p className={styles.note}>
+                        Prerequisites:{' '}
+                        {f.prerequisites
+                          .map(
+                            (id) => run.report!.findings.find((s) => s.competencyId === id)?.name,
+                          )
+                          .join(', ')}
+                      </p>
+                    )}
+                    <Link
+                      href={`/diagnostic-v2/learn?skill=${encodeURIComponent(f.moduleSkillId) + '&subskill=' + encodeURIComponent(f.nextSubskill ?? '')}`}
+                    >
+                      Explore the SkillSetu module <ArrowRight size={14} />
+                    </Link>
+                  </details>
                 </article>
               ))}
             </div>
-            <div className={styles.nextPlan}>
-              <h2>Your next learning steps</h2>
+            {learningEnabled && (
+              <AdaptiveLearningRecommendation key={`revision-${run.id}`} sourceRunId={run.id} />
+            )}
+            {learningEnabled && <DiagnosticLearningPathway key={run.id} sourceRunId={run.id} />}
+            <details className={styles.nextPlan}>
+              <summary>All report learning links</summary>
+              <h2>
+                {learningEnabled ? 'Existing guided practice links' : 'Your next learning steps'}
+              </h2>
               {run.report.learningOrder.length ? (
                 <ol>
                   {run.report.learningOrder.map((id) => {
@@ -598,7 +641,7 @@ export function DiagnosticExperience({ draftPreview = false }: { draftPreview?: 
                 Learning and practice do not change this diagnostic. Reassessment collects new
                 evidence and may give a different result.
               </p>
-            </div>
+            </details>
 
             <button className={styles.primary} disabled={busy} onClick={() => void start(true)}>
               <RotateCcw size={16} /> Start an independent fresh diagnostic

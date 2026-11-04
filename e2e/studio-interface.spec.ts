@@ -144,20 +144,17 @@ for (const width of [1440, 390, 320]) {
     const final = await (await page.request.get('/api/demo')).json();
     expect(final.attempts[0].score).toBe(0);
     await page.goto('/diagnostic-v2/learn?skill=starter-dsa&subskill=Algorithmic%20complexity');
-    await expect(page.locator('.studio-repair')).toHaveCSS(
-      'background-color',
-      'rgb(250, 249, 241)',
-    );
-    await page
-      .getByRole('textbox')
-      .fill('Halve the sorted search range until the target is found or no candidates remain.');
-    await page
-      .getByRole('button', { name: 'Compare with the worked example', exact: true })
-      .click();
     await expect(
-      page.getByText('Stage 2 of 3 · practice does not change diagnostic results', { exact: true }),
+      page.getByRole('heading', { name: 'Why binary search takes O(log n)', exact: true }),
     ).toBeVisible();
-    await shot('guided-repair');
+    await expect(page.getByRole('textbox')).toHaveCount(0);
+    await expect(page.locator('main')).toContainText('halves the range');
+    await shot('targeted-overview');
+    await page.goto(
+      '/diagnostic-v2/learn?skill=starter-fundamentals&subskill=For%20loops%20and%20range',
+    );
+    await expect(page).toHaveURL(/learn\/lesson\?lesson=python-loop-boundaries/);
+    await expect(page.getByRole('button', { name: 'Begin the lesson', exact: true })).toBeVisible();
     expect(errors).toEqual([]);
   });
 }

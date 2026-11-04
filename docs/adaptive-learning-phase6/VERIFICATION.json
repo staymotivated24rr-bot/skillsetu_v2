@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-03",
+  "branch": "codex/adaptive-learning-revision",
+  "head": "7c91a18c4bb9d46d0561f90f1dd9624ca0fc7050",
+  "uncommittedImplementation": true,
+  "buildId": "-yzvcUTfBTgftQJtBut_B",
+  "selectorVersion": "learning-revision-1-draft.1",
+  "schemaChangesThisPhase": 0,
+  "protectedFiles": 39,
+  "changedProtectedFiles": [],
+  "sourceHashes": {
+    "src/lib/learning-studio/selector.ts": "9b725bc1e9979fa9d00fd93be457f97c673681c685d5b6aa883f5617d30896cc",
+    "src/lib/learning-studio/selector-types.ts": "4c6a0df870a91d404bfd4225fd0c8e3a3d992a132f6ec58625e5b69d6616494e",
+    "src/lib/learning-studio/service.ts": "df5d474cc4baafb5a55374c2aa43e7d46d463f8747a6db121b5dd4da0eadd577",
+    "src/app/api/diagnostic-v2/learning/route.ts": "21c8a38bda782d5f13ff98c674f0de9c68aec8d65a6b6b7550b3154ed525faac",
+    "src/app/diagnostic-v2/learn/revision/page.tsx": "0da3960329ebda06efa716ec93150e46d86236c55826afd0d6bdc490be3ca17b",
+    "src/components/adaptive-learning-recommendation.tsx": "3706f151fc566439d7ec7d3e7d27b827ec80afa6a444066a41a4a7d2b4884a5f",
+    "src/components/diagnostic-learning-pathway.module.css": "7607e3c616a90c2aa914ff4b16089736ce8ccce2950c849303c6d336e3c55f1f",
+    "src/components/diagnostic-experience.tsx": "c2e03cafa14a7de3194441aab1412d5744593f1c08bceb1efd496dc8d5874e86",
+    "tests/learning-selector.test.ts": "46e7b4c547fae6e870dd5ffd60c0d2ccc85dd63f1284379753d49e4aa43070c2",
+    "tests/learning-selector-service.test.ts": "49c1bbf44ef75dc5394fd9f29a2e4eb7df60f54e92ef5deb3b963979862da3c8",
+    "tests/fixtures/learning-profiles.ts": "9cef49220f399b791bdaf1df0128c54978f129c4cda3bf20be48622d9bb6781d",
+    "e2e/learning-revision.spec.ts": "912a833b44cb03466a953b5e8898e726399d1af8e00d007395b7ae2d38f41dcd"
+  },
+  "unitIntegration": {
+    "failed": 0,
+    "passed": 233,
+    "files": 28,
+    "seconds": 91.46
+  },
+  "chromium": {
+    "failed": 0,
+    "duration": "3.6m",
+    "skipped": 0,
+    "passed": 32
+  },
+  "syntheticProfiles": 6,
+  "lint": "pass",
+  "typecheck": "pass",
+  "productionCompilation": "pass - unchanged generated Prisma client, database-write guard",
+  "pdfPagesInspected": 5,
+  "runtime": {
+    "routeHttp": 200,
+    "unauthenticatedRecommendation": 401,
+    "revisionRoute": "/diagnostic-v2/learn/revision?source=<owned-completed-run-id>",
+    "url": "http://127.0.0.1:3007/diagnostic-v2",
+    "databaseHost": "127.0.0.1:15434",
+    "database": "skillsetu_studio_dev"
+  },
+  "testDatabase": "skillsetu_visualizations_test on 127.0.0.1:15434",
+  "deployment": false,
+  "push": false,
+  "pullRequest": false
+}

@@ -38,3 +38,23 @@ No founder choice blocks local delivery. Independent educator review of the twel
 # 2026-11-01 — staged content review after presentation repairs
 
 The 360-item rendering audit and binary-search repair are implemented and tested. Educator approval is still required before publishing this bank. In particular, review the normalization distractor hypothesis wording (“Assumes lower does not remove whitespace”) in a separately versioned candidate: lower itself preserves whitespace, while strip removes the surrounding whitespace in these items. Existing snapshot labels/grades were deliberately not rewritten. This content-review follow-up does not block the local rendering repair.
+
+# 2026-11-03 — dependency follow-ups outside the minimal Next/Zod repair
+
+The exact Review CI audit filter now passes, but optional Prisma peer dependencies and development tooling still have advisories. Plan a separately validated Prisma dependency/packaging solution and Vitest/Vite/ESLint maintenance update. Do not assume an audit with dev/optional exclusions proves the complete installed graph safe. No major upgrade, blanket override or production packaging change was made in this task. Evidence and affected-package counts: docs/security-dependency-review/README.md.
+
+# 2026-11-03 — instructional coverage and recovery after Phase 4
+
+The explicit draft crosswalk and variables/reference lesson need independent educator review before rollout. Most of the120 diagnostic families still have only an existing guided overview; full interactive lessons require separately versioned instructional content. Cookie-loss/account recovery is intentionally unresolved: do not infer identity from names, demo UUIDs or a guessed report ID. A future secure linking design must receive explicit approval before transferring any records. These limitations do not block the isolated local integration. See docs/diagnostic-learning-phase4/README.md.
+
+# 2026-11-03 — visualization content and future live traces
+
+Four authored simulation examples await independent educator review. They are not a general debugger and exploration resets on refresh; future durable trace progress must receive a versioned lesson adapter rather than silently count as independent mastery. Any future live-code trace instrumentation must remain inside the reviewed browser sandbox and undergo a separate boundary review. Manual assistive-technology/physical-device review and load measurement remain outside the current automated verification. See docs/python-visualizations-phase5/README.md.
+
+# 2026-11-03 — learning-selector validation and coverage follow-up
+
+The initial learning/revision thresholds and scheduling intervals are deterministic instructional defaults requiring educator review and pilot data. They are not calibrated proficiency or forgetting measures. Only the exact variables/reference lesson version has a full selector evidence contract; additional competency/subskill courses, stretch-level tasks and fresh verification forms must be separately authored/versioned. Existing broad prerequisites may remain uncertain after a partial lesson; do not silently clear them or rewrite assessment scores. Manual assistive-technology/physical-device testing and measured load remain future validation. Evidence and simulations: docs/adaptive-learning-phase6/README.md.
+
+# 2026-11-04 — remaining instructional and release validation
+
+The concept path now includes four complete activities, with new exact-version practice contracts for values/division, loops and applied transfer. Full interactive coverage of other subskills is still incomplete; retain explicit content-needed guidance and targeted overviews. Independently review original new lesson keys/distractors, prerequisite suggestions and selector thresholds before any release. Three final forms per course are finite; author new variants rather than manufacture fresh verification from exposure. Manual screen-reader/device evaluation, cookie recovery/account linking, measured load and the separately documented optional/dev dependency advisories remain unresolved. These are disclosed local-preview limitations, not permission to deploy or Phase 7 scope. See docs/learning-experience-corrections/README.md.

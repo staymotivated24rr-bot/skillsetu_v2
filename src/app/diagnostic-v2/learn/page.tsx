@@ -1,6 +1,7 @@
-import { GuidedRepair } from '@/components/guided-repair';
+import { instructionalLesson, lessonHref } from '@/lib/learning-studio/lesson-navigation';
+import { studioEnabled } from '@/lib/learning-studio/service';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { pythonRepairs } from '@/lib/authentic/python-banks';
 import styles from '@/components/diagnostic.module.css';
 import { starterLessonFor } from '@/lib/diagnostic/starter-v3/lessons';
@@ -13,6 +14,8 @@ export default async function DiagnosticLearning({
 }) {
   if (process.env.DIAGNOSTIC_V2_ENABLED !== 'true') notFound();
   const { skill, subskill } = await searchParams;
+  const interactive = skill ? instructionalLesson(skill, subskill) : undefined;
+  if (interactive && studioEnabled()) redirect(lessonHref(interactive));
   const starter = skill ? starterLessonFor(skill, subskill) : undefined;
   if (starter) {
     if (!draftPreviewEnabled()) notFound();
@@ -29,12 +32,15 @@ export default async function DiagnosticLearning({
           <p className={styles.eyebrow}>Draft learning recommendation · practice only</p>
           <h1 className="studio-learning-title">{starter.title}</h1>
           <p>Focus: {subskill ?? starter.title}</p>
-          <GuidedRepair
-            subskill={subskill ?? starter.title}
-            concept={starter.concept}
-            example={starter.example}
-            scenario={starter.scenario}
-          />
+          <section className={styles.taskCard}>
+            <h2>Concept overview</h2>
+            <p>{starter.concept}</p>
+            <pre style={{ whiteSpace: 'pre-wrap' }}>{starter.example}</pre>
+          </section>
+          <p>
+            A full interactive lesson for this exact topic is still being authored. This overview
+            does not record mastery.
+          </p>
           <p>
             Use this starter to investigate the named subskill; it is not a complete lesson for
             every bank item. Practice does not change diagnostic proficiency.
@@ -58,11 +64,6 @@ export default async function DiagnosticLearning({
         <p className={styles.eyebrow}>From your skill map · existing SkillSetu module</p>
         <h1 className="studio-learning-title">{learningModule.title}</h1>
         <p className={styles.lead}>{learningModule.concept}</p>
-        <GuidedRepair
-          subskill={subskill ?? learningModule.title}
-          concept={learningModule.concept}
-          example={learningModule.example}
-        />
         <section className={styles.taskCard}>
           <h2>Build the intuition</h2>
           <p>{learningModule.intuition}</p>

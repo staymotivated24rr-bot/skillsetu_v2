@@ -9,6 +9,7 @@ export function TaskResponse({
   busy,
   evaluate,
   onSubmit,
+  onDraft,
 }: {
   task: PublicTask;
   storageKey: string;
@@ -16,6 +17,7 @@ export function TaskResponse({
   busy: boolean;
   evaluate: (payload: TaskPayload) => Promise<Feedback>;
   onSubmit: (payload: TaskPayload) => Promise<void>;
+  onDraft?: (payload: TaskPayload) => void;
 }) {
   const [payload, setPayload] = useState<TaskPayload>(() => {
     if (typeof window !== 'undefined') {
@@ -43,7 +45,8 @@ export function TaskResponse({
     try {
       localStorage.setItem(storageKey, JSON.stringify(payload));
     } catch {}
-  }, [payload, storageKey]);
+    onDraft?.(payload);
+  }, [payload, storageKey, onDraft]);
   useEffect(
     () => () => {
       cancel.current?.();

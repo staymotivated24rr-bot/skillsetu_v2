@@ -9,11 +9,13 @@ export function CodeBlockComposer({
   answer,
   onChange,
   disabled,
+  instruction = 'Click or tap a blank, then choose a block. Tab and Enter also work. Results are shown at the end.',
 }: {
-  question: PublicQuestion;
+  question: Pick<PublicQuestion, 'id' | 'code' | 'codeSlots'>;
   answer: Answer;
   onChange: (answer: Answer) => void;
   disabled: boolean;
+  instruction?: string;
 }) {
   const slots = q.codeSlots!;
   const [activeId, setActiveId] = useState(
@@ -140,8 +142,7 @@ export function CodeBlockComposer({
         </button>
       </div>
       <p className={styles.note}>
-        Click or tap a blank, then choose a block. Tab and Enter also work. Results are shown at the
-        end.
+        {instruction}
       </p>
     </div>
   );

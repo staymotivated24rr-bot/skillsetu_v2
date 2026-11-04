@@ -1,0 +1,467 @@
+.shell {
+  max-width: 1040px;
+  margin: auto;
+  padding: 24px;
+  min-height: 100dvh;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+  border-bottom: 1px solid var(--border, #39505b);
+}
+.header a {
+  color: var(--text, #faf8ee);
+  font-weight: 800;
+  font-size: 26px;
+  text-decoration: none;
+}
+.header span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  margin-top: 8px;
+}
+.shell main {
+  padding-top: 32px;
+}
+.shell h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 5vw, 48px);
+}
+.shell .intro {
+  font-size: 22px;
+  color: #edf3ee;
+  max-width: 720px;
+}
+.sessionNote {
+  color: #bfd2dc;
+  font-size: 13px;
+}
+.lessonMap {
+  border: 1px solid #77929d;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 24px 0;
+}
+.lessonMap summary {
+  cursor: pointer;
+  font-weight: 650;
+  min-height: 28px;
+}
+.mastery {
+  padding: 20px;
+  border-radius: 18px;
+  background: #17313f;
+  border: 1px solid #77929d;
+  margin: 20px 0;
+}
+.mastery h2 {
+  font-size: 22px;
+}
+.checkpoint {
+  border-left: 3px solid #426952;
+  padding: 12px;
+  background: #e5ede9;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.reviewPanel {
+  margin: 30px 0;
+  padding: 24px;
+  border: 1px solid #77929d;
+  border-radius: 20px;
+}
+.reviewPanel details {
+  border-top: 1px solid #39505b;
+  padding: 16px 0;
+}
+.reviewPanel summary {
+  cursor: pointer;
+  min-height: 44px;
+}
+.reviewPanel code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.reference {
+  padding: clamp(12px, 3vw, 24px);
+  border: 1px solid #9fb7bd;
+  background: #e8efeb;
+  border-radius: 18px;
+  margin: 24px 0;
+}
+.referenceTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  color: #245b73;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.reference pre {
+  padding: 14px;
+  background: #102a36;
+  color: #edf4ef;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.referenceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.shell .reference h3 {
+  color: #245b73;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.binding {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  background: white;
+  border: 1px solid #77929d;
+  padding: 14px;
+  margin: 12px 0;
+  border-radius: 12px;
+}
+.binding code {
+  font-weight: 700;
+}
+.objectCard {
+  background: #fffdf5;
+  border: 2px solid #77929d;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 12px 0;
+  animation: settle 0.2s ease-out;
+}
+.objectCard > div {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.objectCard > div span {
+  color: #245b73;
+}
+.objectCard > code {
+  color: #182c34;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.referenceControls {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.referenceControls button {
+  color: #182c34;
+  background: white;
+  border: 1px solid #77929d;
+}
+@keyframes settle {
+  from {
+    opacity: 0.5;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .objectCard {
+    animation: none;
+  }
+}
+.shell p {
+  line-height: 1.7;
+  margin: 16px 0;
+}
+.shell button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.shell button:focus-visible,
+.shell input:focus-visible,
+.shell summary:focus-visible {
+  outline: 3px solid #3491b5;
+  outline-offset: 3px;
+}
+.shell button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.shell h2:focus {
+  outline: 2px solid #3491b5;
+  outline-offset: 6px;
+  scroll-margin-top: 24px;
+}
+.card {
+  background: #faf9f1;
+  color: #182c34;
+  border: 1px solid #d5dfdf;
+  padding: clamp(16px, 4vw, 32px);
+  border-radius: 24px;
+  margin: 24px 0;
+  --text: #182c34;
+  --muted: #52646a;
+}
+.card :global(.muted) {
+  color: #52646a;
+}
+.shell .card h2,
+.shell .card p,
+.shell .card b,
+.shell .card legend {
+  color: #182c34;
+}
+.shell .card :global(.eyebrow) {
+  color: #245b73;
+}
+.shell .card :global(.run-results) p,
+.shell .card :global(.run-results) b {
+  color: #edf4ef;
+}
+.shell .card :global(.code-mobile-note) {
+  color: #70441d;
+  background: #fff0d6;
+}
+.shell .card :global(.code-toolbar) button {
+  color: #c5ef75;
+}
+.card > label,
+.trace label {
+  display: block;
+  margin: 16px 0;
+}
+.card input:not([type='radio']):not([type='checkbox']) {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-height: 46px;
+  border: 1px solid #77929d;
+  border-radius: 10px;
+  background: white;
+  color: #182c34;
+  padding: 12px;
+  margin-top: 8px;
+}
+.card fieldset {
+  min-width: 0;
+  border: none;
+  padding: 0;
+}
+.card > button {
+  margin: 8px 8px 8px 0;
+}
+.card :global(.btn-outline) {
+  color: #245b73;
+  background: white;
+  border: 1px solid #77929d;
+}
+.card :global(.short-answer),
+.card :global(.code-editor) {
+  max-width: 100%;
+}
+.card :global(.code-editor) {
+  background: #102a36;
+  color: #edf4ef;
+}
+.option {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  border: 1px solid #77929d;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 12px 0;
+}
+.progress {
+  display: block;
+  margin: 22px 0;
+}
+.progress progress {
+  display: block;
+  width: 100%;
+  height: 14px;
+  margin-top: 12px;
+  accent-color: #c5ef75;
+}
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0;
+}
+.steps button {
+  background: #17313f;
+  color: #faf8ee;
+  border: 1px solid #77929d;
+}
+.steps [aria-current] {
+  background: #c5ef75;
+  color: #182c34;
+}
+.visual {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.visual > div {
+  background: #e5ede9;
+  padding: 18px;
+  border-radius: 12px;
+}
+.visual code {
+  display: block;
+  margin-top: 12px;
+}
+.code {
+  background: #102a36;
+  color: #edf4ef;
+  padding: 20px;
+  border-radius: 14px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.trace {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+.order {
+  padding-left: 24px;
+}
+.order li {
+  margin: 12px 0;
+  padding: 8px;
+  border-bottom: 1px solid #d5dfdf;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.order li span {
+  flex: 1;
+}
+.feedback {
+  padding: 16px;
+  border-left: 4px solid #497a47;
+  background: #e5ede9;
+  margin: 16px 0;
+}
+.error {
+  padding: 12px;
+  background: #ffe6dc;
+  color: #6b2517;
+  border-radius: 10px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+.navigation button,
+.complete button {
+  background: #17313f;
+  border: 1px solid #77929d;
+  color: #faf8ee;
+}
+.complete {
+  padding: 20px;
+  border: 1px solid #c5ef75;
+  border-radius: 18px;
+}
+@media (max-width: 600px) {
+  .shell {
+    padding: 16px;
+  }
+  .visual {
+    grid-template-columns: 1fr;
+  }
+  .trace {
+    grid-template-columns: 1fr;
+  }
+  .referenceGrid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .shell .intro {
+    font-size: 18px;
+  }
+  .mastery,
+  .reviewPanel {
+    padding: 16px;
+  }
+  .order li {
+    flex-wrap: wrap;
+  }
+  .order li span {
+    flex-basis: 100%;
+  }
+}
+
+.phase {
+  display: inline-flex;
+  padding: 0.4rem 0.8rem;
+  background: #ccf279;
+  color: #13232b;
+  border-radius: 99px;
+  font-weight: 700;
+}
+
+.shell[data-active='true'] .header {
+  min-height: 76px;
+}
+.shell[data-active='true'] main {
+  padding-top: 18px;
+}
+.shell[data-active='true'] h1 {
+  font-size: clamp(26px, 3.4vw, 38px);
+  margin: 12px 0;
+}
+.shell[data-active='true'] .intro {
+  font-size: 18px;
+  margin-block: 8px;
+}
+.shell summary {
+  min-height: 44px;
+  cursor: pointer;
+  padding-block: 10px;
+}
+.shell[data-active='true'] .lessonMap {
+  margin-block: 12px;
+  padding: 8px 16px;
+}
+.sessionDetails {
+  font-size: 13px;
+  color: #bfd2dc;
+}
+.shell .card button[aria-pressed='true'] {
+  outline: 3px solid #577d20;
+  outline-offset: 2px;
+}
+.shell .card button:not(:disabled)[aria-pressed='false'] {
+  background-color: #244451;
+  color: #f6f8ed;
+}
+
+.shell .card button[aria-pressed='true'] {
+  background-color: #ccf279;
+  color: #13232b;
+}
+.codeHelp {
+  font-size: 12px;
+}

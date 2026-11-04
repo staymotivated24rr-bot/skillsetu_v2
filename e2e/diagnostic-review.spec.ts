@@ -7,12 +7,14 @@ test('final score and individual review show every full question and the learner
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto('/diagnostic-v2');
+  await page.goto('/diagnostic-v2?preview=legacy');
   await page.getByLabel('What should we call you?').fill('Final report review QA');
   await page.getByRole('button', { name: 'Explore my Python skills' }).click();
   await expect(page.getByRole('button', { name: 'Submit response', exact: true })).toBeVisible();
+  await expect(page).toHaveURL(/preview=legacy/);
   const origin = new URL(page.url()).origin;
-  let run: RunView = (await (await page.request.get('/api/diagnostic-v2')).json()).run;
+  let run: RunView = (await (await page.request.get('/api/diagnostic-v2?preview=legacy')).json())
+    .run;
   const recorded: { id: string; answer: Answer }[] = [];
   await expect(page.getByRole('region', { name: 'Final answer count' })).toHaveCount(0);
   while (run.current) {
