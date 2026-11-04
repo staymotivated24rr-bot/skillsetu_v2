@@ -1,0 +1,75 @@
+[
+  {
+    "id": "F1",
+    "priority": "P2",
+    "title": "Boundary candidate resets while the saved answer survives",
+    "affected": [
+      "review2-values-parallel-loop-boundary"
+    ],
+    "steps": "Set Candidate stop to a value other than 3, wait for the draft to save, refresh, then Resume diagnostic.",
+    "observed": "The restored answer is retained, but the dial, slider and numeric candidate reset to 3. The screenshot shows a saved answer of 5 alongside a candidate of 3.",
+    "impact": "The learner sees conflicting states; touching the reset control can overwrite the restored answer.",
+    "recommendation": "Initialize/synchronize the candidate from the restored draft and keep a single source of answer state.",
+    "source": "src/components/diagnostic-manipulation.tsx:12",
+    "evidence": "screenshots/review2-values-parallel-loop-boundary-resume-discrepancy.png"
+  },
+  {
+    "id": "F2",
+    "priority": "P2",
+    "title": "Source-line choice loses its selected state on resume",
+    "affected": [
+      "review2-collections-parallel-error-location",
+      "review2-errors-parallel-error-location",
+      "review2-testing-parallel-error-location"
+    ],
+    "steps": "Select a source-line radio, wait for its answer draft to save, refresh and Resume diagnostic.",
+    "observed": "The text answer is restored, but no source-line radio remains checked.",
+    "impact": "The visible error-localization control no longer represents the saved answer.",
+    "recommendation": "Derive the selected line from the saved draft, including updates made through the answer input.",
+    "source": "src/components/diagnostic-manipulation.tsx:14",
+    "evidence": "screenshots/resume-source-line.png"
+  },
+  {
+    "id": "F3",
+    "priority": "P3",
+    "title": "State-card scratch work is not restored",
+    "affected": [
+      "review2-values-parallel-state-cards",
+      "review2-functions-parallel-state-cards"
+    ],
+    "steps": "Advance through state cards, enter scratch predictions, save the final answer, refresh and Resume diagnostic.",
+    "observed": "The answer persists, but transition notes and active state-card position reset.",
+    "impact": "Exploration work can disappear during a break even though the answer draft is saved. Scratch work is not graded.",
+    "recommendation": "Persist per-transition scratch state separately, or disclose clearly that the thinking-space notes are temporary.",
+    "source": "src/components/diagnostic-manipulation.tsx:12",
+    "evidence": "screenshots/resume-scratch.png"
+  },
+  {
+    "id": "F4",
+    "priority": "P2",
+    "title": "The return-contract lesson still uses generic verification practice",
+    "affected": [
+      "Functions & scope lesson reached from the struggling report"
+    ],
+    "steps": "Open the Functions module recommendation for return-contract; predict a case, compare the example, and exercise both practice options.",
+    "observed": "The route displays Practice: return-contract, but its guided check falls through to the generic independent-expectation question instead of a return-value contract exercise. Both buttons work; all six modules are reachable.",
+    "impact": "The recommendation is functional, but its repair activity is less targeted than the diagnostic subskill suggests.",
+    "recommendation": "Give return-contract an explicit guided activity and review the other generic fallback routes for subskill alignment.",
+    "source": "src/components/guided-repair.tsx:16",
+    "evidence": "screenshots/lesson-2.png"
+  },
+  {
+    "id": "F5",
+    "priority": "P3",
+    "title": "Localized code displays two sets of line numbers",
+    "affected": [
+      "The three error-location items"
+    ],
+    "steps": "Inspect an error-location question before submitting.",
+    "observed": "The code already contains authored 1:, 2: labels while the renderer adds its own gutter numbers. This was visually observed, not counted as a failed submission.",
+    "impact": "Redundant labels add clutter to a task that asks for a line number.",
+    "recommendation": "Use one consistent presentation numbering layer without mutating published bank snapshots or grading line identifiers.",
+    "source": "src/components/diagnostic-experience.tsx:385",
+    "evidence": "screenshots/review2-errors-parallel-error-location.png"
+  }
+]

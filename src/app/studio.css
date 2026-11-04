@@ -1,0 +1,734 @@
+/* Shared Learning Studio presentation. Screen-only: the report's existing
+   A4 print rules and the diagnostic's approved CSS module remain independent. */
+@media screen {
+  .landing-app,
+  .product-app {
+    --background: #0d1c25;
+    --background-secondary: #122936;
+    --surface: #17313f;
+    --surface-elevated: #1d3a49;
+    --surface-hover: #244654;
+    --surface-active: #283e36;
+    --text-primary: #faf8ee;
+    --text-secondary: #bfd2dc;
+    --text-muted: #abc1cc;
+    --border: #ffffff1c;
+    --border-strong: #4d6b79;
+    --accent: #c5ef75;
+    --accent-hover: #d8fc98;
+    --accent-ink: #1c3325;
+    --focus-ring: #b5dfff;
+    --studio-lime: #c5ef75;
+    --radius: 22px;
+    min-height: 100dvh;
+    background: radial-gradient(ellipse at 85% 0%, #163548 0%, transparent 48%), #0d1c25;
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .landing-app .brand,
+  .product-app .brand {
+    font-weight: 750;
+    letter-spacing: -0.04em;
+  }
+  .brand small {
+    font-size: 8px;
+    letter-spacing: 0.16em;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+  .studio-mark {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 39px;
+    height: 42px;
+    border-radius: 13px 13px 4px 13px;
+    color: #1c3325;
+    background: #c5ef75;
+    box-shadow: 0 4px 0 #71984e;
+    font-size: 29px;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+  }
+  .landing-app .btn,
+  .product-app .btn {
+    min-height: 48px;
+    border-radius: 13px;
+    padding: 12px 20px;
+    font-size: 14px;
+    gap: 12px;
+  }
+  .product-app .text-btn,
+  .product-app .icon-btn,
+  .landing-app .text-btn,
+  .landing-app .icon-btn {
+    min-height: 44px;
+  }
+  .landing-app .btn-primary,
+  .product-app .btn-primary {
+    background: #c5ef75;
+    color: #1c3325;
+    border: 1px solid #acd55b;
+    border-bottom: 4px solid #7f9f4e;
+    font-weight: 700;
+  }
+  .landing-app .btn-primary:hover:not(:disabled),
+  .product-app .btn-primary:hover:not(:disabled) {
+    background: #d8fc98;
+  }
+  .landing-app .btn-primary:active:not(:disabled),
+  .product-app .btn-primary:active:not(:disabled) {
+    transform: translateY(2px);
+  }
+  .landing-app :focus-visible,
+  .product-app :focus-visible {
+    outline: 3px solid var(--focus-ring);
+    outline-offset: 4px;
+  }
+  .landing-app .eyebrow,
+  .product-app .eyebrow {
+    color: #afd2e3;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+  }
+  .landing-app .badge,
+  .product-app .badge,
+  .landing-app .tag,
+  .product-app .tag {
+    border-radius: 30px;
+    padding: 6px 12px;
+  }
+  .landing-nav {
+    min-height: 84px;
+    border-color: var(--border);
+  }
+  .landing-footer {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding: 30px 40px;
+  }
+  .college-callout > small {
+    display: block;
+    margin-top: 12px;
+  }
+  .landing-hero {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .hero-copy h1 {
+    font:
+      500 clamp(48px, 5.4vw, 78px)/1.06 Georgia,
+      'Times New Roman',
+      serif;
+    letter-spacing: -0.055em;
+  }
+  .hero-copy h1 em {
+    color: #c5ef75;
+    font-weight: 500;
+  }
+  .hero-copy > p {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .mock-dashboard {
+    border-radius: 30px;
+    background: linear-gradient(145deg, #224352, #152d3b);
+    box-shadow: 0 26px 70px #0003;
+  }
+  .studio-landing-orbit {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    font-size: 13px;
+  }
+  .loop-cards article,
+  .college-callout {
+    border-radius: 24px;
+    background: #17313fc9;
+  }
+  .loop-cards article > div > svg {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 16px;
+    background: #c5ef75;
+    color: #273a26;
+    box-shadow: 0 4px 0 #71984e;
+  }
+  .loop-cards article:nth-child(2) > div > svg {
+    background: #d3c8f0;
+    box-shadow: 0 4px 0 #89779f;
+  }
+  .loop-cards article:nth-child(3) > div > svg {
+    background: #bbd7e2;
+    box-shadow: 0 4px 0 #76959e;
+  }
+  .sidebar {
+    background: #0d1c25f5;
+    padding-top: 30px;
+    border-color: var(--border);
+  }
+  .sidebar > .brand {
+    margin-inline: 8px;
+    margin-bottom: 44px;
+  }
+  .sidebar nav > button {
+    min-height: 48px;
+    font-size: 12px;
+    border-radius: 13px;
+    gap: 12px;
+  }
+  .sidebar nav > button.active {
+    color: #c5ef75;
+    border-color: #c5ef7544;
+    background: #c5ef7512;
+  }
+  .sidebar nav > button.active svg {
+    color: #c5ef75;
+  }
+  .studio-side-companion {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 0;
+    border-top: 1px solid var(--border);
+  }
+  .studio-side-companion p {
+    font-size: 10px;
+    margin: 0;
+  }
+  .studio-side-companion p span {
+    display: block;
+    color: var(--text-muted);
+    margin-top: 3px;
+  }
+  .studio-side-companion > div {
+    width: 64px;
+    height: 64px;
+  }
+  .product-topbar {
+    min-height: 82px;
+    background: #112733a8;
+    border-color: var(--border);
+  }
+  .product-topbar > div {
+    font-size: 12px;
+  }
+  .studio-topbar-label {
+    color: #acc8d8;
+    letter-spacing: 0.12em;
+    font-size: 9px;
+  }
+  .role-switch select {
+    background: #173340;
+    border-color: #567281;
+    border-radius: 24px;
+    min-height: 42px;
+    padding-inline: 14px;
+  }
+  .main-content {
+    padding-top: 42px;
+    padding-bottom: 80px;
+  }
+  .page-heading {
+    align-items: flex-start;
+    margin-bottom: 32px;
+  }
+  .page-heading h1,
+  .onboarding h1 {
+    font:
+      500 clamp(32px, 3.5vw, 50px)/1.12 Georgia,
+      'Times New Roman',
+      serif;
+    letter-spacing: -0.045em;
+  }
+  .page-heading p {
+    max-width: 64ch;
+    font-size: 15px;
+  }
+  .workspace-hero {
+    border-radius: 28px;
+    padding: clamp(26px, 3vw, 44px);
+    background: linear-gradient(125deg, #17313ff2, #142c39f2);
+    border-color: #526c7977;
+    gap: 36px;
+  }
+  .workspace-hero h2 {
+    font:
+      500 clamp(34px, 3.6vw, 50px)/1.1 Georgia,
+      'Times New Roman',
+      serif;
+    letter-spacing: -0.045em;
+  }
+  .workspace-hero p {
+    max-width: 57ch;
+    font-size: 16px;
+  }
+  .studio-workspace-hero {
+    grid-template-columns: minmax(0, 1fr) 230px;
+    align-items: center;
+  }
+  .studio-guide-card {
+    padding: 22px;
+    border: 1px solid #bbd7e22e;
+    border-radius: 26px;
+    background: #b9d8e90a;
+  }
+  .studio-guide-card > div {
+    width: 135px;
+    height: 135px;
+  }
+  .studio-guide-card h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-top: 12px;
+  }
+  .studio-guide-card p {
+    font-size: 12px;
+    color: #b9ccd7;
+    margin-bottom: 0;
+  }
+  .studio-guide-card .eyebrow {
+    margin-top: 22px;
+  }
+  .art-chip {
+    background: transparent;
+    height: auto;
+    width: auto;
+    border: 0;
+  }
+  .art-chip > div {
+    width: 140px;
+    height: 140px;
+  }
+  .journey {
+    padding-bottom: 28px;
+    margin-bottom: 34px;
+    gap: 14px;
+  }
+  .journey > div {
+    font-size: 12px;
+    gap: 12px;
+  }
+  .journey > div > span {
+    width: 38px;
+    height: 40px;
+    border-radius: 13px;
+    background: #bad8e714;
+    color: #c0d9e5;
+  }
+  .journey .journey-active > span {
+    background: #c5ef75;
+    color: #1c3325;
+    box-shadow: 0 4px 0 #71984e;
+    border-color: #c5ef75;
+  }
+  .case-preview,
+  .module-card,
+  .repair-priority,
+  .stat {
+    border-radius: 22px;
+    border-color: #bad8e72b;
+    background: #17313fbf;
+  }
+  .case-preview-top > svg,
+  .module-top > svg {
+    width: 46px;
+    height: 46px;
+    padding: 11px;
+    background: #c9dbe7;
+    color: #23404d;
+    border-radius: 15px;
+    box-shadow: 0 4px 0 #7896a4;
+  }
+  .case-preview:nth-child(3n + 1) .case-preview-top > svg {
+    background: #c5ef75;
+    color: #294024;
+    box-shadow: 0 4px 0 #71984e;
+  }
+  .case-preview:nth-child(3n + 2) .case-preview-top > svg {
+    background: #d3c8f0;
+    color: #514169;
+    box-shadow: 0 4px 0 #89779f;
+  }
+  .case-number {
+    color: #b6d5e4;
+  }
+  .stat > strong {
+    font:
+      500 38px/1.15 Georgia,
+      'Times New Roman',
+      serif;
+  }
+  .stat > span,
+  .stat > small {
+    font-size: 12px;
+  }
+  .onboarding {
+    position: relative;
+    border-radius: 28px;
+    padding: 36px;
+    background: #17313fcc;
+  }
+  .studio-onboarding-orbit {
+    float: right;
+    margin: -8px 0 12px 18px;
+  }
+  .role-choice {
+    border-radius: 18px;
+    background: #0e2633;
+    border-bottom-width: 3px;
+  }
+  .role-selected {
+    border-color: #c5ef75;
+    background: #c5ef7512;
+  }
+  .text-input {
+    border-radius: 12px;
+    min-height: 48px;
+  }
+  .case-panel,
+  .lesson-guide {
+    border-radius: 24px;
+    background: #183340;
+  }
+  .case-panel pre {
+    background: #0b202b;
+    border-radius: 13px;
+  }
+  .lesson-steps button {
+    border-radius: 12px;
+    min-height: 44px;
+  }
+  .mode-switch {
+    padding: 4px;
+    background: #0c2531;
+    border-radius: 14px;
+  }
+  .mode-switch button {
+    border-radius: 10px;
+    min-height: 40px;
+  }
+  /* Warm work surfaces use local tokens, keeping all feedback states legible. */
+  .product-app .action-panel,
+  .studio-repair,
+  .product-app .lesson-work,
+  .product-app .report-hero,
+  .product-app .learning-banner,
+  .product-app .results-columns .card,
+  .product-app .main-content:has(.report-hero) > .card {
+    color-scheme: light;
+    --background: #faf9f1;
+    --background-secondary: #eef3f1;
+    --surface: #ffffff;
+    --surface-elevated: #eaf1ed;
+    --surface-hover: #f2f6f3;
+    --surface-active: #e4f0e5;
+    --text-primary: #182c34;
+    --text-secondary: #38525c;
+    --text-muted: #52646a;
+    --border: #d5dfdf;
+    --border-strong: #91a9b0;
+    --accent: #28677b;
+    --accent-hover: #154c60;
+    --success: #28613f;
+    --warning: #865c17;
+    --danger: #a6332b;
+    --focus-ring: #287da3;
+    background: #faf9f1;
+    color: #182c34;
+    border-color: #d5dfdf;
+    border-radius: 26px;
+  }
+  .product-app .action-panel .eyebrow,
+  .product-app .lesson-work .eyebrow,
+  .product-app .report-hero .eyebrow,
+  .product-app .learning-banner .eyebrow,
+  .product-app .results-columns .card .eyebrow,
+  .product-app .main-content:has(.report-hero) > .card .eyebrow {
+    color: #28677b;
+  }
+  .studio-repair {
+    max-width: 900px;
+    margin: 28px 0;
+    padding: clamp(22px, 4vw, 38px);
+    border: 1px solid #d5dfdf;
+  }
+  .studio-learning-title {
+    color: #faf8ee;
+    font:
+      500 clamp(34px, 4vw, 56px)/1.1 Georgia,
+      'Times New Roman',
+      serif;
+    letter-spacing: -0.045em;
+    max-width: 25ch;
+  }
+  .studio-repair :is(h2, h3, p, label, legend) {
+    color: #182c34;
+  }
+  .studio-repair h2 {
+    font-size: 28px;
+  }
+  .studio-repair p[role='status'] {
+    color: #52646a;
+    font-size: 13px;
+  }
+  .studio-repair textarea[rows] {
+    margin: 12px 0 20px;
+    background: #fff;
+    color: #182c34;
+    border: 1px solid #91a9b0;
+    border-radius: 12px;
+    padding: 14px;
+  }
+  .studio-repair button {
+    background: #c5ef75;
+    color: #1c3325;
+    border: 1px solid #acd55b;
+    border-bottom: 4px solid #7f9f4e;
+    border-radius: 13px;
+    padding: 12px 22px;
+    min-height: 48px;
+  }
+  .studio-repair fieldset {
+    border: 0;
+    padding: 0;
+    margin: 22px 0;
+  }
+  .studio-repair fieldset label {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #d5dfdf;
+    border-bottom-width: 4px;
+    border-radius: 14px;
+    background: #fff;
+    margin: 12px 0;
+  }
+  .studio-repair fieldset label:has(input:checked) {
+    background: #e9f4f8;
+    border-color: #4d91a7;
+  }
+  .studio-repair input[type='radio'] {
+    width: 18px;
+    height: 18px;
+    min-height: 18px;
+    accent-color: #28677b;
+  }
+  .studio-repair :focus-visible {
+    outline: 3px solid #287da3;
+    outline-offset: 4px;
+  }
+  .option {
+    border-radius: 14px;
+    border-width: 2px;
+    border-bottom-width: 4px;
+    min-height: 58px;
+    background: #fff;
+  }
+  .option.selected {
+    border-color: #4d91a7;
+    background: #e9f4f8;
+  }
+  .action-panel h2,
+  .lesson-work h2 {
+    font-size: clamp(24px, 2.5vw, 32px);
+  }
+  .product-app .code-editor {
+    background: #102c38;
+    color: #e9f5f1;
+    border-radius: 14px;
+    border-color: #52717e;
+  }
+  .report-hero h2 {
+    font:
+      500 clamp(30px, 3.2vw, 44px)/1.15 Georgia,
+      'Times New Roman',
+      serif;
+    letter-spacing: -0.04em;
+  }
+  .readiness-circle {
+    border-radius: 50%;
+    background: #eaf1e4;
+    border: 2px solid #a3bc90;
+  }
+  .readiness-circle b {
+    color: #345f3c;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  .learning-banner {
+    border-radius: 22px;
+    padding: 26px;
+  }
+  .info-strip,
+  .dashboard-note {
+    border-radius: 18px;
+    background: #bbd7e208;
+  }
+  .table-wrap {
+    border-radius: 14px;
+  }
+  .table-wrap th {
+    font-size: 11px;
+    letter-spacing: 0.025em;
+  }
+  .table-wrap td {
+    font-size: 12px;
+  }
+  .product-footer {
+    color: #abc1cc;
+  }
+  .product-app .loading {
+    color: #bbd7e2;
+  }
+  @media (min-width: 769px) {
+    .sidebar {
+      overflow-y: auto;
+    }
+    .sidebar-bottom {
+      padding-top: 24px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .studio-topbar-label {
+      display: none;
+    }
+    .studio-workspace-hero {
+      grid-template-columns: 1fr;
+    }
+    .studio-guide-card {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 0 20px;
+      align-items: center;
+    }
+    .studio-guide-card > div {
+      grid-row: 1 / 4;
+      width: 100px;
+      height: 100px;
+    }
+    .studio-guide-card .eyebrow {
+      margin-top: 0;
+    }
+    .studio-guide-card h3 {
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .landing-footer {
+      padding: 28px 24px;
+    }
+    .sidebar {
+      overflow-y: auto;
+    }
+    .sidebar-bottom {
+      padding-top: 24px;
+    }
+    .product-topbar {
+      min-height: 76px;
+      padding: 12px 16px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .product-topbar > div {
+      font-size: 10px;
+      gap: 8px;
+      min-width: 0;
+    }
+    .product-topbar > div:first-child {
+      flex: 1 1 120px;
+    }
+    .product-topbar > div:last-child {
+      margin-left: auto;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .role-switch {
+      gap: 5px;
+    }
+    .role-switch > span {
+      display: none;
+    }
+    .role-switch select {
+      max-width: 160px;
+      font-size: 11px;
+      padding-inline: 9px;
+    }
+    .new-demo {
+      font-size: 10px;
+      display: inline-flex;
+    }
+    .main-content {
+      padding: 28px 18px 50px;
+    }
+    .page-heading h1 {
+      font-size: 34px;
+      overflow-wrap: anywhere;
+    }
+    .workspace-hero {
+      padding: 24px;
+      border-radius: 24px;
+    }
+    .workspace-hero h2 {
+      font-size: 36px;
+    }
+    .workspace-hero p {
+      font-size: 15px;
+    }
+    .journey > div {
+      font-size: 10px;
+      gap: 8px;
+    }
+    .journey > div > span {
+      width: 32px;
+      height: 34px;
+    }
+    .onboarding {
+      padding: 24px;
+    }
+    .studio-onboarding-orbit > div {
+      width: 64px;
+      height: 64px;
+    }
+    .hero-copy h1 {
+      font-size: clamp(44px, 10vw, 64px);
+    }
+    .hero-copy > p {
+      font-size: 16px;
+    }
+    .studio-guide-card {
+      padding: 16px;
+      gap: 0 14px;
+      grid-template-columns: 74px minmax(0, 1fr);
+    }
+    .studio-guide-card > div {
+      width: 74px;
+      height: 74px;
+    }
+    .studio-guide-card h3 {
+      font-size: 21px;
+    }
+    .action-panel,
+    .lesson-work {
+      padding: 24px 20px;
+    }
+    .brand small {
+      font-size: 7px;
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .btn {
+      transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+    }
+    .btn-primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+    }
+  }
+}

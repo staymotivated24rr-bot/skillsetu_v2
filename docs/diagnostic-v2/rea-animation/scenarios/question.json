@@ -1,0 +1,60 @@
+{
+  "browser": {
+    "mode": "launch",
+    "executable_path": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"
+  },
+  "start_url": {
+    "url": "http://127.0.0.1:3002/diagnostic-v2"
+  },
+  "actions": [
+    {
+      "step_id": "intro-ready",
+      "action": "wait_for",
+      "locator": {
+        "kind": "css",
+        "selector": "#pilot-name"
+      },
+      "state": "visible",
+      "timeout_ms": 10000
+    },
+    {
+      "step_id": "nickname",
+      "action": "fill",
+      "locator": {
+        "kind": "css",
+        "selector": "#pilot-name"
+      },
+      "value": {
+        "source": "literal",
+        "value": "REA baseline QA"
+      }
+    },
+    {
+      "step_id": "start",
+      "action": "click",
+      "locator": {
+        "kind": "css",
+        "selector": "form button"
+      },
+      "timeout_ms": 10000
+    },
+    {
+      "step_id": "question-ready",
+      "action": "wait_for",
+      "locator": {
+        "kind": "css",
+        "selector": "#diagnostic-answer"
+      },
+      "state": "visible",
+      "timeout_ms": 10000
+    }
+  ],
+  "capture": {
+    "at_end": [
+      "dom",
+      "accessibility",
+      "screenshot",
+      "url"
+    ]
+  }
+}

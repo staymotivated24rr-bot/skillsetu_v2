@@ -1,0 +1,1 @@
+{"browser":{"mode":"launch","executable_path":"C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"},"start_url":{"url":"http://127.0.0.1:3002/diagnostic-v2"},"actions":[{"step_id":"intro-ready","action":"wait_for","locator":{"kind":"css","selector":"#pilot-name"},"state":"visible","timeout_ms":10000}],"capture":{"at_end":["dom","accessibility","screenshot","url"]}}

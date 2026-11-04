@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-04",
+  "unitIntegration": {
+    "passed": 248,
+    "failed": 0,
+    "skipped": 0,
+    "files": 30,
+    "seconds": 101.56
+  },
+  "combinedChromium": {
+    "passed": 36,
+    "failed": 0,
+    "skipped": 0,
+    "duration": "5.5 minutes"
+  },
+  "finalAffectedChromium": {
+    "passed": 6,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 41.1
+  },
+  "typecheck": "pass",
+  "lint": "pass",
+  "guardedNextProductionBuild": "pass",
+  "newFinalVariantsInBrowserPython": 9,
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "protectedSourceFilesUnchanged": 34,
+  "testDatabase": "isolated loopback skillsetu_visualizations_test",
+  "previewDatabase": "isolated loopback skillsetu_studio_dev",
+  "productionTouched": false,
+  "phase7Started": false
+}

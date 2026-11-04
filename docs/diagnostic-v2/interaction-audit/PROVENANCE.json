@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-30",
+  "sourceCommit": "0fd0039f3b2e69f0538da6705b47bf710702c117",
+  "buildId": "rBmPQ5IUTOoBkEL_leYfi",
+  "localUrl": "http://127.0.0.1:3002/diagnostic-v2",
+  "database": "skillsetu_audit on 127.0.0.1:15432",
+  "browser": "Microsoft Edge 156.0.4314.50 (Chromium), headless local isolated contexts",
+  "viewports": [
+    "1440x1000",
+    "390x844",
+    "additional regression widths 1024 and 320"
+  ],
+  "bank": "python-adaptive-reviewed-2.0.0",
+  "productionParity": "not verified; no production behavior attributed to this checkout",
+  "productSourceModified": false,
+  "productionDataChanged": false,
+  "hashes": {
+    "results": "39f24c5f7689908880ecbbd7d6fcd8af1f877e4c7c0a2ef59835d8ab1577d282",
+    "recovery": "14b897581013567a49c5b1301c653d1b73ace89f96059fe5b47465a283636320",
+    "bank": "82364d0ab4f223adbd366c5c79ae2ef524f58f0b00819f1811bb9882baafcf0a",
+    "experience": "617b26665af5e9a128dac80b3da3a5a5ab8bf0a1e209bce4adca1a0a4451126b",
+    "manipulation": "5f1158e523410d5bea177614045ad1b9753375ba0083a6b8a9d0b83e0aa0304e"
+  },
+  "harnessCorrections": [
+    "Use async main for this CommonJS project",
+    "Scope recovery alert to main; Next also creates a route-announcer alert. First ambiguity remains in RESULTS.json; targeted corrected recovery rerun passed."
+  ],
+  "regression": {
+    "passed": 9,
+    "total": 9,
+    "seconds": 58.8
+  },
+  "auditScriptChecks": {
+    "typecheck": "pass",
+    "eslint": "pass"
+  },
+  "screenshots": 63
+}

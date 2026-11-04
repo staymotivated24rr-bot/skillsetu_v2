@@ -1,0 +1,175 @@
+[
+  {
+    "name": "brilliant",
+    "evidenceId": "ev_9b6ccb67ab4e5084eb369f629b313d67746466e822ca10f87a1f0103e22999ba",
+    "provider": "rea-playwright-browser-scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "sha256": "534494a95bad72b72e68b62ff08b7f35cfa40385243b6e2f3e279fcec040b924",
+    "source": "public reference site",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "name": "duolingo",
+    "evidenceId": "ev_dc56c225fb2cf1043e7f2f4706cb1beedacf6cda16a2eac8887a3950d37d3a4f",
+    "provider": "rea-playwright-browser-scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "sha256": "035a5050eb0e3046c7cf7bf39eb1d8cef80b9a6d3e8afe5c94bac05166af8ada",
+    "source": "public reference site",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "name": "alux",
+    "evidenceId": "ev_defdba51b3c67b877107a99d16661751a5634ba196714f15d5397eddcdb4f9d9",
+    "provider": "rea-playwright-browser-scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "sha256": "4ff08c3bcc67288899b0f1e9ebcaf80c62547db17c5305e0383e9f3b803173b8",
+    "source": "public reference site",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "name": "alux-clear",
+    "evidenceId": "ev_015062f83694bc7dee9b9b266c6d09ceaa41b0ac0017614a0c2a18a1c62525fd",
+    "provider": "rea-playwright-browser-scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "sha256": "ef509f215dc7a289138885a6f3f614d608ea5f70192df9082576b41c14266045",
+    "source": "public reference site",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "name": "local-before",
+    "evidenceId": "ev_d88b1bd929b1f8c973a823ae750847050a3a29ea7abebb9b9bcb782d0c035a5b",
+    "provider": "rea-playwright-browser-scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "sha256": "f5e2eaa37149a6e1073457ee57616a5ff20daf4adfe4f0df4e687d2214fbbd7f",
+    "source": "local disposable audit server",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "name": "local-after",
+    "evidenceId": "ev_17c6452c1c5f205fc9804439c5cbd3512cd7544635404df52dca741d6e6e9d34",
+    "provider": "rea-playwright-browser-scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "sha256": "27533c5dd3f5842f1495cfb8b3cdd508a296980d912abe9b54b619c71c3ab475",
+    "source": "local disposable audit server",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "name": "intro-after",
+    "evidenceId": "ev_75b5f43035f2873bb723a6a5d6991e8ae067dfdbbe1e277aeeb3f209add7adec",
+    "provider": "rea-playwright-browser-scenario",
+    "completeness": {
+      "status": "complete",
+      "equality_eligible": true,
+      "missing_sections": [],
+      "truncated_sections": []
+    },
+    "sha256": "8a0bc67d1d2008484d0b01afa0a6274ac8eacb5544c30bd21531afa82c41f38b",
+    "source": "local disposable audit server",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  {
+    "name": "local-before-after-comparison",
+    "evidenceId": "ev_592735407dfbf10f6617ae3edddbeea0c73979a406961b3ef0216f9dcf07dfca",
+    "status": "changed",
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "Steps align only by exact, unique step_id; missing, duplicate, or action-mismatched steps are reported and prevent an unchanged claim.",
+      "Only declared literal normalization rules are applied, in canonical rule_id order, to already-redacted durable capture fields.",
+      "Elapsed time, event sequence/index values, request observation times and durations, and capture-local transaction IDs are excluded as volatile; network transactions are compared as an unordered collection in the step that sent their request; cookies, local storage and session storage entries are compared as unordered collections after literal normalization; screenshot bytes are compared by content digest.",
+      "A changed status proves an observed normalized difference. Missing or truncated evidence, incompatible capture context, or alignment failure prevents an unchanged claim."
+    ]
+  }
+]

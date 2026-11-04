@@ -1,0 +1,413 @@
+[
+  {
+    "profile": "complete-beginner",
+    "recommendation": {
+      "selectorVersion": "learning-revision-1-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-beginner",
+      "asOfDay": "2026-11-03",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:values",
+        "name": "Values & control flow",
+        "skillId": "py-fundamentals",
+        "competencyId": "values",
+        "subskill": "loop boundaries"
+      },
+      "reasonCode": "prerequisite-uncertainty",
+      "prerequisiteFor": "Collections & mutation",
+      "diagnosticEvidence": "uncertain",
+      "reason": "Before Collections & mutation, investigate prerequisite Values & control flow. Evidence is uncertain or absent, not demonstrated weakness. Synthetic uncertain observations do not establish a weakness. No full interactive lesson is mapped to this exact subskill. Existing overviews supply no recorded independent mastery.",
+      "suggestedDifficulty": 1,
+      "difficultyReason": "Use a scaffolded foundation task, then an applied fresh check; easy repetitions alone cannot establish mastery.",
+      "review": {
+        "status": "not-started",
+        "reason": "No submitted practice is recorded for this content version."
+      },
+      "practice": {
+        "status": "unsupported",
+        "completedSteps": 0,
+        "totalSteps": 0,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 0,
+        "nextOrdinal": 1,
+        "finalAttempted": false,
+        "reason": "No full interactive lesson is mapped to this exact subskill. Existing overviews supply no recorded independent mastery."
+      },
+      "variant": {
+        "fresh": false,
+        "available": false,
+        "reason": "No full interactive challenge contract is mapped to this exact subskill. The existing overview is instructional only."
+      },
+      "action": {
+        "kind": "guided-practice",
+        "href": "/diagnostic-v2/learn?skill=py-fundamentals&subskill=loop%20boundaries",
+        "label": "Open existing guided practice",
+        "coverage": "Existing guided overview only. A full interactive lesson for this subskill is not yet available."
+      },
+      "evidence": {
+        "diagnosticReason": "Synthetic uncertain observations do not establish a weakness.",
+        "prerequisiteSupport": [],
+        "learningRunIds": []
+      }
+    }
+  },
+  {
+    "profile": "strong",
+    "recommendation": {
+      "selectorVersion": "learning-revision-1-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-strong",
+      "asOfDay": "2026-11-03",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:values",
+        "name": "Values & control flow",
+        "skillId": "py-fundamentals",
+        "competencyId": "values",
+        "subskill": "loop boundaries"
+      },
+      "reasonCode": "independent-verification",
+      "diagnosticEvidence": "strength",
+      "reason": "The diagnostic supplies preliminary strength evidence; it is not lesson mastery. Three synthetic unaided matches support a preliminary strength. No full interactive lesson is mapped to this exact subskill. Existing overviews supply no recorded independent mastery.",
+      "suggestedDifficulty": 3,
+      "difficultyReason": "Prefer a new transfer challenge because prior independent evidence supports stretching. Availability is shown separately.",
+      "review": {
+        "status": "not-started",
+        "reason": "No submitted practice is recorded for this content version."
+      },
+      "practice": {
+        "status": "unsupported",
+        "completedSteps": 0,
+        "totalSteps": 0,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 0,
+        "nextOrdinal": 1,
+        "finalAttempted": false,
+        "reason": "No full interactive lesson is mapped to this exact subskill. Existing overviews supply no recorded independent mastery."
+      },
+      "variant": {
+        "fresh": false,
+        "available": false,
+        "reason": "No full interactive challenge contract is mapped to this exact subskill. The existing overview is instructional only."
+      },
+      "action": {
+        "kind": "guided-practice",
+        "href": "/diagnostic-v2/learn?skill=py-fundamentals&subskill=loop%20boundaries",
+        "label": "Open existing guided practice",
+        "coverage": "Existing guided overview only. A full interactive lesson for this subskill is not yet available."
+      },
+      "evidence": {
+        "diagnosticReason": "Three synthetic unaided matches support a preliminary strength.",
+        "prerequisiteSupport": [],
+        "learningRunIds": []
+      }
+    }
+  },
+  {
+    "profile": "struggling",
+    "recommendation": {
+      "selectorVersion": "learning-revision-1-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-struggling",
+      "asOfDay": "2026-11-03",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:collections",
+        "name": "Collections & mutation",
+        "skillId": "py-structures",
+        "competencyId": "collections",
+        "subskill": "aliasing"
+      },
+      "reasonCode": "review-due",
+      "diagnosticEvidence": "likely-gap",
+      "reason": "The completed diagnostic reports a likely gap, not a proven inability. Synthetic repeated unaided aliasing difficulty. 0/5 first-ever unaided checkpoint matches; 5 unaided misses; 0 assisted first checkpoints; 0 hint uses; 0 distinct fresh final passes and 1 fresh unaided final misses; 0 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Further independent evidence is needed; completion and retries do not establish mastery. Review was due on 2026-11-03.",
+      "suggestedDifficulty": 1,
+      "difficultyReason": "Use a scaffolded foundation task, then an applied fresh check; easy repetitions alone cannot establish mastery.",
+      "review": {
+        "status": "due",
+        "dueDay": "2026-11-03",
+        "intervalDays": 1,
+        "reason": "1 calendar-day instructional interval from meaningful submitted evidence; visits, hints and repeated matches do not postpone review. This is a deterministic scheduling default, not a calibrated forgetting model."
+      },
+      "practice": {
+        "status": "developing",
+        "completedSteps": 12,
+        "totalSteps": 12,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 5,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 1,
+        "availableFreshForms": 2,
+        "nextOrdinal": 2,
+        "finalAttempted": true,
+        "moduleVersionId": "python-variables-references@1.0.0-draft.1",
+        "reason": "0/5 first-ever unaided checkpoint matches; 5 unaided misses; 0 assisted first checkpoints; 0 hint uses; 0 distinct fresh final passes and 1 fresh unaided final misses; 0 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Further independent evidence is needed; completion and retries do not establish mastery.",
+        "activeRunId": "synthetic-run-1",
+        "lastPracticeAt": "2026-11-02T10:00:00.000Z",
+        "lastMeaningfulAt": "2026-11-02T10:00:00.000Z"
+      },
+      "variant": {
+        "fresh": true,
+        "available": true,
+        "ordinal": 2,
+        "reason": "The next owned practice run can use fresh final form 2. Repeated checkpoint questions supply no new independent credit."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/variables?source=synthetic-struggling&competency=collections",
+        "label": "Open lesson for a fresh check",
+        "coverage": "Partial competency coverage. Aliasing, rebinding and flat-list mutation."
+      },
+      "evidence": {
+        "diagnosticReason": "Synthetic repeated unaided aliasing difficulty.",
+        "prerequisiteSupport": [
+          "Values & control flow: supported by preliminary diagnostic strength"
+        ],
+        "learningRunIds": [
+          "synthetic-run-1"
+        ]
+      }
+    }
+  },
+  {
+    "profile": "inconsistent",
+    "recommendation": {
+      "selectorVersion": "learning-revision-1-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-inconsistent",
+      "asOfDay": "2026-11-03",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:collections",
+        "name": "Collections & mutation",
+        "skillId": "py-structures",
+        "competencyId": "collections",
+        "subskill": "aliasing"
+      },
+      "reasonCode": "address-likely-gap",
+      "diagnosticEvidence": "likely-gap",
+      "reason": "The completed diagnostic reports a likely gap, not a proven inability. Synthetic repeated unaided aliasing difficulty. 2/5 first-ever unaided checkpoint matches; 3 unaided misses; 0 assisted first checkpoints; 0 hint uses; 0 distinct fresh final passes and 1 fresh unaided final misses; 0 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Further independent evidence is needed; completion and retries do not establish mastery.",
+      "suggestedDifficulty": 2,
+      "difficultyReason": "Use an applied contrast and a fresh independent check to resolve mixed or incomplete evidence.",
+      "review": {
+        "status": "verification-needed",
+        "dueDay": "2026-11-04",
+        "intervalDays": 2,
+        "reason": "2 calendar-day instructional interval from meaningful submitted evidence; visits, hints and repeated matches do not postpone review. This is a deterministic scheduling default, not a calibrated forgetting model."
+      },
+      "practice": {
+        "status": "inconsistent",
+        "completedSteps": 12,
+        "totalSteps": 12,
+        "firstUnaidedMatches": 2,
+        "firstUnaidedMisses": 3,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 1,
+        "availableFreshForms": 2,
+        "nextOrdinal": 2,
+        "finalAttempted": true,
+        "moduleVersionId": "python-variables-references@1.0.0-draft.1",
+        "reason": "2/5 first-ever unaided checkpoint matches; 3 unaided misses; 0 assisted first checkpoints; 0 hint uses; 0 distinct fresh final passes and 1 fresh unaided final misses; 0 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Further independent evidence is needed; completion and retries do not establish mastery.",
+        "activeRunId": "synthetic-run-1",
+        "lastPracticeAt": "2026-11-02T10:00:00.000Z",
+        "lastMeaningfulAt": "2026-11-02T10:00:00.000Z"
+      },
+      "variant": {
+        "fresh": true,
+        "available": true,
+        "ordinal": 2,
+        "reason": "The next owned practice run can use fresh final form 2. Repeated checkpoint questions supply no new independent credit."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/variables?source=synthetic-inconsistent&competency=collections",
+        "label": "Open lesson for a fresh check",
+        "coverage": "Partial competency coverage. Aliasing, rebinding and flat-list mutation."
+      },
+      "evidence": {
+        "diagnosticReason": "Synthetic repeated unaided aliasing difficulty.",
+        "prerequisiteSupport": [
+          "Values & control flow: supported by preliminary diagnostic strength"
+        ],
+        "learningRunIds": [
+          "synthetic-run-1"
+        ]
+      }
+    }
+  },
+  {
+    "profile": "repeated-hints",
+    "recommendation": {
+      "selectorVersion": "learning-revision-1-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-hints",
+      "asOfDay": "2026-11-03",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:collections",
+        "name": "Collections & mutation",
+        "skillId": "py-structures",
+        "competencyId": "collections",
+        "subskill": "aliasing"
+      },
+      "reasonCode": "review-due",
+      "diagnosticEvidence": "likely-gap",
+      "reason": "The completed diagnostic reports a likely gap, not a proven inability. Synthetic repeated unaided aliasing difficulty. 0/5 first-ever unaided checkpoint matches; 0 unaided misses; 5 assisted first checkpoints; 5 hint uses; 0 distinct fresh final passes and 0 fresh unaided final misses; 1 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Further independent evidence is needed; completion and retries do not establish mastery. Review was due on 2026-11-03.",
+      "suggestedDifficulty": 1,
+      "difficultyReason": "Use a scaffolded foundation task, then an applied fresh check; easy repetitions alone cannot establish mastery.",
+      "review": {
+        "status": "due",
+        "dueDay": "2026-11-03",
+        "intervalDays": 1,
+        "reason": "1 calendar-day instructional interval from meaningful submitted evidence; visits, hints and repeated matches do not postpone review. This is a deterministic scheduling default, not a calibrated forgetting model."
+      },
+      "practice": {
+        "status": "guided",
+        "completedSteps": 12,
+        "totalSteps": 12,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 5,
+        "hintUses": 5,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 1,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 2,
+        "nextOrdinal": 2,
+        "finalAttempted": true,
+        "moduleVersionId": "python-variables-references@1.0.0-draft.1",
+        "reason": "0/5 first-ever unaided checkpoint matches; 0 unaided misses; 5 assisted first checkpoints; 5 hint uses; 0 distinct fresh final passes and 0 fresh unaided final misses; 1 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Further independent evidence is needed; completion and retries do not establish mastery.",
+        "activeRunId": "synthetic-run-1",
+        "lastPracticeAt": "2026-11-02T10:00:00.000Z",
+        "lastMeaningfulAt": "2026-11-02T10:00:00.000Z"
+      },
+      "variant": {
+        "fresh": true,
+        "available": true,
+        "ordinal": 2,
+        "reason": "The next owned practice run can use fresh final form 2. Repeated checkpoint questions supply no new independent credit."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/variables?source=synthetic-hints&competency=collections",
+        "label": "Open lesson for a fresh check",
+        "coverage": "Partial competency coverage. Aliasing, rebinding and flat-list mutation."
+      },
+      "evidence": {
+        "diagnosticReason": "Synthetic repeated unaided aliasing difficulty.",
+        "prerequisiteSupport": [
+          "Values & control flow: supported by preliminary diagnostic strength"
+        ],
+        "learningRunIds": [
+          "synthetic-run-1"
+        ]
+      }
+    }
+  },
+  {
+    "profile": "returning-after-inactivity",
+    "recommendation": {
+      "selectorVersion": "learning-revision-1-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-returning",
+      "asOfDay": "2026-11-03",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:collections",
+        "name": "Collections & mutation",
+        "skillId": "py-structures",
+        "competencyId": "collections",
+        "subskill": "aliasing"
+      },
+      "reasonCode": "review-due",
+      "diagnosticEvidence": "strength",
+      "reason": "The diagnostic supplies preliminary strength evidence; it is not lesson mastery. Three synthetic unaided matches support a preliminary strength. 5/5 first-ever unaided checkpoint matches; 0 unaided misses; 0 assisted first checkpoints; 0 hint uses; 1 distinct fresh final passes and 0 fresh unaided final misses; 0 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Preliminary practice mastery is limited to this lesson, not an entire competency. Review was due on 2026-09-08.",
+      "suggestedDifficulty": 3,
+      "difficultyReason": "Prefer a new transfer challenge because prior independent evidence supports stretching. Availability is shown separately.",
+      "review": {
+        "status": "due",
+        "dueDay": "2026-09-08",
+        "intervalDays": 7,
+        "reason": "7 calendar-day instructional interval from meaningful submitted evidence; visits, hints and repeated matches do not postpone review. This is a deterministic scheduling default, not a calibrated forgetting model."
+      },
+      "practice": {
+        "status": "demonstrated",
+        "completedSteps": 12,
+        "totalSteps": 12,
+        "firstUnaidedMatches": 5,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 1,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 2,
+        "nextOrdinal": 2,
+        "finalAttempted": true,
+        "moduleVersionId": "python-variables-references@1.0.0-draft.1",
+        "reason": "5/5 first-ever unaided checkpoint matches; 0 unaided misses; 0 assisted first checkpoints; 0 hint uses; 1 distinct fresh final passes and 0 fresh unaided final misses; 0 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Preliminary practice mastery is limited to this lesson, not an entire competency.",
+        "activeRunId": "synthetic-run-1",
+        "lastPracticeAt": "2026-09-01T10:00:00.000Z",
+        "lastMeaningfulAt": "2026-09-01T10:00:00.000Z"
+      },
+      "variant": {
+        "fresh": true,
+        "available": true,
+        "ordinal": 2,
+        "reason": "The next owned practice run can use fresh final form 2. Repeated checkpoint questions supply no new independent credit."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/variables?source=synthetic-returning&competency=collections",
+        "label": "Open lesson for a fresh check",
+        "coverage": "Partial competency coverage. Aliasing, rebinding and flat-list mutation."
+      },
+      "evidence": {
+        "diagnosticReason": "Three synthetic unaided matches support a preliminary strength.",
+        "prerequisiteSupport": [
+          "Values & control flow: supported by preliminary diagnostic strength"
+        ],
+        "learningRunIds": [
+          "synthetic-run-1"
+        ]
+      }
+    }
+  }
+]

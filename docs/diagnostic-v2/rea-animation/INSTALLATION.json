@@ -1,0 +1,15 @@
+{
+  "package": "rea-agents",
+  "version": "6.8.0",
+  "integrity": "sha512-9QDeRnGqEDzABZyr04eLnBXBv/c6I9/TWu/6M0MD4pEfkySI/BIgwTODIbAReX3C1x6hjw9+Jlx4A2yUSPZ9ww==",
+  "runtime": "Node 24.22.1 Windows x64",
+  "scope": ".env.local-runtime/rea-runtime (ignored)",
+  "launcher": "scripts/rea-local.ps1",
+  "installScripts": "disabled",
+  "MCPRegistration": "not changed; executed through CLI",
+  "capabilitiesVerified": [
+    "version",
+    "browser-scenario capture",
+    "web capture comparison"
+  ]
+}

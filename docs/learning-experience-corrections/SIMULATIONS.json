@@ -1,0 +1,552 @@
+[
+  {
+    "profile": "A: eight independent strengths",
+    "recommendation": {
+      "selectorVersion": "learning-revision-2-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-source",
+      "asOfDay": "2026-11-04",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "advanced-transfer",
+        "name": "Build a dispatch manifest",
+        "subskill": "Validation, iteration and capacity decisions"
+      },
+      "reasonCode": "strong-transfer",
+      "diagnosticEvidence": "strength",
+      "reason": "You answered consistently without diagnostic hints across the assessed areas. Try a new practical contract that combines several skills.",
+      "suggestedDifficulty": 3,
+      "difficultyReason": "A new multi-step application task builds on the sampled strengths.",
+      "review": {
+        "status": "not-started",
+        "reason": "Review timing uses meaningful submitted evidence. An unfinished lesson is a continuation option, not evidence of a diagnostic weakness."
+      },
+      "practice": {
+        "status": "not-started",
+        "completedSteps": 0,
+        "totalSteps": 0,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 3,
+        "nextOrdinal": 1,
+        "finalAttempted": false,
+        "moduleVersionId": "python-transfer-manifest@1.0.0-draft.1",
+        "reason": "No matching versioned lesson practice exists. Diagnostic findings are not lesson mastery."
+      },
+      "variant": {
+        "available": true,
+        "fresh": true,
+        "ordinal": 1,
+        "reason": "A new final-task variant is available. Open the activity and choose a new practice run if you have completed an earlier run."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/lesson?lesson=python-transfer-manifest&source=synthetic-source&competency=course%3Apython-transfer-manifest",
+        "label": "Start transfer challenge",
+        "coverage": "A new applied task, not a claim of complete Python mastery."
+      },
+      "evidence": {
+        "diagnosticReason": "Three synthetic unaided matches support a preliminary strength.",
+        "prerequisiteSupport": [],
+        "learningRunIds": []
+      },
+      "category": "advanced",
+      "continueLearning": [],
+      "learningMap": [
+        {
+          "id": "python-values-division",
+          "title": "Values, names, and division",
+          "prerequisites": [],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-values-division&source=synthetic-source&competency=course%3Apython-values-division"
+        },
+        {
+          "id": "python-loop-boundaries",
+          "title": "Loops: every item, exactly once",
+          "prerequisites": [
+            "Values and assignment"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-loop-boundaries&source=synthetic-source&competency=course%3Apython-loop-boundaries"
+        },
+        {
+          "id": "python-variables-references",
+          "title": "Python Variables, References, and Mutation",
+          "prerequisites": [
+            "Names and assignment"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/variables?source=synthetic-source&competency=course%3Apython-variables-references"
+        },
+        {
+          "id": "python-transfer-manifest",
+          "title": "Transfer challenge: build a dispatch manifest",
+          "prerequisites": [
+            "Iteration",
+            "Validation",
+            "Collections"
+          ],
+          "recommended": true,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-transfer-manifest&source=synthetic-source&competency=course%3Apython-transfer-manifest"
+        }
+      ]
+    }
+  },
+  {
+    "profile": "B: strengths plus 2/12 unfinished",
+    "recommendation": {
+      "selectorVersion": "learning-revision-2-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-source",
+      "asOfDay": "2026-11-04",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "advanced-transfer",
+        "name": "Build a dispatch manifest",
+        "subskill": "Validation, iteration and capacity decisions"
+      },
+      "reasonCode": "strong-transfer",
+      "diagnosticEvidence": "strength",
+      "reason": "You answered consistently without diagnostic hints across the assessed areas. Try a new practical contract that combines several skills.",
+      "suggestedDifficulty": 3,
+      "difficultyReason": "A new multi-step application task builds on the sampled strengths.",
+      "review": {
+        "status": "not-started",
+        "reason": "Review timing uses meaningful submitted evidence. An unfinished lesson is a continuation option, not evidence of a diagnostic weakness."
+      },
+      "practice": {
+        "status": "not-started",
+        "completedSteps": 0,
+        "totalSteps": 0,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 3,
+        "nextOrdinal": 1,
+        "finalAttempted": false,
+        "moduleVersionId": "python-transfer-manifest@1.0.0-draft.1",
+        "reason": "No matching versioned lesson practice exists. Diagnostic findings are not lesson mastery."
+      },
+      "variant": {
+        "available": true,
+        "fresh": true,
+        "ordinal": 1,
+        "reason": "A new final-task variant is available. Open the activity and choose a new practice run if you have completed an earlier run."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/lesson?lesson=python-transfer-manifest&source=synthetic-source&competency=course%3Apython-transfer-manifest",
+        "label": "Start transfer challenge",
+        "coverage": "A new applied task, not a claim of complete Python mastery."
+      },
+      "evidence": {
+        "diagnosticReason": "Three synthetic unaided matches support a preliminary strength.",
+        "prerequisiteSupport": [],
+        "learningRunIds": []
+      },
+      "category": "advanced",
+      "continueLearning": [
+        {
+          "runId": "synthetic-run-1",
+          "title": "Python Variables, References, and Mutation",
+          "completed": 2,
+          "total": 12,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-variables-references&run=synthetic-run-1"
+        }
+      ],
+      "learningMap": [
+        {
+          "id": "python-values-division",
+          "title": "Values, names, and division",
+          "prerequisites": [],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-values-division&source=synthetic-source&competency=course%3Apython-values-division"
+        },
+        {
+          "id": "python-loop-boundaries",
+          "title": "Loops: every item, exactly once",
+          "prerequisites": [
+            "Values and assignment"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-loop-boundaries&source=synthetic-source&competency=course%3Apython-loop-boundaries"
+        },
+        {
+          "id": "python-variables-references",
+          "title": "Python Variables, References, and Mutation",
+          "prerequisites": [
+            "Names and assignment"
+          ],
+          "recommended": false,
+          "completed": false,
+          "progress": "2/12 steps",
+          "href": "/diagnostic-v2/learn/variables?source=synthetic-source&competency=course%3Apython-variables-references"
+        },
+        {
+          "id": "python-transfer-manifest",
+          "title": "Transfer challenge: build a dispatch manifest",
+          "prerequisites": [
+            "Iteration",
+            "Validation",
+            "Collections"
+          ],
+          "recommended": true,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-transfer-manifest&source=synthetic-source&competency=course%3Apython-transfer-manifest"
+        }
+      ]
+    }
+  },
+  {
+    "profile": "C: repeated loop misses",
+    "recommendation": {
+      "selectorVersion": "learning-revision-2-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-source",
+      "asOfDay": "2026-11-04",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:fundamentals",
+        "name": "For loops and range",
+        "subskill": "Python Fundamentals",
+        "competencyId": "fundamentals",
+        "skillId": "py-fundamentals"
+      },
+      "reasonCode": "targeted-gap",
+      "diagnosticEvidence": "likely-gap",
+      "reason": "Repeated independent difficulty points to For loops and range. Use a focused lesson, then verify on a new case.",
+      "suggestedDifficulty": 1,
+      "difficultyReason": "Use a short explanation and scaffolded practice before the independent check.",
+      "review": {
+        "status": "not-started",
+        "reason": "Review timing uses meaningful submitted evidence. An unfinished lesson is a continuation option, not evidence of a diagnostic weakness."
+      },
+      "practice": {
+        "status": "not-started",
+        "completedSteps": 0,
+        "totalSteps": 0,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 3,
+        "nextOrdinal": 1,
+        "finalAttempted": false,
+        "moduleVersionId": "python-loop-boundaries@1.0.0-draft.1",
+        "reason": "No matching versioned lesson practice exists. Diagnostic findings are not lesson mastery."
+      },
+      "variant": {
+        "available": true,
+        "fresh": true,
+        "ordinal": 1,
+        "reason": "A new final-task variant is available. Open the activity and choose a new practice run if you have completed an earlier run."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/lesson?lesson=python-loop-boundaries&source=synthetic-source&competency=course%3Apython-loop-boundaries",
+        "label": "Start focused lesson",
+        "coverage": "Focused instruction and a separate independent check."
+      },
+      "evidence": {
+        "diagnosticReason": "Three synthetic unaided matches support a preliminary strength.",
+        "prerequisiteSupport": [],
+        "learningRunIds": []
+      },
+      "category": "remediation",
+      "continueLearning": [],
+      "learningMap": [
+        {
+          "id": "python-values-division",
+          "title": "Values, names, and division",
+          "prerequisites": [],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-values-division&source=synthetic-source&competency=course%3Apython-values-division"
+        },
+        {
+          "id": "python-loop-boundaries",
+          "title": "Loops: every item, exactly once",
+          "prerequisites": [
+            "Values and assignment"
+          ],
+          "recommended": true,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-loop-boundaries&source=synthetic-source&competency=course%3Apython-loop-boundaries"
+        },
+        {
+          "id": "python-variables-references",
+          "title": "Python Variables, References, and Mutation",
+          "prerequisites": [
+            "Names and assignment"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/variables?source=synthetic-source&competency=course%3Apython-variables-references"
+        },
+        {
+          "id": "python-transfer-manifest",
+          "title": "Transfer challenge: build a dispatch manifest",
+          "prerequisites": [
+            "Iteration",
+            "Validation",
+            "Collections"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-transfer-manifest&source=synthetic-source&competency=course%3Apython-transfer-manifest"
+        }
+      ]
+    }
+  },
+  {
+    "profile": "D: uncertain loop evidence",
+    "recommendation": {
+      "selectorVersion": "learning-revision-2-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-source",
+      "asOfDay": "2026-11-04",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:fundamentals",
+        "name": "For loops and range",
+        "subskill": "Python Fundamentals",
+        "competencyId": "fundamentals",
+        "skillId": "py-fundamentals"
+      },
+      "reasonCode": "targeted-uncertainty",
+      "diagnosticEvidence": "uncertain",
+      "reason": "The evidence for For loops and range is incomplete or conflicting. A fresh targeted check will help clarify it.",
+      "suggestedDifficulty": 2,
+      "difficultyReason": "Use a new contrasting case before deciding whether more instruction is needed.",
+      "review": {
+        "status": "not-started",
+        "reason": "Review timing uses meaningful submitted evidence. An unfinished lesson is a continuation option, not evidence of a diagnostic weakness."
+      },
+      "practice": {
+        "status": "not-started",
+        "completedSteps": 0,
+        "totalSteps": 0,
+        "firstUnaidedMatches": 0,
+        "firstUnaidedMisses": 0,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 0,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 3,
+        "nextOrdinal": 1,
+        "finalAttempted": false,
+        "moduleVersionId": "python-loop-boundaries@1.0.0-draft.1",
+        "reason": "No matching versioned lesson practice exists. Diagnostic findings are not lesson mastery."
+      },
+      "variant": {
+        "available": true,
+        "fresh": true,
+        "ordinal": 1,
+        "reason": "A new final-task variant is available. Open the activity and choose a new practice run if you have completed an earlier run."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/lesson?lesson=python-loop-boundaries&source=synthetic-source&competency=course%3Apython-loop-boundaries",
+        "label": "Open targeted verification",
+        "coverage": "Focused instruction and a separate independent check."
+      },
+      "evidence": {
+        "diagnosticReason": "Three synthetic unaided matches support a preliminary strength.",
+        "prerequisiteSupport": [],
+        "learningRunIds": []
+      },
+      "category": "verification",
+      "continueLearning": [],
+      "learningMap": [
+        {
+          "id": "python-values-division",
+          "title": "Values, names, and division",
+          "prerequisites": [],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-values-division&source=synthetic-source&competency=course%3Apython-values-division"
+        },
+        {
+          "id": "python-loop-boundaries",
+          "title": "Loops: every item, exactly once",
+          "prerequisites": [
+            "Values and assignment"
+          ],
+          "recommended": true,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-loop-boundaries&source=synthetic-source&competency=course%3Apython-loop-boundaries"
+        },
+        {
+          "id": "python-variables-references",
+          "title": "Python Variables, References, and Mutation",
+          "prerequisites": [
+            "Names and assignment"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/variables?source=synthetic-source&competency=course%3Apython-variables-references"
+        },
+        {
+          "id": "python-transfer-manifest",
+          "title": "Transfer challenge: build a dispatch manifest",
+          "prerequisites": [
+            "Iteration",
+            "Validation",
+            "Collections"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-transfer-manifest&source=synthetic-source&competency=course%3Apython-transfer-manifest"
+        }
+      ]
+    }
+  },
+  {
+    "profile": "E: strength contrasted by independent practice misses",
+    "recommendation": {
+      "selectorVersion": "learning-revision-2-draft.1",
+      "mappingVersion": "diagnostic-learning-1-draft.1",
+      "sourceRunId": "synthetic-source",
+      "asOfDay": "2026-11-04",
+      "schedulingTimezone": "Asia/Kolkata",
+      "noAssessmentCredit": true,
+      "concept": {
+        "id": "competency:collections8",
+        "name": "Python Variables, References, and Mutation",
+        "subskill": "Collections & Mutation",
+        "competencyId": "collections8",
+        "skillId": "py-structures"
+      },
+      "reasonCode": "verify-practice-contrast",
+      "diagnosticEvidence": "strength",
+      "reason": "Your diagnostic showed strength, while later independent practice gave a different signal. Check this specific concept with a fresh case; your diagnostic result stays as recorded.",
+      "suggestedDifficulty": 2,
+      "difficultyReason": "Use a new contrasting case before deciding whether more instruction is needed.",
+      "review": {
+        "status": "due",
+        "dueDay": "2026-11-04",
+        "intervalDays": 2,
+        "reason": "Review timing uses meaningful submitted evidence. An unfinished lesson is a continuation option, not evidence of a diagnostic weakness."
+      },
+      "practice": {
+        "status": "inconsistent",
+        "completedSteps": 12,
+        "totalSteps": 12,
+        "firstUnaidedMatches": 3,
+        "firstUnaidedMisses": 2,
+        "firstAssisted": 0,
+        "hintUses": 0,
+        "repeatedMatches": 0,
+        "repeatedEasyMatches": 0,
+        "assistedFinals": 0,
+        "freshFinalPasses": 1,
+        "freshFinalMisses": 0,
+        "availableFreshForms": 2,
+        "nextOrdinal": 2,
+        "finalAttempted": true,
+        "moduleVersionId": "python-variables-references@1.0.0-draft.1",
+        "reason": "3/5 first-ever unaided checkpoint matches; 2 unaided misses; 0 assisted first checkpoints; 0 hint uses; 1 distinct fresh final passes and 0 fresh unaided final misses; 0 assisted finals excluded. 0 repeated checkpoint matches supply no new independent credit. Completion (12/12) is shown separately. Further independent evidence is needed; completion and retries do not establish mastery.",
+        "activeRunId": "synthetic-run-1",
+        "lastPracticeAt": "2026-11-02T10:00:00.000Z",
+        "lastMeaningfulAt": "2026-11-02T10:00:00.000Z"
+      },
+      "variant": {
+        "available": true,
+        "fresh": true,
+        "ordinal": 2,
+        "reason": "A new final-task variant is available. Open the activity and choose a new practice run if you have completed an earlier run."
+      },
+      "action": {
+        "kind": "fresh-verification",
+        "href": "/diagnostic-v2/learn/variables?source=synthetic-source&competency=course%3Apython-variables-references",
+        "label": "Open targeted verification",
+        "coverage": "Focused instruction and a separate independent check."
+      },
+      "evidence": {
+        "diagnosticReason": "Three synthetic unaided matches support a preliminary strength.",
+        "prerequisiteSupport": [
+          "Python Fundamentals: optional preparation; no mandatory lock"
+        ],
+        "learningRunIds": [
+          "synthetic-run-1"
+        ]
+      },
+      "category": "verification",
+      "continueLearning": [],
+      "learningMap": [
+        {
+          "id": "python-values-division",
+          "title": "Values, names, and division",
+          "prerequisites": [],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-values-division&source=synthetic-source&competency=course%3Apython-values-division"
+        },
+        {
+          "id": "python-loop-boundaries",
+          "title": "Loops: every item, exactly once",
+          "prerequisites": [
+            "Values and assignment"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-loop-boundaries&source=synthetic-source&competency=course%3Apython-loop-boundaries"
+        },
+        {
+          "id": "python-variables-references",
+          "title": "Python Variables, References, and Mutation",
+          "prerequisites": [
+            "Names and assignment"
+          ],
+          "recommended": true,
+          "completed": true,
+          "progress": "12/12 steps",
+          "href": "/diagnostic-v2/learn/variables?source=synthetic-source&competency=course%3Apython-variables-references"
+        },
+        {
+          "id": "python-transfer-manifest",
+          "title": "Transfer challenge: build a dispatch manifest",
+          "prerequisites": [
+            "Iteration",
+            "Validation",
+            "Collections"
+          ],
+          "recommended": false,
+          "completed": false,
+          "href": "/diagnostic-v2/learn/lesson?lesson=python-transfer-manifest&source=synthetic-source&competency=course%3Apython-transfer-manifest"
+        }
+      ]
+    }
+  }
+]

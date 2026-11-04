@@ -1,0 +1,60 @@
+{
+  "recordedAtUTC": "2026-10-31T17:04:15.023Z",
+  "branch": "codex/hybrid-adaptive-v41",
+  "sourceCommittedAs": "6ef9d775238195452bcb000ca9021cbb06df7b24",
+  "gitHeadDuringBuild": "569eb81bdbec89f5a2809181292c2fdf4acba0c9",
+  "buildId": "Io3A-2nEEmX27gHnCzMVa",
+  "buildNote": "Application sources were built as local working-copy changes, then committed unchanged. No application changes followed the final build.",
+  "engine": "hybrid-4.1.0-draft.1",
+  "bank": "python-starter-v3-360-draft-2",
+  "hashNormalization": "UTF-8 normalized to LF",
+  "applicationSHA256": {
+    "src/lib/diagnostic/hybrid-vnext.ts": "29d45033fa6c31ab4287aa32bc85bdbe0cdd3b395915b0d03bc1f332bd9e99fa",
+    "src/lib/diagnostic/engine.ts": "971f254b605395d31f8b61f208faa8f0f29b38d8d636ae2cedf4a8f923d1680c",
+    "src/lib/diagnostic/service.ts": "5a119580ff89cec3833ede4328950b791dc2f753ec190d3a6c5d62bba6b09f25",
+    "src/lib/diagnostic/types.ts": "cbfecd876bc937125ebf40db295758a69ef248e6889d29dd99e2daf898f3472c",
+    "src/components/diagnostic-experience.tsx": "bbfbd122b8605d01edd69739a73b9be7e919802e2e763e111fa93374f5ff658b",
+    "src/components/diagnostic-question-review.tsx": "3fbcbd88251197089dae7f27d90eb80e4c30468f66e7c14a8619d8e3b41d9b4f",
+    "src/components/diagnostic.module.css": "514c71ab2c43e71b6c07212d1b75bcc71adcb596ac55b0ce71a656d257a574f4"
+  },
+  "immutableContentDiff": [],
+  "tests": {
+    "unitIntegration": {
+      "passed": 178,
+      "total": 178,
+      "files": 17,
+      "seconds": 61.98
+    },
+    "newBrowser": {
+      "passed": 4,
+      "total": 4,
+      "seconds": 28.2,
+      "build": "final"
+    },
+    "legacyBrowser": {
+      "passed": 12,
+      "total": 12,
+      "duration": "1.7 minutes",
+      "note": "Same selector/service logic; checked before final unsure-only CSS and report-copy polish."
+    },
+    "lint": "passed",
+    "types": "passed",
+    "productionBuild": "passed; migration and seed skipped",
+    "visualQA": "Neutral unsure pill and desktop/mobile report inspected"
+  },
+  "selectionSeed": "immutable run UUID; per-engine per-position SHA-256 tie-break",
+  "local": {
+    "url": "http://localhost:3002/diagnostic-v2",
+    "draft": true,
+    "defaultEightAreas": true,
+    "database": "disposable loopback audit database"
+  },
+  "migrations": "none",
+  "production": {
+    "accessed": false,
+    "dataModified": false,
+    "deployed": false,
+    "commitParity": "not inspected"
+  },
+  "releaseState": "Questions, topic bridges and heuristic calibration require independent educator review and real-learner pilots. Hosted/default release flags remain disabled."
+}

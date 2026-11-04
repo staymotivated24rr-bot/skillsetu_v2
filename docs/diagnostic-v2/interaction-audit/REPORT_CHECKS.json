@@ -1,0 +1,11 @@
+{
+  "result": "pass",
+  "checks": [
+    "48 row matrix",
+    "decision filter yields 6",
+    "completion + loop-boundary filter yields 1",
+    "filter clearing restores 48",
+    "finding screenshot loads",
+    "mobile report has no page-level horizontal overflow"
+  ]
+}

@@ -1,0 +1,230 @@
+.workspace {
+  color-scheme: light;
+  color: #182f3b;
+  background: #faf9f1;
+  border: 1px solid #a8bfc3;
+  border-radius: 24px;
+  padding: clamp(14px, 3vw, 28px);
+  margin-block: 24px;
+  overflow-wrap: anywhere;
+}
+.workspace :is(h2, h3, p, legend, dt, dd, strong, label) {
+  color: #182f3b;
+}
+.workspace h2 {
+  font-size: clamp(1.5rem, 4vw, 2.1rem);
+  margin: 0.3rem 0;
+}
+.workspace h3 {
+  font-size: 1rem;
+  margin-block: 1rem 0.5rem;
+}
+.workspace p {
+  line-height: 1.65;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 750;
+}
+.workspace .note {
+  color: #405d69;
+  font-size: 0.875rem;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 20px;
+  align-items: start;
+}
+.code {
+  background: #112c39;
+  color: #f7f5ec;
+  border-radius: 16px;
+  padding: 14px 0;
+  min-width: 0;
+}
+.code p {
+  color: #d9ebf1;
+  font-size: 0.8rem;
+  padding-inline: 14px;
+}
+.code ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.code li {
+  display: grid;
+  grid-template-columns: 2em minmax(0, 1fr);
+  gap: 0.5em;
+  padding: 8px 10px;
+  border-left: 4px solid transparent;
+}
+.code .active {
+  border-left-color: #cdf184;
+  background: #244b5e;
+  font-weight: 700;
+}
+.lineNumber {
+  color: #b3d2df;
+  user-select: none;
+}
+.workspace code,
+.workspace pre {
+  font-family: var(--font-geist-mono, ui-monospace), monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-size: 0.9rem;
+}
+.state {
+  min-width: 0;
+}
+.state dl {
+  margin: 0;
+}
+.state dl > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 12px;
+  border-bottom: 1px solid #bed0cf;
+  padding-block: 10px;
+}
+.state dt span {
+  display: block;
+  font-size: 0.75rem;
+  color: #405d69;
+}
+.state dd {
+  margin: 0;
+  align-self: center;
+}
+.state pre {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #a8bfc3;
+  background: #edf2ee;
+}
+.objects {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.objects > div {
+  padding: 12px;
+  border: 2px solid #577584;
+  border-radius: 14px;
+  flex: 1 1 100px;
+  background: #eef3eb;
+}
+.objects strong,
+.objects code {
+  display: block;
+  margin-block: 4px;
+}
+.objects strong {
+  font-size: 0.8rem;
+}
+.stack {
+  padding-left: 20px;
+}
+.stack li {
+  border: 1px solid #9fb8bd;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+.stack li:last-child {
+  border-left: 4px solid #3d6955;
+}
+.explanation,
+.feedback,
+.iteration {
+  padding: 16px;
+  border-left: 4px solid #47705b;
+  background: #e6eee4;
+  margin-block: 18px;
+  border-radius: 8px;
+  line-height: 1.7;
+}
+.prediction {
+  border: 1px solid #8ba8b0;
+  padding: 16px;
+  border-radius: 16px;
+  min-width: 0;
+}
+.prediction legend {
+  font-weight: 750;
+}
+.prediction label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-block: 8px;
+  background: white;
+  border: 1px solid #91adb5;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.prediction label:has(input:checked) {
+  background: #e6efd8;
+  border-color: #3b674b;
+  box-shadow: inset 3px 0 #3b674b;
+}
+.prediction input {
+  flex: 0 0 auto;
+  accent-color: #245747;
+  width: 18px;
+  height: 18px;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-block: 20px;
+}
+.workspace button {
+  background: #d1ed92;
+  border: 1px solid #567345;
+  border-radius: 12px;
+  color: #182f3b;
+  padding: 12px;
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.workspace button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.workspace :is(button, input):focus-visible {
+  outline: 3px solid #266b85;
+  outline-offset: 4px;
+}
+@media (max-width: 700px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+  .controls button {
+    flex: 1 1 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workspace *,
+  .workspace *::before,
+  .workspace *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

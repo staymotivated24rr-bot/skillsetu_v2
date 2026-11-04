@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-03",
+  "branch": "codex/python-learning-visualizations",
+  "head": "7c91a18c4bb9d46d0561f90f1dd9624ca0fc7050",
+  "uncommittedImplementation": true,
+  "buildId": "UODOQoz0tw40BcCJVfbmU",
+  "traceVersion": "1.0.0-draft.1",
+  "schemaChangesThisPhase": 0,
+  "protectedFiles": 39,
+  "changedProtectedFiles": 0,
+  "sandboxApiHashUnchanged": true,
+  "sourceHashes": {
+    "src/lib/learning-studio/trace-types.ts": "bda03821884d4e7b926bbd1b16591d35e897d997563ffcd67182756140f27b95",
+    "src/lib/learning-studio/trace-content.ts": "b4585868b27d312a439686ffcbff21b1f7a50a22fca5194a5fcc3d73d0beeccc",
+    "src/lib/learning-studio/trace-model.ts": "2ebb481b7891de5eed3e7d44bb2b8634682dafff1b7a9fe0550bd18a42321d3b",
+    "src/lib/learning-studio/trace-state.ts": "240d9816e18841032451703e7b7a06351a3fd08f1bfdee3b521b10925ae16597",
+    "src/components/python-trace-visualizer.tsx": "4c13ab4bf4807383cffbdf31a09f6406c69725b804ec2375221127ec0c8aa302",
+    "src/components/python-trace-visualizer.module.css": "2a02d0e301a12acb4b8da4d3230c63afceace73737fec1f52f187247a0cd78e5",
+    "src/components/python-visualization-studio.tsx": "08d09eafbfc28309f598844f61ce57ddc0d44c154f54221216f4fc89f56f1efa",
+    "src/app/diagnostic-v2/learn/visualizations/page.tsx": "ce464b75f32442901f4ebb442f0baf72fd9a30ed96aac858de41fda0cae546cb",
+    "src/app/api/diagnostic-v2/learning/route.ts": "4ce55cd48e45cf367a835c689e7a0f30abbeedddae408f7cbcaa96057cb065e7",
+    "src/components/interactive-lesson-studio.tsx": "179833bd720fd1ee429a6ecb412ac2b3e6eb7d9175d230be3ef0cd4b51f2e292",
+    "tests/python-traces.test.ts": "399edeea27bf927267aecac1dd20f28349bdb6d7e5c98bd14d989a4f5a602ded",
+    "tests/diagnostic-learning-pathway-service.test.ts": "e33cf9723a1a63aaff32990e904087eee449586dbbc492ff4526fcd432da67aa",
+    "e2e/python-visualizations.spec.ts": "fef6a103af9b7adee1a9fd1575fc3d8d4a18adfb0cf5851a193e19d3f9a693cc"
+  },
+  "unitIntegration": {
+    "files": 26,
+    "seconds": 112.99,
+    "failed": 0,
+    "passed": 225
+  },
+  "repeatedMigrationAndTrace": {
+    "seconds": 21.07,
+    "failed": 0,
+    "passed": 7
+  },
+  "chromium": {
+    "duration": "3.8m",
+    "skipped": 0,
+    "failed": 0,
+    "passed": 29
+  },
+  "finalVisualizationRerun": {
+    "widths": [
+      1440,
+      390,
+      320
+    ],
+    "seconds": 43.3,
+    "failed": 0,
+    "passed": 6
+  },
+  "lint": "pass",
+  "typecheck": "pass",
+  "productionCompilation": "pass - unchanged generated Prisma client; database-write guard",
+  "pdfPagesInspected": 5,
+  "runtime": {
+    "unauthenticatedTraceOpen": 401,
+    "database": "skillsetu_studio_dev",
+    "routeHttp": 200,
+    "url": "http://127.0.0.1:3007/diagnostic-v2/learn/visualizations",
+    "databaseHost": "127.0.0.1:15434"
+  },
+  "testDatabase": "skillsetu_visualizations_test on 127.0.0.1:15434",
+  "deployment": false,
+  "push": false,
+  "pullRequest": false
+}

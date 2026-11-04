@@ -1,0 +1,41 @@
+{
+  "branch": "codex/interactive-learning-studio",
+  "baseCommit": "7c91a18c4bb9d46d0561f90f1dd9624ca0fc7050",
+  "buildId": "7FP29NAeD3HQEAcFITbyW",
+  "route": "http://127.0.0.1:3007/diagnostic-v2/learn/studio",
+  "isolatedDatabaseNames": [
+    "skillsetu_studio_dev",
+    "skillsetu_studio_test"
+  ],
+  "postgresPort": 15434,
+  "protectedExistingFilesUnchanged": 32,
+  "checks": {
+    "unitIntegration": "209/209",
+    "newFinalBrowser": "3/3",
+    "existingBrowser": "17/17",
+    "lint": "pass",
+    "types": "pass",
+    "build": "pass",
+    "filteredProductionAudit": "0 vulnerabilities"
+  },
+  "sourceSHA256": {
+    "src/lib/learning-studio/content.ts": "126416a63cca10371fd98bd3655d45d6ef5f6a1098177bf877545c2a748a3daa",
+    "src/lib/learning-studio/evaluation.ts": "c2ef32bf6db579916567b9506f3682191a17cc065b84bfb859f56f72b02d5a09",
+    "src/lib/learning-studio/service.ts": "1fbacdb70d76dd86a0d8a85e76837c89121d04575c4cad0b49d9923436cc54f0",
+    "src/lib/learning-studio/types.ts": "70a4d51ba17e593bf856d51cb17e6f0742e845a2fd5f2e476834074c4a5298f0",
+    "src/app/api/diagnostic-v2/learning/route.ts": "e2c46057544cb5afa2d9a561f0c92d866c8389a4781cab36eed61b5969930c3c",
+    "src/app/diagnostic-v2/learn/studio/page.tsx": "f9e22149cf80e712f484808faa1ee5ec7780a799bc2abff334f383171cc4be90",
+    "prisma/migrations/202611030001_learning_studio/migration.sql": "ff7f937f82a866a8cc5095836d8ce3e0cc1580df5cf8a9521d5e839cdc27b9f9",
+    "src/components/interactive-lesson-studio.tsx": "1599d92078ad7ac24a73df1a3d048ad8ebab54f1e38e52dfa2ce8d0803bd1b22",
+    "src/components/interactive-lesson-studio.module.css": "ff5212d74b8e815f9447a325bf168144eeac5cca53a917296fcaf8454bd0dba2",
+    "src/components/code-block-composer.tsx": "3041aff68bb018b0943f16546b831c1bef8124e2f94dee38e9289962b8b4d41c",
+    "src/components/task-response.tsx": "1545e03499737913a3bda528a9c11bdfb442dc59006225ce9fa10699d7216a10",
+    "scripts/dev-learning-studio.mjs": "46b515b1dd54b880f184892b3953a1efe4467a5533084e77cd9185a85ff0ca72",
+    "prisma/schema.prisma": "1c97d9d02e78539f98f68935f698282ad7780a6c3541ec646e38f84b59898144",
+    "package.json": "e9ad3fed9cee1a9121a90466d727059a8cf1bd77571084140b3d9a22dca52a96",
+    "package-lock.json": "6c2d11d75bc9ce33887f9df864d50f4bea901ba864957b402e1a762e3a818e16",
+    "e2e/learning-studio.spec.ts": "3ed6368942cb685d8cba6f8746d1e435ed7e393be833b91083bf2a13b0ac8211",
+    "tests/learning-studio.test.ts": "6a8a3621d099b7c40b35b74ccb81ded19aeac020411564e06aef62d466bb1ed3",
+    "tests/learning-studio-service.test.ts": "0bc137d4551a8d481381e1f8b10e95ac285a2a44db97ed985ca8dd91f6608843"
+  }
+}

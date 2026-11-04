@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-03",
+  "branch": "codex/variables-references-lesson",
+  "buildId": "t1YFKhPCzsMLRNmkvpJ9f",
+  "protectedFiles": 34,
+  "changedProtectedFiles": [],
+  "sourceHashes": {
+    ".\\src\\lib\\learning-studio\\output-contract.ts": "887e77447d5a777c71a970beca6f765217783aa3337cae3fa576b93ab89ac421",
+    ".\\src\\lib\\learning-studio\\mastery.ts": "a5ae4059fce5968721d3a5a77ec6a2038a50415a865c38d3e17d3d3e9d134dac",
+    ".\\src\\lib\\learning-studio\\review.ts": "f98b115049f03d1609f1607f19a8a8d61c6ee724ad40b7e6d388f83623673664",
+    ".\\src\\lib\\learning-studio\\service.ts": "fbb0c9361102f6c9f0b59a20b285d64ef6f12764073fe491ea4783d55e059f91",
+    ".\\src\\lib\\learning-studio\\types.ts": "38759663ee1f11b4a819665778ae700d95b6d393b324196f044df9f2c14bee9d",
+    ".\\src\\lib\\learning-studio\\evaluation.ts": "97dd1fb94203a5f393ff0b1f3106b83691355998096daa86f3cd368e123b5d67",
+    ".\\src\\lib\\learning-studio\\content.ts": "5175635b9b027be94cb58de3ceb4c81e5e3231d4294db6ea156fe44308f047aa",
+    ".\\src\\lib\\learning-studio\\variables-lesson.ts": "bf87cb59ea9bd81d5fbae9bb24b0aaf368ed730612bd4eef04b26562ab082b10",
+    ".\\src\\lib\\learning-studio\\catalog.ts": "30a1f77636f94523315dcc49f3de17ea84111dea50c313cdb2288cb1d11426ab"
+  },
+  "unitIntegration": 215,
+  "finalFocused": 21,
+  "distinctBrowserCases": 20,
+  "productionDeployment": false
+}
